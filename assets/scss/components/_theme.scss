@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.row>* {
+    padding-right: 0 !important;
+}
+
+.p-relative {
+    position: relative;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.bg-light {
+    background-color: #f9f6f1 !important;
+}

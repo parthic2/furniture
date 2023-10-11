@@ -1,0 +1,78 @@
+.form-group {
+	position: relative;
+	z-index: 2;
+	margin-bottom: 30px;
+	display: block;
+
+	input,
+	textarea {
+		border: 2px solid #eeeef5;
+		background-color: transparent;
+		padding-bottom: 8px;
+		padding-top: 8px;
+		border-radius: 5px;
+		// @include mixins.border-radius(0);
+		padding-left: 14px;
+		padding-right: 0;
+		width: 100%;
+
+		&[type="text"] {
+			outline: none;
+
+			&:focus {
+				border: 2px solid #b9a38e;
+			}
+		}
+
+		&[type="email"] {
+			outline: none;
+
+			&:focus {
+				border: 2px solid #b9a38e;
+			}
+		}
+	}
+	textarea {
+		outline: none;
+
+		&:focus {
+			border: 2px solid #b9a38e;
+		}
+	}
+}
+
+.tp-btn-square {
+	height: 61px;
+	padding: 0px 58px;
+	display: inline-block;
+	line-height: 61px;
+	font-weight: 500;
+	font-size: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.3s;
+	// @include mixins.transition(0.3s);
+	background: #866340;
+	color: #ffffff;
+	border: none;
+
+	@media only screen and (min-width: 992px) and (max-width: 1199px),
+		only screen and (min-width: 768px) and (max-width: 991px) {
+		height: 50px;
+		padding: 0px 25px;
+		line-height: 50px;
+		font-size: 14px;
+	}
+
+	@media (max-width: 767px) {
+		height: 50px;
+		padding: 0px 25px;
+		line-height: 50px;
+		font-size: 12px;
+	}
+
+	&:hover {
+		background-color: rgb(158, 117, 76);
+		color: #ffffff;
+	}
+}
