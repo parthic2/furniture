@@ -177,6 +177,12 @@ document.addEventListener("click", (event) => {
     }
 });
 
+document.querySelectorAll(".tp-category-menu > nav > ul > li").forEach(item => {
+    item.addEventListener("click", () => {
+        categoryMenuNav.style.display = "none";
+    });
+});
+
 // for mobile menu to open all categories
 const categoryMenuContent = document.querySelector(".tp-category-menu-content");
 const mobileMenu = document.querySelector(".tp-category-mobile-menu");
