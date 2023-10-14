@@ -163,13 +163,19 @@ document.querySelectorAll(".qtybutton").forEach(function (element) {
 
 // index2.html js
 // for index2.html file all categories menu in desktop
-document.querySelector(".tp-category-menu-toggle").addEventListener("click", function () {
-    const categoryMenuNav = document.querySelector(".tp-category-menu > nav > ul");
-    if (categoryMenuNav) {
-        categoryMenuNav.style.display = (categoryMenuNav.style.display === "block") ? "none" : "block";
-    }
+const categoryMenuToggle = document.querySelector(".tp-category-menu-toggle");
+const categoryMenuNav = document.querySelector(".tp-category-menu > nav > ul");
+
+categoryMenuToggle.addEventListener("click", (event) => {
+    event.stopPropagation();
+    categoryMenuNav.style.display = (categoryMenuNav.style.display === "block") ? "none" : "block";
 });
 
+document.addEventListener("click", (event) => {
+    if (event.target !== categoryMenuToggle && !categoryMenuNav.contains(event.target)) {
+        categoryMenuNav.style.display = "none";
+    }
+});
 
 // for mobile menu to open all categories
 const categoryMenuContent = document.querySelector(".tp-category-menu-content");
