@@ -1,0 +1,421 @@
+.section-box {
+    padding-top: 150px;
+    padding-bottom: 120px;
+}
+
+.story-about-section {
+    & .story-content .story-detail {
+        padding: 80px 90px 0 55px;
+        position: relative;
+
+        @media screen and (max-width:1199px) and (min-width:992px) {
+            padding: 35px 35px 0;
+        }
+
+        @media screen and (max-width:991px) and (min-width:768px) {
+            padding: 10px 10px 0;
+        }
+
+        @media screen and (max-width:767px) {
+            padding: 80px 50px 0;
+        }
+
+
+        @media (max-width:575px) {
+            padding: 80px 20px 0;
+        }
+
+        &:before {
+            position: absolute;
+            content: '';
+            background: url("/assets/img/about/hp-6-items-bg.jpg");
+            top: 8.5%;
+            left: -18.5%;
+            width: 119.3%;
+            height: 122%;
+            z-index: -1;
+
+            @media screen and (max-width:1199px) and (min-width:992px) {
+                top: 3%;
+                height: 110%;
+            }
+
+            @media screen and (max-width:991px) and (min-width:768px) {
+                top: -10%;
+                height: 125%;
+            }
+
+            @media screen and (max-width:767px) {
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .info {
+            margin-top: 60px;
+
+            & .images {
+                width: 125px;
+                float: left;
+                margin-top: 4px;
+
+                @media (max-width:320px) {
+                    float: none;
+                    margin: 4px auto 20px;
+                }
+            }
+
+            & .author {
+                width: 57%;
+                text-align: center;
+
+                @media screen and (max-width:1199px) and (min-width:992px) {
+                    width: 75%;
+                }
+
+                @media screen and (max-width:991px) and (min-width:768px) {
+                    width: 100%
+                }
+
+                @media screen and (max-width:767px) {
+                    width: 85%;
+                }
+
+                & .name {
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #333;
+                    padding-bottom: 4px;
+                }
+            }
+        }
+
+        & .special-heading {
+            text-align: left;
+            margin-bottom: 46px;
+
+            &:before {
+                left: 0;
+                transform: translateX(0);
+            }
+        }
+    }
+}
+
+.special-heading {
+    font-size: 38px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+    position: relative;
+    padding-bottom: 16px;
+    margin-bottom: 63px;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all .5s ease .1s;
+    z-index: 9;
+}
+
+.gallery-about-section {
+    &.section-box {
+        padding-top: 50px;
+    }
+
+    & .gallery-content {
+        padding: 0 7.5px;
+
+        .images {
+            margin: 0 -7.5px 15px;
+            position: relative;
+
+            & .overlay {
+                background: rgba(0, 0, 0, .2);
+            }
+
+            &:hover .overlay {
+                opacity: 1;
+            }
+
+            & .gallery-zoom .gallery-elements {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                cursor: pointer;
+                z-index: 99;
+            }
+        }
+    }
+}
+
+.our-team-page {
+    &.our-team-about.section-box {
+        padding: 7px 0 118px;
+    }
+
+    & .our-team-content .our-team-detail {
+        text-align: center;
+
+        @media screen and (max-width:991px) and (min-width:576px) {
+            margin-bottom: 70px;
+        }
+
+        @media (max-width:575px) {
+            margin-bottom: 100px;
+        }
+
+        &:hover {
+            .job {
+                display: none;
+            }
+
+            .socials {
+                display: block;
+            }
+        }
+
+        & .member-images {
+            overflow: hidden;
+            cursor: pointer;
+            border-radius: 50%;
+
+            &:hover img {
+                transform: scale(1.1);
+            }
+
+            img {
+                border-radius: 50%;
+                transition: transform .6s cubic-bezier(.25, .46, .45, .94);
+            }
+        }
+
+        & .member-info {
+            cursor: pointer;
+
+            & .name {
+                font-size: 20px;
+                padding: 27px 0 7px;
+            }
+
+            & .job {
+                font-size: 15px;
+                font-weight: 400;
+                color: #666;
+                display: block;
+            }
+
+            & .socials {
+                display: none;
+                margin-bottom: -10px;
+
+                a {
+                    fill: #999;
+                    font-size: 18px;
+                    padding: 0 8px;
+                    text-decoration: none;
+
+                    &:hover {
+                        fill: #333;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// testimonials css
+// .testimonials-hp-1.testimonials-about-us {
+//     background: #f7f7f7;
+// }
+
+// .testimonials-hp-1.testimonials-about-us .testimonials-content {
+//     background: 0 0;
+// }
+
+// .testimonials-hp-1 .testimonials-content {
+//     margin: 0 65px;
+//     background: #f7f7f7;
+// }
+
+// @media screen and (max-width: 1750px) and (min-width: 1200px) {
+//     .testimonials-hp-1 .item .testimonials-detail {
+//         padding: 150px 80px 40px;
+//     }
+// }
+
+// .testimonials-hp-1 .item .testimonials-detail {
+//     padding: 149px 65px 135px 85px;
+//     text-align: center;
+// }
+
+// .testimonials-hp-1 .item .testimonials-detail svg {
+//     font-size: 90px;
+//     fill: #666;
+// }
+
+// .testimonials-hp-1 .item .testimonials-detail p {
+//     margin-top: 7px;
+//     color: #212529;
+//     font-size: 15px;
+// }
+
+// .testimonials-hp-1 .item .testimonials-detail h5 {
+//     font-size: 20px;
+//     padding: 38px 0 4px;
+// }
+
+// .testimonials-hp-1 .item .left-block.left-block-2 .images {
+//     padding-right: 0;
+//     margin-right: -63px;
+// }
+
+// .testimonials-hp-1 .item .left-block .images {
+//     padding-right: 0;
+//     margin-right: -10px;
+// }
+
+
+// index2.html main page about css
+.overflow-visible {
+    overflow: visible !important;
+}
+
+.cover-background {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    overflow: hidden;
+    position: relative;
+    background-position: center center !important;
+}
+
+.margin-20px-bottom {
+    margin-bottom: 20px;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.margin-4-rem-bottom {
+    margin-bottom: 4rem;
+}
+
+.w-55 {
+    width: 55%;
+}
+
+.right-25px {
+    right: 25px;
+}
+
+.bottom-minus-50px {
+    bottom: -50px;
+}
+
+.position-absolute {
+    position: absolute !important;
+}
+
+@media (max-width: 767px) {
+    .sm-no-margin-bottom {
+        margin-bottom: 0 !important;
+    }
+
+    .sm-margin-10-rem-bottom {
+        margin-bottom: 10rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .md-margin-8-rem-bottom {
+        margin-bottom: 8rem;
+    }
+
+    .md-right-15px {
+        right: 15px;
+    }
+
+    .md-bottom-minus-30px {
+        bottom: -30px;
+    }
+}
+
+.about {
+    &__title {
+        margin-bottom: 30px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+
+        .border {
+            height: 1px;
+            width: 40px;
+            margin-right: 20px;
+            opacity: .7;
+            background-color: #bf8c4c;
+        }
+    }
+
+    &__text {
+        color: #bf8c4c;
+    }
+
+    &__heading {
+        font-weight: 700;
+        width: 85%;
+        margin-bottom: 35px;
+        font-size: 38.9px;
+        line-height: 45px;
+        color: #232323;
+
+        @media (max-width:767px) {
+            margin-bottom: 25px;
+            font-size: 31.35px;
+        }
+    }
+
+    &_desc {
+        color: #828282;
+        font-size: 15px;
+        width: 80%;
+        line-height: 30px;
+    }
+}
+
+
+@media (max-width:1199px) {
+    .lg-w-100 {
+        width: 100% !important
+    }
+}
+
+.btn-fancy {
+    margin-top: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 12px 28px;
+    background-color: #232323;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    &:focus,
+    &:hover {
+        background: 0 0;
+        color: #232323;
+    }
+}

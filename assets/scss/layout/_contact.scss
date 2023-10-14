@@ -1,78 +1,83 @@
-.form-group {
-	position: relative;
-	z-index: 2;
-	margin-bottom: 30px;
-	display: block;
+.title {
+	&-border {
+		position: relative;
 
-	input,
-	textarea {
-		border: 2px solid #eeeef5;
-		background-color: transparent;
-		padding-bottom: 8px;
-		padding-top: 8px;
-		border-radius: 5px;
-		// @include mixins.border-radius(0);
-		padding-left: 14px;
-		padding-right: 0;
-		width: 100%;
-
-		&[type="text"] {
-			outline: none;
-
-			&:focus {
-				border: 2px solid #b9a38e;
-			}
-		}
-
-		&[type="email"] {
-			outline: none;
-
-			&:focus {
-				border: 2px solid #b9a38e;
-			}
+		&::before {
+			background: #eee none repeat scroll 0 0;
+			bottom: 0;
+			content: "";
+			height: 2px;
+			left: 0;
+			position: absolute;
+			width: 50px;
 		}
 	}
-	textarea {
-		outline: none;
 
-		&:focus {
-			border: 2px solid #b9a38e;
+	&-1 {
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 28px;
+	}
+}
+
+.contact-details {
+	ul {
+		li {
+			clear: both;
+			margin-bottom: 20px;
+			overflow: hidden;
+
+			span {
+				display: block;
+				color: #666;
+				// font-family: Lato,sans-serif;
+				font-size: 13px;
+				font-weight: 400;
+				line-height: 20px;
+			}
+
+			i {
+				background: #ddd none repeat scroll 0 0;
+				color: #999;
+				float: left;
+				font-size: 20px;
+				height: 35px;
+				line-height: 35px;
+				margin-right: 20px;
+				text-align: center;
+				width: 35px;
+
+				svg {
+					fill: #999;
+				}
+			}
 		}
 	}
 }
 
-.tp-btn-square {
-	height: 61px;
-	padding: 0px 58px;
-	display: inline-block;
-	line-height: 61px;
-	font-weight: 500;
-	font-size: 16px;
-	text-align: center;
+.customer-login {
+	background: #fff none repeat scroll 0 0;
+	padding: 40px;
+}
+
+.submit-button {
+	background: #866340 none repeat scroll 0 0;
+	color: #fff;
+	height: 50px;
+	line-height: 35px;
+	padding: 0 30px;
 	text-transform: uppercase;
-	transition: 0.3s;
-	// @include mixins.transition(0.3s);
-	background: #866340;
-	color: #ffffff;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
 	border: none;
+}
 
-	@media only screen and (min-width: 992px) and (max-width: 1199px),
-		only screen and (min-width: 768px) and (max-width: 991px) {
-		height: 50px;
-		padding: 0px 25px;
-		line-height: 50px;
-		font-size: 14px;
-	}
-
-	@media (max-width: 767px) {
-		height: 50px;
-		padding: 0px 25px;
-		line-height: 50px;
-		font-size: 12px;
-	}
-
-	&:hover {
-		background-color: rgb(158, 117, 76);
-		color: #ffffff;
-	}
+.custom-textarea {
+	background: #f6f6f6 none repeat scroll 0 0;
+	border: medium none;
+	height: 100px;
+	padding: 15px 20px;
+	width: 100%;
+	outline: none;
 }

@@ -43,10 +43,10 @@ const featureSwiper = new Swiper('.tp-feature__active', {
         delay: 2000, // Adjust the delay (in milliseconds) as needed
         disableOnInteraction: false, // Prevent auto-play from stopping on user interaction
     },
-    navigation: {
-        prevEl: '.slider-prev',
-        nextEl: '.slider-next',
-    }
+    // navigation: {
+    //     prevEl: '.slider-prev',
+    //     nextEl: '.slider-next',
+    // }
 });
 
 const feature2Swiper = new Swiper('.tp-feature-2__active', {
@@ -58,9 +58,25 @@ const feature2Swiper = new Swiper('.tp-feature-2__active', {
         delay: 2000, // Adjust the delay (in milliseconds) as needed
         disableOnInteraction: false, // Prevent auto-play from stopping on user interaction
     },
+    // navigation: {
+    //     prevEl: '.slider-prev-2',
+    //     nextEl: '.slider-next-2',
+    // }
+});
+
+// testimoinal slider
+const testiSwiper = new Swiper('.tp-testi__active', {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    autoplay: {
+        delay: 2000, // Adjust the delay (in milliseconds) as needed
+        disableOnInteraction: false, // Prevent auto-play from stopping on user interaction
+    },
     navigation: {
-        prevEl: '.slider-prev-2',
-        nextEl: '.slider-next-2',
+        prevEl: '.slider-prev-test',
+        nextEl: '.slider-next-test',
     }
 });
 
@@ -122,3 +138,74 @@ document.querySelectorAll(".dropdown .option-btn").forEach(function (button) {
         menu.style.display = menu.classList.contains("active") ? "block" : "none";
     });
 });
+
+// add product plus minus js
+// const cartPlusMinus = document.querySelectorAll(".cart-plus-minus");
+// cartPlusMinus.innerHTML = '<div class="dec qtybutton">-</div>';
+// cartPlusMinus.innerHTML += '<div class="inc qtybutton">+</div>';
+
+document.querySelectorAll(".qtybutton").forEach(function (element) {
+    element.addEventListener("click", function () {
+        const parent = this.parentElement;
+        const input = parent.querySelector("input");
+        let value = parseFloat(input.value);
+        if (this.textContent === "+") {
+            value += 1;
+        } else if (value > 1) {
+            value -= 1;
+        } else {
+            value = 1;
+        }
+        input.value = value;
+    });
+});
+
+
+// index2.html js
+// for index2.html file all categories menu in desktop
+document.querySelector(".tp-category-menu-toggle").addEventListener("click", function () {
+    const categoryMenuNav = document.querySelector(".tp-category-menu > nav > ul");
+    if (categoryMenuNav) {
+        categoryMenuNav.style.display = (categoryMenuNav.style.display === "block") ? "none" : "block";
+    }
+});
+
+
+// for mobile menu to open all categories
+const categoryMenuContent = document.querySelector(".tp-category-menu-content");
+const mobileMenu = document.querySelector(".tp-category-mobile-menu");
+
+if (categoryMenuContent && mobileMenu) {
+    mobileMenu.innerHTML = categoryMenuContent.outerHTML;
+
+    document.querySelector('.tp-offcanvas-category-toggle').addEventListener('click', function () {
+        const nav = this.nextElementSibling;
+        if (nav) {
+            nav.style.display = (nav.style.display === "block") ? "none" : "block";
+        }
+    });
+
+    document.querySelectorAll(".tp-category-mobile-menu .has-dropdown > a").forEach(function (arrowLink) {
+        const arrowBtn = document.createElement("button");
+        arrowBtn.classList.add("dropdown-toggle-btn");
+        arrowBtn.innerHTML = "<i class='fa-regular fa-angle-right'></i>";
+        arrowLink.appendChild(arrowBtn);
+
+        arrowBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            const parentListItem = arrowLink.parentElement;
+            const grandparentListItem = parentListItem.parentElement;
+            parentListItem.classList.toggle("expanded");
+            parentListItem.classList.toggle("dropdown-opened");
+            Array.from(grandparentListItem.children).forEach(sibling => {
+                if (sibling !== parentListItem) {
+                    sibling.classList.remove("dropdown-opened");
+                }
+            });
+            const submenu = grandparentListItem.querySelector(".tp-submenu");
+            if (submenu) {
+                submenu.style.display = (submenu.style.display === "block") ? "none" : "block";
+            }
+        });
+    });
+}
