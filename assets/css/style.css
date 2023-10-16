@@ -2441,8 +2441,8 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .story-about-section .story-content .story-detail .info .author {
-    width: 57%;
-    text-align: center;
+    width: 100%;
+    text-align: end;
 }
 
 .story-about-section .story-content .story-detail .info .author .name {
@@ -2459,7 +2459,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     }
 
     .story-about-section .story-content .story-detail .info .author {
-        width: 75%;
+        width: 100%;
     }
 
     .story-about-section .story-content .story-detail:before {
@@ -2831,6 +2831,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .catalog-right .section-title {
     margin-bottom: 32px;
+    text-transform: capitalize;
 }
 
 .catalog-right .text {

@@ -71,11 +71,11 @@
             }
 
             & .author {
-                width: 57%;
-                text-align: center;
+                width: 100%;
+                text-align: end;
 
                 @media screen and (max-width:1199px) and (min-width:992px) {
-                    width: 75%;
+                    width: 100%;
                 }
 
                 @media screen and (max-width:991px) and (min-width:768px) {
