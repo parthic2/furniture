@@ -633,6 +633,14 @@ only screen and (min-width: 768px) and (max-width: 991px),
     padding-left: 0 !important;
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .tpoffcanvas .tp-main-menu-content ul .search,
+    .tpoffcanvas .tp-main-menu-content ul .cart {
+        display: none;
+    }
+}
+
 .tpoffcanvas ul li a {
     text-transform: capitalize;
 }
@@ -1113,6 +1121,13 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 .fa-service__wrapper img {
     width: 100vw;
+    height: 100vh;
+}
+
+@media only screen and (max-width:991px) {
+    .fa-service__wrapper img {
+        height: 100%;
+    }
 }
 
 .fa-slider__arrow-box {
@@ -1415,7 +1430,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
     margin-bottom: 20px;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:991px) {
     .process__space {
         padding-top: 30px;
     }

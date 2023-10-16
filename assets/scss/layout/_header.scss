@@ -486,6 +486,14 @@
 			display: block;
 			box-shadow: none;
 
+			@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+				.search,
+				.cart {
+					display: none;
+				}
+			}
+
 			li {
 				list-style: none;
 				position: relative;

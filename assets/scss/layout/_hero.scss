@@ -7,7 +7,11 @@
 
     img {
         width: 100vw;
-        // height: 78%;
+        height: 100vh;
+
+        @media only screen and (max-width:991px) {
+            height: 100%;
+        }
     }
 }
 
@@ -74,29 +78,29 @@
                 right: 58%;
                 top: 75%;
             }
-    
+
             @media only screen and (min-width: 1200px) and (max-width: 1399px) {
                 right: 58%;
                 top: 86%;
             }
-    
+
             @media only screen and (min-width: 992px) and (max-width: 1199px) {
                 right: 49.5%;
                 top: 79%;
             }
-    
+
             @media only screen and (min-width: 768px) and (max-width: 991px) {
                 display: none;
             }
-    
+
             @media (max-width: 767px) {
                 display: none;
             }
-    
+
             @media only screen and (min-width: 576px) and (max-width: 767px) {
                 display: none;
             }
-    
+
             @media only screen and (min-width: 440px) and (max-width: 575px) {
                 display: none;
             }
