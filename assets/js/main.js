@@ -21,7 +21,7 @@ windowOn.addEventListener('scroll', function () {
 const serviceSwiper = new Swiper('.tp-slider__active', {
     direction: 'horizontal',
     slidesPerView: 1,
-    spaceBetween: 10,
+    spaceBetween: 20,
     loop: true,
     autoplay: {
         delay: 2000, // Adjust the delay (in milliseconds) as needed
