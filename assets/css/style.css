@@ -7,7 +7,6 @@
 
 img {
     max-width: 100%;
-    height: 100%;
 }
 
 /* .row>* {
@@ -1678,6 +1677,10 @@ only screen and (min-width: 1400px) and (max-width: 1599px) {
     padding-bottom: 10px;
 }
 
+.news-bg img {
+    height: 100%;
+}
+
 /* footer css */
 .tp-footer-2__bg {
     background: #2f2e2e;
@@ -2764,7 +2767,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     transform: translateY(-50%);
 }
 
-.info .ratings i{
+.info .ratings i {
     color: #c2a773;
 }
 
@@ -2817,7 +2820,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     box-shadow: 0px 4px 19px -8px rgba(0, 0, 0, 0.5);
 }
 
-.featured-deals-item img{
+.featured-deals-item img {
     width: 100%;
 }
 
