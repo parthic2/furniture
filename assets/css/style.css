@@ -1677,10 +1677,6 @@ only screen and (min-width: 1400px) and (max-width: 1599px) {
     padding-bottom: 10px;
 }
 
-.news-bg img {
-    height: 100%;
-}
-
 /* footer css */
 .tp-footer-2__bg {
     background: #2f2e2e;
