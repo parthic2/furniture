@@ -20,7 +20,7 @@
     <div class="tpoffcanvas-area">
       <div class="tpoffcanvas">
         <div class="tpoffcanvas__close-btn">
-          <button class="close-btn"><i class="fa-solid fa-xmark fa-sm"></i></button>
+          <button class="close-btn" aria-label="close"><i class="fa-solid fa-xmark fa-sm"></i></button>
         </div>
         <div class="tpoffcanvas__logo">
           <a href="index.html">
@@ -102,11 +102,13 @@
                       <li>
                         <a href="contact.html">contact us</a>
                       </li>
-                      <li>
+                      <li class="search">
                         <i class="fa-solid fa-magnifying-glass fa-sm"></i>
                       </li>
-                      <li>
-                        <button><i class="fa-solid fa-cart-shopping fa-sm"></i></button>
+                      <li class="cart">
+                        <a href="product.html">
+                          <i class="fa-solid fa-cart-shopping fa-sm"></i>
+                        </a>
                       </li>
                     </ul>
                   </nav>
@@ -185,7 +187,7 @@
                                   <input type="text" name="con_name" placeholder="Your name here...">
                                   <input type="text" name="con_email" placeholder="Your email here...">
                                   <textarea class="custom-textarea" name="con_message" placeholder="Your comment here..."></textarea>
-                                  <button class="button-one submit-button mt-20" data-text="submit message" type="submit">submit message</button>
+                                  <button class="button-one submit-button mt-20" data-text="submit message" type="submit" aria-label="submit">submit message</button>
                                   <p class="form-message"></p>
                               </form>
                           </div>

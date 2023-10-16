@@ -63,12 +63,20 @@
 			}
 		}
 
-		button {
+		.cart a {
 			border: none;
 			background: #866340;
 			height: 90px;
 			width: 90px;
 			color: white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 20px;
+
+			&:hover{
+				color: white;
+			}
 		}
 
 		ul {
