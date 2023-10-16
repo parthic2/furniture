@@ -611,6 +611,9 @@
 		background-color: #ffffff;
 		color: #09052f;
 		border: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
 		&:hover i {
 			transform: rotate(360deg);
@@ -618,9 +621,9 @@
 		}
 
 		i {
-			font-weight: 300;
-			font-size: 20px;
+			font-size: 25px;
 			transition: 0.9s;
+			color: #7f8387;
 			// @include mixins.transition(0.9s);
 		}
 	}
@@ -813,7 +816,7 @@
 			// }
 
 			&:hover {
-				background-color: #ff8717;
+				background-color: #c4af86;
 				color: #ffffff;
 			}
 		}

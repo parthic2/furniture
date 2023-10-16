@@ -13,7 +13,7 @@
         }
 
         button {
-            fill: #999;
+            color: #999;
             font-size: 18px;
             line-height: 50px;
             position: absolute;
@@ -219,6 +219,49 @@ span.color {
             width: 100%;
         }
     }
+
+    &-action {
+        background: #fff none repeat scroll 0 0;
+        bottom: -40px;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .5s ease 0s;
+        width: calc(100% - 40px);
+    
+        a {
+            color: #666;
+            float: left;
+            font-size: 16px;
+            height: 40px;
+            line-height: 40px;
+            position: relative;
+            width: 25%;
+    
+            &:last-child::before {
+                display: none
+            }
+    
+            &::before {
+                background: #999 none repeat scroll 0 0;
+                content: "";
+                height: 16px;
+                margin-top: -8px;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                width: 2px;
+            }
+    
+            &:hover {
+                color: #c8a165;
+            }
+        }
+    }
 }
 
 .shop-tab {
@@ -229,56 +272,13 @@ span.color {
 
     li {
         a {
-            fill: #999;
+            color: #999;
             display: block;
             font-size: 20px;
 
             &.active {
-                fill: #c8a165;
+                color: #c8a165;
             }
-        }
-    }
-}
-
-.product-action {
-    background: #fff none repeat scroll 0 0;
-    bottom: -40px;
-    left: 0;
-    margin: auto;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: all .5s ease 0s;
-    width: calc(100% - 40px);
-
-    a {
-        fill: #666;
-        float: left;
-        font-size: 16px;
-        height: 40px;
-        line-height: 40px;
-        position: relative;
-        width: 25%;
-
-        &:last-child::before {
-            display: none
-        }
-
-        &::before {
-            background: #999 none repeat scroll 0 0;
-            content: "";
-            height: 16px;
-            margin-top: -8px;
-            position: absolute;
-            right: 0;
-            top: 50%;
-            width: 2px;
-        }
-
-        &:hover {
-            fill: #c8a165;
         }
     }
 }
@@ -313,13 +313,13 @@ span.color {
                     color: #c8a165;
                 }
 
-                svg {
-                    fill: #666;
+                i {
+                    color: #666;
                 }
 
                 i {
                     display: block;
-                    font-size: 20px;
+                    font-size: 16px;
                     line-height: 30px;
                 }
             }
@@ -428,7 +428,7 @@ span.color {
 
 .pro {
     &-rating a {
-        fill: #c87065;
+        color: #c87065;
         font-size: 15px;
         line-height: 28px;
         text-decoration: none;

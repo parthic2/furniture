@@ -109,7 +109,7 @@ if (document.querySelectorAll('.tp-main-menu-content').length && document.queryS
     arrow.forEach(function (arrowItem) {
         let arrowBtn = document.createElement("button");
         arrowBtn.classList.add("dropdown-toggle-btn");
-        arrowBtn.innerHTML = "<i class='fal fa-angle-right'></i>";
+        arrowBtn.innerHTML = "<i class='fa-solid fa-angle-right'></i>";
 
         arrowItem.appendChild(arrowBtn);
 

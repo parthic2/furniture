@@ -7,6 +7,7 @@
 
 img {
     max-width: 100%;
+    height: 100%;
 }
 
 /* .row>* {
@@ -722,6 +723,9 @@ only screen and (min-width: 768px) and (max-width: 991px),
     background-color: #ffffff;
     color: #09052f;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tpoffcanvas__close-btn button:hover i {
@@ -729,9 +733,9 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .tpoffcanvas__close-btn button i {
-    font-weight: 300;
-    font-size: 20px;
+    font-size: 25px;
     transition: 0.9s;
+    color: #7f8387;
 }
 
 .tpoffcanvas__logo {
@@ -796,7 +800,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .tp-header-4__main-menu nav ul li:hover>a {
-    color: #ef8b59;
+    color: #c2a773;
 }
 
 .tp-header-4__main-menu nav ul li>a {
@@ -819,7 +823,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .tp-header-4__main-menu nav ul li .submenu {
-    border-top: 5px solid #ef8b59;
+    border-top: 5px solid #c2a773;
     position: absolute;
     top: 100%;
     left: -5px;
@@ -888,7 +892,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
     text-align: left;
     position: relative;
     color: #ffffff;
-    background-color: #ef8b59;
+    background-color: #c2a773;
     border-radius: 4px 4px 0 0;
     width: 100%;
     border: none;
@@ -908,7 +912,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 } */
 
 .tp-category-menu-btn:hover {
-    background-color: #ff8717;
+    background-color: #c4af86;
     color: #ffffff;
 }
 
@@ -955,7 +959,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .tp-category-menu nav ul li a:hover {
-    color: #ef8b59;
+    color: #c2a773;
 }
 
 .tp-category-menu nav ul li a span {
@@ -1083,7 +1087,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
     width: 100%;
     text-align: left;
     color: #ffffff;
-    background-color: #ef8b59;
+    background-color: #c2a773;
     padding: 20px 20px;
     border: none;
 }
@@ -2592,14 +2596,14 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .our-team-page .our-team-content .our-team-detail .member-info .socials a {
-    fill: #999;
+    color: #999;
     font-size: 18px;
     padding: 0 8px;
     text-decoration: none;
 }
 
 .our-team-page .our-team-content .our-team-detail .member-info .socials a:hover {
-    fill: #333;
+    color: #333;
 }
 
 .our-team-page .our-team-content .our-team-detail .member-images:hover img {
@@ -2651,7 +2655,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .btn-header {
-    background: #ef8b59;
+    background: #c2a773;
     text-transform: uppercase;
     border-radius: 10px;
     font-weight: 700;
@@ -2704,8 +2708,12 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     width: 100%;
 }
 
+.new-product-item .image img {
+    width: 100%;
+}
+
 .new-product-item .badge {
-    background: #ef8b59;
+    background: #c2a773;
     position: absolute;
     padding: 8px;
     width: 65px;
@@ -2723,7 +2731,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .info:hover .name {
-    color: #ef8b59;
+    color: #c2a773;
 }
 
 .info .name {
@@ -2736,7 +2744,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 .info .price .new {
     margin-left: 10px;
     font-weight: 600;
-    color: #ef8b59;
+    color: #c2a773;
 }
 
 .info .price .old {
@@ -2754,6 +2762,10 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     background-color: #a3a3a3;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.info .ratings i{
+    color: #c2a773;
 }
 
 .info .ratings span {
@@ -2776,7 +2788,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .category-item img {
     height: 100%;
-    -o-object-fit: cover;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -2805,8 +2817,12 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     box-shadow: 0px 4px 19px -8px rgba(0, 0, 0, 0.5);
 }
 
+.featured-deals-item img{
+    width: 100%;
+}
+
 .bg-brown {
-    background-color: #ef8b59;
+    background-color: #c2a773;
 }
 
 .catalog-right {
@@ -2824,7 +2840,9 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .catalog-left {
     min-height: 420px;
-    background: url("/images/catalog_img.png");
+    background: url("/assets/img/bg/catalog-left.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .newsletter-content {
@@ -2876,7 +2894,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .footer-item ul li a:hover {
-    color: #ef8b59;
+    color: #c2a773;
 }
 
 /* main product page css */
@@ -2897,7 +2915,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .widget-search button {
-    fill: #999;
+    color: #999;
     font-size: 18px;
     line-height: 50px;
     position: absolute;
@@ -3092,13 +3110,13 @@ span.color.color-7 {
 }
 
 .shop-tab li a {
-    fill: #999;
+    color: #999;
     display: block;
     font-size: 20px;
 }
 
 .shop-tab li a.active {
-    fill: #c8a165;
+    color: #c8a165;
 }
 
 .product-action {
@@ -3116,7 +3134,7 @@ span.color.color-7 {
 }
 
 .product-action a {
-    fill: #666;
+    color: #666;
     float: left;
     font-size: 16px;
     height: 40px;
@@ -3141,7 +3159,7 @@ span.color.color-7 {
 }
 
 .product-action a:hover {
-    fill: #c8a165;
+    color: #c8a165;
 }
 
 .pagination {
@@ -3178,13 +3196,13 @@ span.color.color-7 {
     color: #c8a165;
 }
 
-.pagination ul li a svg {
-    fill: #666;
+.pagination ul li a i {
+    color: #666;
 }
 
 .pagination ul li a i {
     display: block;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
 }
 
@@ -3304,7 +3322,7 @@ span.color.color-7 {
 }
 
 .pro-rating a {
-    fill: #c87065;
+    color: #c87065;
     font-size: 15px;
     line-height: 28px;
     text-decoration: none;

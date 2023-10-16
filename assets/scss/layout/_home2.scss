@@ -20,7 +20,7 @@
 }
 
 .btn-header {
-    background: #ef8b59;
+    background: #c2a773;
     text-transform: uppercase;
     border-radius: 10px;
     font-weight: 700;
@@ -71,10 +71,14 @@
     .image {
         position: relative;
         width: 100%;
+
+        img{
+            width: 100%;
+        }
     }
 
     .badge {
-        background: #ef8b59;
+        background: #c2a773;
         position: absolute;
         padding: 8px;
         width: 65px;
@@ -92,7 +96,7 @@
     background-color: white;
 
     &:hover .name {
-        color: #ef8b59;
+        color: #c2a773;
     }
 
     .name {
@@ -106,7 +110,7 @@
         .new {
             margin-left: 10px;
             font-weight: 600;
-            color: #ef8b59;
+            color: #c2a773;
         }
 
         .old {
@@ -131,6 +135,10 @@
         margin-left: 3px;
         color: #a3a3a3;
     }
+
+    .ratings i {
+        color: #c2a773;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -151,6 +159,7 @@
         img {
             height: 100%;
             object-fit: cover;
+            width: 100%;
         }
 
         &:hover {
@@ -178,6 +187,10 @@
     overflow: hidden;
     transition: all 300ms ease-in-out;
 
+    img{
+        width: 100%;
+    }
+
     &:hover {
         box-shadow: 0px 4px 19px -8px rgba(0, 0, 0, 0.5);
     }
@@ -185,7 +198,7 @@
 
 // 5th part css
 .bg-brown {
-    background-color: #ef8b59;
+    background-color: #c2a773;
 }
 
 .catalog {
@@ -204,7 +217,7 @@
 
     &-left {
         min-height: 420px;
-        background: url("/images/catalog_img.png");
+        background: url("/assets/img/bg/catalog-left.jpg");
     }
 }
 
@@ -259,7 +272,7 @@
                 color: black;
 
                 &:hover{
-                    color: #ef8b59;
+                    color: #c2a773;
                 }
             }
         }
