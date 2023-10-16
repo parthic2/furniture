@@ -3483,4 +3483,21 @@ input.cart-plus-minus-box {
     float: left;
 }
 
+.price_slider_amount {
+    margin-bottom: 10px;
+}
+
+.price_slider_amount>input {
+    background: #fff none repeat scroll 0 0;
+    border: medium none;
+    margin: 0 5px 0 0;
+    padding: 0;
+    width: auto;
+}
+
+.price_slider_amount>input#amount {
+    margin-right: 0;
+    width: 90px;
+}
+
 /*# sourceMappingURL=theme.css.map */

@@ -130,15 +130,6 @@ if (document.querySelectorAll('.tp-main-menu-content').length && document.queryS
     });
 }
 
-// products page dropdown menu js
-document.querySelectorAll(".dropdown .option-btn").forEach(function (button) {
-    button.addEventListener("click", function () {
-        const menu = this.nextElementSibling;
-        menu.classList.toggle("active");
-        menu.style.display = menu.classList.contains("active") ? "block" : "none";
-    });
-});
-
 // add product plus minus js
 // const cartPlusMinus = document.querySelectorAll(".cart-plus-minus");
 // cartPlusMinus.innerHTML = '<div class="dec qtybutton">-</div>';
@@ -159,7 +150,6 @@ document.querySelectorAll(".qtybutton").forEach(function (element) {
         input.value = value;
     });
 });
-
 
 // index2.html js
 // for index2.html file all categories menu in desktop

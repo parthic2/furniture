@@ -232,7 +232,7 @@ span.color {
         opacity: 0;
         transition: all .5s ease 0s;
         width: calc(100% - 40px);
-    
+
         a {
             color: #666;
             float: left;
@@ -241,11 +241,11 @@ span.color {
             line-height: 40px;
             position: relative;
             width: 25%;
-    
+
             &:last-child::before {
                 display: none
             }
-    
+
             &::before {
                 background: #999 none repeat scroll 0 0;
                 content: "";
@@ -256,7 +256,7 @@ span.color {
                 top: 50%;
                 width: 2px;
             }
-    
+
             &:hover {
                 color: #c8a165;
             }
@@ -472,6 +472,26 @@ span.color {
         }
     }
 }
+
+.price_slider {
+    &_amount {
+        margin-bottom: 10px;
+    }
+
+    &_amount>input {
+        background: #fff none repeat scroll 0 0;
+        border: medium none;
+        margin: 0 5px 0 0;
+        padding: 0;
+        width: auto;
+
+        &#amount{
+            margin-right: 0;
+            width: 90px;
+        }
+    }
+}
+
 
 .cart-plus-minus {
     background: #f6f6f6 none repeat scroll 0 0;
