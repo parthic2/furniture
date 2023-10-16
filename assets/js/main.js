@@ -163,25 +163,23 @@ document.querySelectorAll(".qtybutton").forEach(function (element) {
 
 // index2.html js
 // for index2.html file all categories menu in desktop
-window.addEventListener("load", () => {
-    const categoryMenuToggle = document.querySelector(".tp-category-menu-toggle");
-    const categoryMenuNav = document.querySelector(".tp-category-menu > nav > ul");
-
-    categoryMenuToggle.addEventListener("click", (event) => {
-        event.stopPropagation();
-        categoryMenuNav.style.display = (categoryMenuNav.style.display === "block") ? "none" : "block";
-    });
-
+document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("click", (event) => {
-        if (event.target !== categoryMenuToggle && !categoryMenuNav.contains(event.target)) {
+        const categoryMenuNav = document.querySelector(".tp-category-menu > nav > ul");
+
+        // Handle click events using event delegation
+        if (event.target.classList.contains("tp-category-menu-toggle")) {
+            // Toggle menu visibility when the toggle button is clicked
+            categoryMenuNav.style.display = (categoryMenuNav.style.display === "block") ? "none" : "block";
+        } else if (event.target.tagName === "LI" && categoryMenuNav.contains(event.target)) {
+            // Handle click on menu items
+            const selectedItem = event.target.textContent;
+            console.log(`Selected Category: ${selectedItem}`);
+            categoryMenuNav.style.display = "none"; // Hide menu after selecting an item
+        } else {
+            // Handle clicks outside the menu by closing the menu
             categoryMenuNav.style.display = "none";
         }
-    });
-
-    document.querySelectorAll(".tp-category-menu > nav > ul > li").forEach(item => {
-        item.addEventListener("click", () => {
-            categoryMenuNav.style.display = "none";
-        });
     });
 });
 
