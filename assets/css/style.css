@@ -2767,7 +2767,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     color: #c2a773;
 }
 
-.info .ratings span {
+.info .ratings p {
     margin-left: 3px;
     color: #a3a3a3;
 }
