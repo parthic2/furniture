@@ -163,23 +163,25 @@ document.querySelectorAll(".qtybutton").forEach(function (element) {
 
 // index2.html js
 // for index2.html file all categories menu in desktop
-const categoryMenuToggle = document.querySelector(".tp-category-menu-toggle");
-const categoryMenuNav = document.querySelector(".tp-category-menu > nav > ul");
+window.addEventListener("load", () => {
+    const categoryMenuToggle = document.querySelector(".tp-category-menu-toggle");
+    const categoryMenuNav = document.querySelector(".tp-category-menu > nav > ul");
 
-categoryMenuToggle.addEventListener("click", (event) => {
-    event.stopPropagation();
-    categoryMenuNav.style.display = (categoryMenuNav.style.display === "block") ? "none" : "block";
-});
+    categoryMenuToggle.addEventListener("click", (event) => {
+        event.stopPropagation();
+        categoryMenuNav.style.display = (categoryMenuNav.style.display === "block") ? "none" : "block";
+    });
 
-document.addEventListener("click", (event) => {
-    if (event.target !== categoryMenuToggle && !categoryMenuNav.contains(event.target)) {
-        categoryMenuNav.style.display = "none";
-    }
-});
+    document.addEventListener("click", (event) => {
+        if (event.target !== categoryMenuToggle && !categoryMenuNav.contains(event.target)) {
+            categoryMenuNav.style.display = "none";
+        }
+    });
 
-document.querySelectorAll(".tp-category-menu > nav > ul > li").forEach(item => {
-    item.addEventListener("click", () => {
-        categoryMenuNav.style.display = "none";
+    document.querySelectorAll(".tp-category-menu > nav > ul > li").forEach(item => {
+        item.addEventListener("click", () => {
+            categoryMenuNav.style.display = "none";
+        });
     });
 });
 
