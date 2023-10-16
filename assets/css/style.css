@@ -623,6 +623,14 @@ only screen and (min-width: 768px) and (max-width: 991px),
     padding: 0;
 }
 
+@media (max-width:991px) {
+
+    .tpoffcanvas .tp-main-menu-mobile ul .search,
+    .tpoffcanvas .tp-main-menu-mobile ul .cart {
+        display: none;
+    }
+}
+
 .tpoffcanvas .tp-main-menu-mobile ul li.has-dropdown>a .dropdown-toggle-btn.dropdown-opened i {
     transform: rotate(90deg);
 }
