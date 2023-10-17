@@ -1,0 +1,19 @@
+{
+  "name": "furniture",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parthic2/furniture.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parthic2/furniture/issues"
+  },
+  "homepage": "https://github.com/parthic2/furniture#readme"
+}
