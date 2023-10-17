@@ -648,6 +648,10 @@ only screen and (min-width: 768px) and (max-width: 991px),
     text-decoration: none;
 }
 
+.tpoffcanvas .tp-main-menu-mobile ul li:not(:last-child)>a {
+    border-bottom: 1px solid rgba(127, 131, 135, 0.3);
+}
+
 .tpoffcanvas .tp-main-menu-content ul {
     padding-left: 0 !important;
 }

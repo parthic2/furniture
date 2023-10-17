@@ -499,9 +499,9 @@
 					transform: rotate(90deg);
 				}
 
-				// &:not(:last-child) > a {
-				// 	border-bottom: var(--tp-border-3);
-				// }
+				&:not(:last-child) > a {
+					border-bottom: 1px solid rgba(127, 131, 135, 0.3);
+				}
 
 				>a {
 					display: block;
