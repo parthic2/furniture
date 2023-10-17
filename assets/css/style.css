@@ -3534,7 +3534,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
     font-size: 21px;
     font-weight: 500;
     text-transform: capitalize;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     transition: 0.3s;
 }
 
@@ -3562,15 +3562,20 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .tp-product-5__thumb {
-    margin-bottom: 20px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    width: 100%;
+    margin: 20px auto;
+    font-size: 20px;
+    color: #999;
+    width: 169px;
+    height: 169px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    background: white;
-    border-radius: 15px;
+    background: #f7f7f7;
+}
+
+.tp-product-5__thumb img{
+    width: 100px;
 }
 
 @media only screen and (max-width: 575px) {

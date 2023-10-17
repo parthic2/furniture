@@ -23,7 +23,7 @@
         font-size: 21px;
         font-weight: 500;
         text-transform: capitalize;
-        margin-bottom: 10px;
+        margin-bottom: 0;
 
         @media only screen and (min-width: 1200px) and (max-width: 1399px) {
             font-size: 19px;
@@ -46,32 +46,20 @@
     }
 
     &__thumb {
-        margin-bottom: 20px;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        width: 100%;
+        margin: 20px auto;
+        font-size: 20px;
+        color: #999;
+        width: 169px;
+        height: 169px;
+        border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 20px;
-        background: white;
-        border-radius: 15px;
+        background: #f7f7f7;
 
-        // @media only screen and (max-width: 767px) {
-        //     height: 225px;
-        // }
-
-        // @media only screen and (max-width: 575px) {
-        //     width: 60%;
-        //     height: 230px;
-        // }
-
-        // @media only screen and (max-width: 375px) {
-        //     width: 75%;
-        // }
-
-        // @media only screen and (max-width: 320px) {
-        //     width: 85%;
-        // }
+        img {
+            width: 100px;
+        }
     }
 
     &__item {

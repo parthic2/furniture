@@ -1,0 +1,13 @@
+<svg fill="#4f4f4f" viewBox="0 0 64 64"
+    xmlns="http://www.w3.org/2000/svg" stroke="#4f4f4f">
+    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+    <g id="SVGRepo_iconCarrier">
+        <title></title>
+        <g data-name="Layer 12" id="Layer_12">
+            <path d="M11,3V61h8V58H45v3h8V3ZM51,20H49V8H43V20H41V10H35V20H33V5H51Zm-4,0H45V10h2Zm-8,0H37V12h2ZM13,5H31V20H29V10H23V20H21V8H15V20H13ZM27,20H25V12h2Zm-8,0H17V10h2Zm-6,2H31V36H29V24H23V36H21V26H15V36H13ZM27,36H25V26h2Zm-8,0H17V28h2ZM17,59H13V58h4Zm-4-3V38H31V56H13Zm38,3H47V58h4Zm0-3H33V38H51ZM39,36H37V26h2Zm8,0H45V28h2Zm2,0V26H43V36H41V24H35V36H33V22H51V36Z"></path>
+            <rect height="4" width="2" x="26" y="41"></rect>
+            <rect height="4" width="2" x="36" y="41"></rect>
+        </g>
+    </g>
+</svg>
