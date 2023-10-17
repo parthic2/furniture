@@ -187,7 +187,7 @@ input[type="password"] {
 .tp-header__main-menu .cart a {
     border: none;
     background: #866340;
-    height: 90px;
+    height: 92px;
     width: 90px;
     color: white;
     display: flex;
@@ -359,12 +359,12 @@ input[type="password"] {
 }
 
 .tp-header-2__bar button i {
-    font-size: 23px;
+    font-size: 20px;
     color: #ffffff;
     display: inline-block;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
     text-align: center;
     border-radius: 50%;
     background: #866340;
@@ -580,7 +580,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
     width: 480px;
     bottom: 0;
     box-shadow: 0 16px -32px 0 rgba(0, 0, 0, 0.8);
-    background-color: #09052f;
+    background-color: #f9f6f1;
     z-index: 999999;
     padding: 50px;
     scrollbar-width: none;
@@ -641,7 +641,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 .tpoffcanvas .tp-main-menu-mobile ul li>a {
     display: block;
     font-size: 16px;
-    color: #ffffff;
+    color: #070707;
     position: relative;
     padding: 15px 0;
     padding-right: 20px;
@@ -666,6 +666,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 .tpoffcanvas ul li.has-dropdown>a .dropdown-toggle-btn {
     background: none;
+    border: none;
     position: absolute;
     right: 0;
     top: 28%;
@@ -1134,9 +1135,9 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 /* hero css */
-/* .fa-service__wrapper {
+.fa-service__wrapper {
     padding-right: 0;
-} */
+}
 
 .fa-service__wrapper img {
     width: 100vw;
@@ -2982,7 +2983,6 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .widget-info.product-cat {
     background: #fff none repeat scroll 0 0;
-    height: 200px;
     padding: 15px 20px 20px 10px;
 }
 
@@ -3391,6 +3391,7 @@ span.color.color-7 {
     margin-bottom: 5px;
     text-decoration: none;
     color: #434343;
+    font-weight: 500;
 }
 
 .post-title a:hover {
@@ -3501,6 +3502,103 @@ input.cart-plus-minus-box {
 .price_slider_amount>input#amount {
     margin-right: 0;
     width: 90px;
+}
+
+/* categories css */
+.tp-product-5__content a {
+    text-decoration: none;
+}
+
+.tp-product-5__content span {
+    color: #787981;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px),
+only screen and (min-width: 768px) and (max-width: 991px),
+(max-width: 767px) {
+    .tp-product-5__content span {
+        font-size: 13px;
+    }
+}
+
+.tp-product-5__title {
+    color: black;
+    font-size: 21px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .tp-product-5__title {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .tp-product-5__title {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+(max-width: 767px) {
+    .tp-product-5__title {
+        font-size: 19px;
+    }
+}
+
+.tp-product-5__title:hover {
+    color: #866340;
+}
+
+.tp-product-5__thumb {
+    margin-bottom: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 100%;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+    .tp-product-5__thumb {
+        height: 225px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .tp-product-5__thumb {
+        width: 60%;
+        height: 230px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .tp-product-5__thumb {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .tp-product-5__thumb {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .tp-product-5__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 /*# sourceMappingURL=theme.css.map */

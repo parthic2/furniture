@@ -46,7 +46,6 @@
 
         &.product-cat {
             background: #fff none repeat scroll 0 0;
-            height: 200px;
             padding: 15px 20px 20px 10px;
         }
     }
@@ -466,6 +465,7 @@ span.color {
         margin-bottom: 5px;
         text-decoration: none;
         color: #434343;
+        font-weight: 500;
 
         &:hover {
             color: #c8a165;
@@ -491,7 +491,6 @@ span.color {
         }
     }
 }
-
 
 .cart-plus-minus {
     background: #f6f6f6 none repeat scroll 0 0;
