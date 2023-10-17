@@ -30,7 +30,15 @@ ul {
 }
 
 .heading-banner-area {
-    background: rgba(0, 0, 0, 0) url("/assets/img/bg/1.jpg") no-repeat scroll center center/cover;
+    background: rgba(0, 0, 0, 0) url("/assets/img/bg/product.jpg") no-repeat scroll center center/cover;
+}
+
+.contact-banner-area{
+    background: rgba(0, 0, 0, 0) url("/assets/img/bg/contact.jpg") no-repeat scroll center center/cover;
+}
+
+.about-banner-area{
+    background: rgba(0, 0, 0, 0) url("/assets/img/bg/about.jpg") no-repeat scroll center center/cover;
 }
 
 .body-bg {
