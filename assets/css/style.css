@@ -2452,8 +2452,8 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .contact-details ul li i {
-    background: #866340 none repeat scroll 0 0;
-    color: #ffffff;
+    /* background: #866340 none repeat scroll 0 0; */
+    color: #866340;
     float: left;
     font-size: 20px;
     height: 35px;
@@ -3693,7 +3693,8 @@ only screen and (min-width: 768px) and (max-width: 991px),
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #866340;
+    background: #f9f6f1;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
 
 .tp-product-5__thumb img {
