@@ -2468,6 +2468,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 .customer-login {
     background: #fff none repeat scroll 0 0;
     padding: 40px;
+    box-shadow: #bcbcbc 0px 0px 7px 3px;
 }
 
 .submit-button {
@@ -3638,13 +3639,13 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
     .tp-product-5__title {
-        font-size: 17px;
+        font-size: 15px;
     }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .tp-product-5__title {
-        font-size: 17px;
+        font-size: 15px;
     }
 }
 
@@ -3674,7 +3675,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .tp-product-5__thumb img {
-    width: 100px;
+    width: 50%;
 }
 
 @media only screen and (max-width: 575px) {
