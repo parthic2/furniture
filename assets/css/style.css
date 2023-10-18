@@ -1687,7 +1687,42 @@ only screen and (min-width: 1400px) and (max-width: 1599px) {
     padding: 25px 40px;
 }
 
-@media (max-width:1199px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .news-bg img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .news-bg img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .news-bg img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .news-bg img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .news-bg img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 440px) and (max-width: 575px) {
     .news-bg img {
         width: 100%;
         height: 100%;
@@ -1732,6 +1767,16 @@ only screen and (min-width: 1400px) and (max-width: 1599px) {
     font-size: 30px;
     font-weight: 200;
     padding-bottom: 10px;
+}
+
+.news__subtitle {
+    font-size: 15px;
+}
+
+@media (max-width:991px) {
+    .news__subtitle br {
+        display: none;
+    }
 }
 
 /* footer css */
@@ -1911,7 +1956,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 @media only screen and (min-width: 1400px) and (max-width: 5500px) {
 
-    .swiper-slide img,
+    .fea-img img,
     .feature-img img {
         width: 100%;
         height: 100%;
@@ -1920,7 +1965,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
 
-    .swiper-slide img,
+    .fea-img img,
     .feature-img img {
         width: 100%;
         height: 100%;
@@ -1929,7 +1974,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
-    .swiper-slide img,
+    .fea-img img,
     .feature-img img {
         width: 100%;
         height: 100%;
@@ -1938,7 +1983,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
-    .swiper-slide img,
+    .fea-img img,
     .feature-img img {
         width: 100%;
         height: 100%;
@@ -1947,7 +1992,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 @media (max-width: 767px) {
 
-    .swiper-slide img,
+    .fea-img img,
     .feature-img img {
         width: 100%;
         height: 100%;
@@ -1956,7 +2001,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
 
-    .swiper-slide img,
+    .fea-img img,
     .feature-img img {
         width: 100%;
         height: 100%;
@@ -1965,7 +2010,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 @media only screen and (min-width: 440px) and (max-width: 575px) {
 
-    .swiper-slide img,
+    .fea-img img,
     .feature-img img {
         width: 100%;
         height: 100%;
