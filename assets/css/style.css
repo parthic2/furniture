@@ -34,7 +34,7 @@ ul {
 }
 
 .contact-banner-area {
-    background: rgba(0, 0, 0, 0) url("/assets/img/bg/contact.jpg") no-repeat scroll center center/cover;
+    background: #eceeef;
 }
 
 .about-banner-area {
@@ -76,7 +76,7 @@ ul {
 }
 
 .breadcumbs li {
-    color: #eee;
+    color: #666;
     display: inline-block;
     /* float: left; */
     font-size: 14px;
@@ -91,7 +91,7 @@ ul {
 }
 
 .breadcumbs ul li a {
-    color: #fff;
+    color: #666;
     display: block;
     text-decoration: none;
 }
@@ -101,7 +101,7 @@ ul {
 }
 
 .breadcumbs li::after {
-    color: #fff;
+    color: #666;
     content: "/";
     left: -22px;
     position: absolute;
@@ -113,7 +113,8 @@ ul {
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="email"] {
     background: #f6f6f6 none repeat scroll 0 0;
     border: medium none;
     box-shadow: none;
@@ -124,6 +125,7 @@ input[type="password"] {
     transition: all 0.5s ease 0s;
     width: 100%;
     outline: none;
+    font-size: 13px;
 }
 
 /* header css */
@@ -2436,6 +2438,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     padding: 15px 20px;
     width: 100%;
     outline: none;
+    font-size: 13px;
 }
 
 /* about page css */
@@ -2828,13 +2831,13 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     transform: translateY(-50%);
 }
 
-.info .ratings i {
-    color: #c2a773;
-}
-
 .info .ratings p {
     margin-left: 3px;
     color: #a3a3a3;
+}
+
+.info .ratings i {
+    color: #c2a773;
 }
 
 @media screen and (max-width: 991px) {
@@ -2852,8 +2855,9 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .category-item img {
     height: 100%;
-    width: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
+    width: 100%;
 }
 
 .category-item:hover .category-badge {
@@ -2877,12 +2881,12 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     transition: all 300ms ease-in-out;
 }
 
-.featured-deals-item:hover {
-    box-shadow: 0px 4px 19px -8px rgba(0, 0, 0, 0.5);
-}
-
 .featured-deals-item img {
     width: 100%;
+}
+
+.featured-deals-item:hover {
+    box-shadow: 0px 4px 19px -8px rgba(0, 0, 0, 0.5);
 }
 
 .bg-brown {
@@ -2905,9 +2909,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .catalog-left {
     min-height: 420px;
-    background: url("/assets/img/bg/catalog-left.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url("/assets/img/bg/about.jpg");
 }
 
 .newsletter-content {
@@ -2933,7 +2935,6 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .newsletter-content .btn {
-    /* padding: 0 56px; */
     height: 60px;
     position: absolute;
     right: 0;
@@ -2941,25 +2942,69 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     text-transform: uppercase;
 }
 
-.footer-item .text {
+@media (max-width: 991px) {
+    .block-menu {
+        padding-top: 20px;
+    }
+}
+
+.block-menu .block-title {
     font-size: 20px;
     line-height: 1.8;
     margin-bottom: 10px;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
-.footer-item ul li {
+.block-menu .newsletter-text {
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.block-menu ul li {
     padding: 5px 0;
     text-transform: capitalize;
 }
 
-.footer-item ul li a {
+.block-menu ul li a {
     text-decoration: none;
     color: black;
 }
 
-.footer-item ul li a:hover {
+.block-menu ul li a:hover {
     color: #c2a773;
+}
+
+.block-content .newsletter-form {
+    display: flex;
+}
+
+.block-content .newsletter-form .email {
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    border-color: #e8e8e8;
+    padding: 0 15px;
+    outline: none;
+    font-size: 13px;
+}
+
+.block-content .newsletter-form .btn-submit {
+    margin-left: 10px;
+    background: #000;
+    padding: 14px;
+    height: 47px;
+    cursor: pointer;
+}
+
+.block-content .newsletter-form .btn-submit:hover {
+    background: #353434;
+}
+
+.block-content .newsletter-form .btn-submit i {
+    text-align: center;
+    font-size: 20px;
+    color: white;
 }
 
 /* main product page css */
