@@ -33,11 +33,11 @@ ul {
     background: rgba(0, 0, 0, 0) url("/assets/img/bg/product.jpg") no-repeat scroll center center/cover;
 }
 
-.contact-banner-area{
+.contact-banner-area {
     background: rgba(0, 0, 0, 0) url("/assets/img/bg/contact.jpg") no-repeat scroll center center/cover;
 }
 
-.about-banner-area{
+.about-banner-area {
     background: rgba(0, 0, 0, 0) url("/assets/img/bg/about.jpg") no-repeat scroll center center/cover;
 }
 
@@ -514,6 +514,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 .homemenu-thumb img {
     max-width: 100%;
+    width: 100%;
 }
 
 .homemenu-thumb:hover .homemenu-btn {
@@ -1896,6 +1897,15 @@ only screen and (min-width: 768px) and (max-width: 991px),
 @media only screen and (max-width: 991px) {
     .fa-sub-title {
         display: none;
+    }
+}
+
+@media only screen and (max-width:991px) {
+
+    .swiper-slide img,
+    .feature-img img {
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -3582,7 +3592,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
     background: #f7f7f7;
 }
 
-.tp-product-5__thumb img{
+.tp-product-5__thumb img {
     width: 100px;
 }
 
