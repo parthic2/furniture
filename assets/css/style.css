@@ -1909,7 +1909,61 @@ only screen and (min-width: 768px) and (max-width: 991px),
     }
 }
 
-@media only screen and (max-width:991px) {
+@media only screen and (min-width: 1400px) and (max-width: 5500px) {
+
+    .swiper-slide img,
+    .feature-img img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .swiper-slide img,
+    .feature-img img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .swiper-slide img,
+    .feature-img img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .swiper-slide img,
+    .feature-img img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .swiper-slide img,
+    .feature-img img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    .swiper-slide img,
+    .feature-img img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 440px) and (max-width: 575px) {
 
     .swiper-slide img,
     .feature-img img {
@@ -2398,8 +2452,8 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .contact-details ul li i {
-    background: #ddd none repeat scroll 0 0;
-    color: #999;
+    background: #866340 none repeat scroll 0 0;
+    color: #ffffff;
     float: left;
     font-size: 20px;
     height: 35px;
@@ -2407,10 +2461,8 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     margin-right: 20px;
     text-align: center;
     width: 35px;
-}
-
-.contact-details ul li i svg {
-    fill: #999;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
 .customer-login {
@@ -3641,7 +3693,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f7f7f7;
+    background: #866340;
 }
 
 .tp-product-5__thumb img {

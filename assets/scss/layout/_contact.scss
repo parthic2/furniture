@@ -37,8 +37,8 @@
 			}
 
 			i {
-				background: #ddd none repeat scroll 0 0;
-				color: #999;
+				background: #866340 none repeat scroll 0 0;
+				color: #ffffff;
 				float: left;
 				font-size: 20px;
 				height: 35px;
@@ -46,10 +46,8 @@
 				margin-right: 20px;
 				text-align: center;
 				width: 35px;
-
-				svg {
-					fill: #999;
-				}
+				cursor: pointer;
+				border-radius: 10px;
 			}
 		}
 	}
