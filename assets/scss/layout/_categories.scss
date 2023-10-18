@@ -26,7 +26,7 @@
         margin-bottom: 0;
 
         @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-            font-size: 19px;
+            font-size: 17px;
         }
 
         @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -56,7 +56,7 @@
         justify-content: center;
         align-items: center;
         background: #f9f6f1;
-        box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+        box-shadow: #00000029 0px 0px 5px 1px;
 
         img {
             width: 100px;

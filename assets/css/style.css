@@ -2846,7 +2846,6 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 .info {
     padding: 32px;
     text-align: start;
-    background-color: white;
 }
 
 .info:hover .name {
@@ -2928,13 +2927,20 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .featured-deals-item {
-    border-radius: 20px !important;
+    /* border-radius: 20px !important; */
     overflow: hidden;
     transition: all 300ms ease-in-out;
+    box-shadow: 0px 4px 19px -8px rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+.featured-deals-item .image {
+    padding: 10px;
 }
 
 .featured-deals-item img {
     width: 100%;
+    border-radius: 10px;
 }
 
 .featured-deals-item:hover {
@@ -2962,36 +2968,6 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 .catalog-left {
     min-height: 420px;
     background: url("/assets/img/bg/about.jpg");
-}
-
-.newsletter-content {
-    padding-top: 30px;
-}
-
-.newsletter-content .form-control {
-    border: none;
-    height: 60px;
-    padding: 0 20px;
-    outline: none;
-    width: 100%;
-    background: #f1f1f1;
-}
-
-.newsletter-content .input-group {
-    max-width: 730px;
-    align-items: stretch;
-    border-radius: 47px;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.newsletter-content .btn {
-    height: 60px;
-    position: absolute;
-    right: 0;
-    color: white;
-    text-transform: uppercase;
 }
 
 @media (max-width: 991px) {
@@ -3662,7 +3638,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
     .tp-product-5__title {
-        font-size: 19px;
+        font-size: 17px;
     }
 }
 
@@ -3694,7 +3670,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
     justify-content: center;
     align-items: center;
     background: #f9f6f1;
-    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    box-shadow: #00000029 0px 0px 5px 1px;
 }
 
 .tp-product-5__thumb img {
@@ -3708,6 +3684,125 @@ only screen and (min-width: 768px) and (max-width: 991px),
         align-items: center;
         flex-direction: column;
     }
+}
+
+
+/* product page change css */
+.ht__cat__thumb img {
+    width: 100%;
+    height: 250px;
+}
+
+.category {
+    overflow: hidden;
+    position: relative;
+}
+
+.category:hover {
+    box-shadow: 1px 25px 54px rgba(0, 0, 0, 0.12);
+}
+
+.category:hover .product__action li:nth-child(1) {
+    animation: 300ms ease-in-out 0s normal none 1 running fadeInRight;
+    opacity: 1;
+    transition: opacity 300ms linear 0s;
+}
+
+.category:hover .product__action li:nth-child(2) {
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInRight;
+    opacity: 1;
+    transition: opacity 500ms linear 0s;
+}
+
+.category:hover .product__action li:nth-child(3) {
+    animation: 700ms ease-in-out 0s normal none 1 running fadeInRight;
+    opacity: 1;
+    transition: opacity 700ms linear 0s;
+}
+
+.category:hover .fr__product__inner h4 a {
+    color: #c8a165;
+}
+
+.fr__hover__info {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.fr__product__inner {
+    padding: 23px;
+    text-align: center;
+}
+
+.fr__product__inner h4 a {
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #434343;
+    font-weight: 500;
+}
+
+.fr__pro__prize {
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+}
+
+.fr__pro__prize li {
+    color: #313131;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 5px;
+}
+
+.fr__pro__prize li.old__prize {
+    color: #888888;
+}
+
+.product__action {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.product__action li {
+    margin: 0;
+    margin-bottom: 2px;
+}
+
+.product__action li:nth-child(1) {
+    opacity: 0;
+    transition: opacity 300ms linear 0s;
+}
+
+.product__action li:nth-child(2) {
+    opacity: 0;
+    transition: opacity 500ms linear 0s;
+}
+
+.product__action li:nth-child(3) {
+    opacity: 0;
+    transition: opacity 700ms linear 0s;
+}
+
+.product__action li a {
+    background: #fefefe none repeat scroll 0 0;
+    display: inline-block;
+    height: 50px;
+    line-height: 60px;
+    text-align: center;
+    transition: all 0.4s ease 0s;
+    width: 50px;
+    color: #c8a165;
+    font-size: 18px;
+}
+
+.product__action li a:hover {
+    background: #c8a165;
+    color: white;
 }
 
 /*# sourceMappingURL=theme.css.map */
