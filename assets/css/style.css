@@ -3639,13 +3639,13 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
     .tp-product-5__title {
-        font-size: 15px;
+        font-size: 17px;
     }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .tp-product-5__title {
-        font-size: 15px;
+        font-size: 17px;
     }
 }
 
