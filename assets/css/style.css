@@ -37,9 +37,9 @@ ul {
     background: rgba(0, 0, 0, 0) url("/assets/img/bg/about.jpg") no-repeat scroll center center/cover;
 }
 
-.body-bg {
+/* .body-bg {
     background: #f6f6f6 none repeat scroll 0 0;
-}
+} */
 
 .overlay-bg {
     position: relative;
@@ -125,6 +125,10 @@ input[type="email"] {
 }
 
 /* header css */
+.tp-header__area {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
 .header-sticky {
     display: none;
     position: fixed;
@@ -1790,7 +1794,7 @@ only screen and (min-width: 1400px) and (max-width: 1599px) {
 
 /* footer css */
 .inner-footer {
-    background: #eee;
+    background: #f9f6f1;
 }
 
 @media (max-width: 991px) {
@@ -1800,7 +1804,7 @@ only screen and (min-width: 1400px) and (max-width: 1599px) {
 }
 
 .footer-one #tiva-copyright {
-    background: #000;
+    background: #866340;
     font-size: 11px;
     color: #f9f6f1;
 }
@@ -1814,7 +1818,7 @@ only screen and (min-width: 1400px) and (max-width: 1599px) {
 }
 
 .footer-one .inner-footer .block-content {
-    color: #666;
+    color: #5b646b;
     font-weight: 400;
     font-size: 13px;
     line-height: 25px;
@@ -1835,6 +1839,7 @@ only screen and (min-width: 1400px) and (max-width: 1599px) {
     margin-left: 1px;
     margin-right: 16px;
     font-size: 14px;
+    color: #866340;
 }
 
 .footer-one .inner-footer .block-content .contact-us:last-child {
@@ -1842,7 +1847,6 @@ only screen and (min-width: 1400px) and (max-width: 1599px) {
 }
 
 .footer-one .inner-footer .block-content .contact-us .content-contact {
-    -o-border-image: none;
     border-image: none;
     border-left-color: #d5d5d5;
     border-left-style: solid;
@@ -1856,13 +1860,13 @@ only screen and (min-width: 1400px) and (max-width: 1599px) {
 }
 
 .footer-one .inner-footer .block-content ul li a {
-    color: #666;
+    color: #5b646b;
     text-decoration: none;
 }
 
 .footer-one .inner-footer .block-content ul li a:hover {
     font-weight: 600;
-    color: #222;
+    color: #866340;
 }
 
 .social {
@@ -1874,11 +1878,19 @@ only screen and (min-width: 1400px) and (max-width: 1599px) {
     height: 40px;
     border-radius: 50%;
     transition: all 0.35s ease-in-out;
-    background-color: #bfbfbf;
+    background-color: #866340;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 15px;
+}
+
+.social ul li a {
+    color: white !important;
+}
+
+.social ul li:hover {
+    background-color: #a28466;
 }
 
 .block-newsletter {
@@ -1888,8 +1900,8 @@ only screen and (min-width: 1400px) and (max-width: 1599px) {
 .block-newsletter .input-group .input-group-btn .btn-secondary {
     padding: 8px 20px;
     color: #fff;
-    border: #222;
-    background: #343434;
+    border: #866340;
+    background: #866340;
     border-radius: 0 23px 23px 0 !important;
     height: 40px;
     font-weight: 500;
@@ -3215,6 +3227,7 @@ span.color.color-7 {
     /* height: 50px; */
     line-height: 50px;
     padding: 0 30px;
+    box-shadow: 1px 25px 54px rgba(0, 0, 0, 0.12);
 }
 
 .product-style-2 .single-product {
@@ -3329,6 +3342,7 @@ span.color.color-7 {
     height: 50px;
     margin: 0;
     border-radius: 0;
+    box-shadow: 1px 25px 54px rgba(0, 0, 0, 0.12);
 }
 
 .pagination ul {

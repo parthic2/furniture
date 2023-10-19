@@ -166,6 +166,7 @@ span.color {
         // height: 50px;
         line-height: 50px;
         padding: 0 30px;
+        box-shadow: 1px 25px 54px rgba(0, 0, 0, 0.12);
     }
 
     &-style-2 {
@@ -288,6 +289,7 @@ span.color {
     height: 50px;
     margin: 0;
     border-radius: 0;
+    box-shadow: 1px 25px 54px rgba(0, 0, 0, 0.12);
 
     ul {
         display: inline-block;

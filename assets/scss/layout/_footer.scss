@@ -1,5 +1,5 @@
 .inner-footer {
-    background: #eee;
+    background: #f9f6f1;
 }
 
 @media (max-width:991px) {
@@ -10,7 +10,7 @@
 
 .footer-one {
     #tiva-copyright {
-        background: #000;
+        background: #866340;
         font-size: 11px;
         color: #f9f6f1;
     }
@@ -25,7 +25,7 @@
         }
 
         .block-content {
-            color: #666;
+            color: #5b646b;
             font-weight: 400;
             font-size: 13px;
             line-height: 25px;
@@ -65,12 +65,12 @@
             }
 
             ul li a {
-                color: #666;
+                color: #5b646b;
                 text-decoration: none;
 
                 &:hover {
                     font-weight: 600;
-                    color: #222;
+                    color: #866340;
                 }
             }
         }
@@ -85,11 +85,19 @@
         height: 40px;
         border-radius: 50%;
         transition: all 0.35s ease-in-out;
-        background-color: #bfbfbf;
+        background-color: #866340;
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 15px;
+
+        &:hover {
+            background-color: #a28466;
+        }
+
+        a {
+            color: white !important;
+        }
     }
 }
 
@@ -99,8 +107,8 @@
     .input-group .input-group-btn .btn-secondary {
         padding: 8px 20px;
         color: #fff;
-        border: #222;
-        background: #343434;
+        border: #866340;
+        background: #866340;
         border-radius: 0 23px 23px 0 !important;
         height: 40px;
         font-weight: 500;
