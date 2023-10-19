@@ -211,3 +211,17 @@ if (categoryMenuContent && mobileMenu) {
         });
     });
 }
+
+// for product filter active
+// Get the elements using document.querySelector
+var shopFilterIcon = document.querySelectorAll('.shop-filter-active, .filter-close');
+var productFilterWrapper = document.querySelector('.product-filter-wrapper');
+
+// Add click event listeners to the elements
+shopFilterIcon.forEach(function(element) {
+    element.addEventListener('click', function(e) {
+        e.preventDefault();
+        productFilterWrapper.classList.toggle('active');
+        productFilterWrapper.style.display = (productFilterWrapper.style.display === 'block' || productFilterWrapper.style.display === '') ? 'none' : 'block';
+    });
+});
