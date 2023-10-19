@@ -1146,6 +1146,25 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 /* hero css */
+.tp-btn-brown {
+    border: 1px solid #866340;
+    padding: 0 32px;
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 15px 25px;
+    transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background: #866340;
+    text-transform: capitalize;
+    color: white;
+}
+
+.tp-btn-brown:hover {
+    border: 1px solid #866340;
+    background: none;
+    color: #000;
+}
+
 .fa-service__wrapper {
     padding-right: 0;
 }
@@ -1153,12 +1172,6 @@ only screen and (min-width: 768px) and (max-width: 991px),
 .fa-service__wrapper img {
     width: 100vw;
     height: 100vh;
-}
-
-@media only screen and (max-width:991px) {
-    .fa-service__wrapper img {
-        height: 100%;
-    }
 }
 
 .fa-slider__arrow-box {

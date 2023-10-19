@@ -8,10 +8,6 @@
     img {
         width: 100vw;
         height: 100vh;
-
-        @media only screen and (max-width:991px) {
-            height: 100%;
-        }
     }
 }
 
@@ -241,5 +237,23 @@
         @media only screen and (min-width: 440px) and (max-width: 575px) {
             padding: 120px 30px;
         }
+    }
+}
+
+.tp-btn-brown {
+    border: 1px solid #866340;
+    padding: 0 32px;
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 15px 25px;
+    transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background: none;
+    text-transform: uppercase;
+
+    &:hover {
+        border: 1px solid #866340;
+        background: #866340;
+        color: #fff;
     }
 }
