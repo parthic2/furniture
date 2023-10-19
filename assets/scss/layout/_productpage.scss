@@ -192,16 +192,6 @@ span.color {
         .product-info {
             padding: 15px 0 0;
         }
-
-        .product-action {
-            background: #f6f6f6 none repeat scroll 0 0;
-            margin-top: 15px;
-            opacity: 1;
-            position: inherit;
-            visibility: visible;
-            width: calc(100% - 0px);
-            box-shadow: 1px 25px 54px rgba(0, 0, 0, 0.12);
-        }
     }
 
     &-img {
@@ -218,45 +208,21 @@ span.color {
     }
 
     &-action {
-        background: #fff none repeat scroll 0 0;
-        bottom: -40px;
-        left: 0;
-        margin: auto;
-        position: absolute;
-        right: 0;
-        text-align: center;
-        visibility: hidden;
-        opacity: 0;
-        transition: all .5s ease 0s;
-        width: calc(100% - 40px);
+        transition: all 0.5s ease 0s;
+        display: flex;
+        justify-content: flex-end;
 
         a {
-            color: #666;
-            float: left;
             font-size: 16px;
-            height: 40px;
-            line-height: 40px;
             position: relative;
-            width: 25%;
-
-            &:last-child::before {
-                display: none
-            }
-
-            &::before {
-                background: #999 none repeat scroll 0 0;
-                content: "";
-                height: 16px;
-                margin-top: -8px;
-                position: absolute;
-                right: 0;
-                top: 50%;
-                width: 2px;
-            }
-
-            &:hover {
-                color: #c8a165;
-            }
+            background: #866340;
+            // background: #c0a273;
+            padding: 10px;
+            color: white;
+            margin-left: 2%;
+            text-decoration: none;
+            width: 50px;
+            text-align: center;
         }
     }
 }
@@ -378,9 +344,9 @@ span.color {
     }
 
     .product-action {
-        float: left;
-        margin: 0 0 0 20px;
-        width: 45%;
+        // float: left;
+        // margin: 0 0 0 20px;
+        // width: 45%;
 
         @media (max-width: 767px) {
             margin: 0 0 0 5%;
