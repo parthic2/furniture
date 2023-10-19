@@ -3407,18 +3407,18 @@ span.color.color-7 {
     }
 }
 
-.shop-list .product-action {
-    /* float: left; */
-    /* margin: 0 0 0 20px;
-    width: 45%; */
-}
+/* .shop-list .product-action {
+     float: left; 
+     margin: 0 0 0 20px;
+    width: 45%;
+} */
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     .shop-list .product-action {
         margin: 0 0 0 5%;
         width: 55%;
     }
-}
+} */
 
 @media (max-width: 767px) {
     .shop-list .pro-rating.floatright {
