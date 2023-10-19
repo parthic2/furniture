@@ -3860,7 +3860,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
     height: 50px;
     line-height: 50px;
     margin-bottom: 0;
-    padding: 0 30px;
+    /* padding: 0 30px; */
     text-transform: uppercase;
     text-decoration: none;
 }
