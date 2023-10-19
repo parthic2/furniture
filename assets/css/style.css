@@ -1879,7 +1879,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .tp-footer-2__list ul li a:hover {
-    color: #866340;
+    color: #f9f6f1;
 }
 
 .tp-footer-2__location {
@@ -1939,7 +1939,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .tp-copyright-2__text span strong {
-    color: #866340;
+    color: #f9f6f1;
 }
 
 /* feature css */
@@ -3275,7 +3275,7 @@ span.color.color-7 {
 }
 
 .product-style-2 .product-action {
-    background: #f6f6f6 none repeat scroll 0 0;
+    /* background: #f6f6f6 none repeat scroll 0 0; */
     margin-top: 15px;
     opacity: 1;
     position: inherit;
