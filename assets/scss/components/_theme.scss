@@ -20,6 +20,15 @@ img {
     position: relative;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    color: inherit;
+}
+
 ul {
     margin: 0px;
     padding: 0px;
