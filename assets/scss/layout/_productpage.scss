@@ -428,7 +428,7 @@ span.color {
 }
 
 .cart-plus-minus {
-    background: #f6f6f6 none repeat scroll 0 0;
+    background: #c0a273 none repeat scroll 0 0;
     float: left;
     height: 40px;
     line-height: 40px;
@@ -443,7 +443,7 @@ span.color {
     font-size: 20px;
     position: relative;
     width: 33.3333%;
-    color: #666;
+    color: white;
 }
 
 .dec.qtybutton::before {
@@ -456,7 +456,7 @@ span.color {
 
 .dec.qtybutton::before,
 .inc.qtybutton::before {
-    background: #999;
+    background: white;
     content: "";
     height: 14px;
     position: absolute;
@@ -466,13 +466,14 @@ span.color {
 }
 
 input.cart-plus-minus-box {
-    background: #f6f6f6 none repeat scroll 0 0;
+    background: #c0a273 none repeat scroll 0 0;
     float: left;
     font-size: 16px;
     margin: 0;
     padding: 0;
     text-align: center;
     width: 33.33%;
+    color: white;
 }
 
 .product-info {
