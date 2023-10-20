@@ -222,16 +222,24 @@
                 </div>
                 <div class="widget-info">
                   <div class="price_filter">
-                    <div class="price_slider_amount">
-                      <input type="submit" value="You range :">
-                      <input
-                        type="text"
-                        id="amount"
-                        name="price"
-                        placeholder="Add Your Price"
-                      >
+                    <div class="price-input">
+                      <div class="field">
+                        <span>Min</span>
+                        <input type="number" class="input-min" value="2500">
+                      </div>
+                      <!-- <div class="separator">-</div> -->
+                      <div class="field ml-10">
+                        <span>Max</span>
+                        <input type="number" class="input-max" value="7500">
+                      </div>
                     </div>
-                    <div id="slider-range"></div>
+                    <div class="slider">
+                      <div class="progress"></div>
+                    </div>
+                    <div class="range-input">
+                      <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                      <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                    </div>
                   </div>
                 </div>
               </aside>

@@ -126,6 +126,7 @@ span.color {
     height: 13px;
     margin-right: 20px;
     width: 13px;
+    border-radius: 50px;
 
     &.color-1 {
         background: #ffa07a;
@@ -427,7 +428,6 @@ span.color {
         font-size: 15px;
         line-height: 18px;
         text-transform: uppercase;
-        // font-family: bree serif;
         margin-bottom: 5px;
         text-decoration: none;
         color: #434343;
@@ -766,4 +766,90 @@ input.cart-plus-minus-box {
             }
         }
     }
+}
+
+// price change css
+.price {
+    &-input {
+        width: 100%;
+        display: flex;
+
+        .field {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            font-size: 15px;
+        }
+    }
+}
+
+.field input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 15px;
+    margin-left: 12px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #c8a165;
+    color: #c8a165;
+    -moz-appearance: textfield;
+}
+
+.slider {
+    height: 5px;
+    position: relative;
+    background: #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+
+    .progress {
+        height: 100%;
+        left: 25%;
+        right: 25%;
+        position: absolute;
+        border-radius: 5px;
+        background: #c8a165;
+    }
+}
+
+.range-input {
+    position: relative;
+
+    input {
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        top: -5px;
+        background: none;
+        pointer-events: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background: #c8a165;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+input[type="range"]::-moz-range-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: #c8a165;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
