@@ -3739,7 +3739,6 @@ only screen and (min-width: 768px) and (max-width: 991px),
     text-align: center;
     border: 1px solid #c8a165;
     color: #c8a165;
-    /* -moz-appearance: textfield; */
 }
 
 .slider {
@@ -3771,7 +3770,6 @@ only screen and (min-width: 768px) and (max-width: 991px),
     background: none;
     pointer-events: none;
     -webkit-appearance: none;
-    /* -moz-appearance: none; */
 }
 
 input[type=range]::-webkit-slider-thumb {
@@ -3791,7 +3789,6 @@ input[type=range]::-moz-range-thumb {
     border-radius: 50%;
     background: #c8a165;
     pointer-events: auto;
-    /* -moz-appearance: none; */
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
 }
 
