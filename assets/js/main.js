@@ -210,25 +210,6 @@ if (categoryMenuContent && mobileMenu) {
     });
 }
 
-// for product filter active
-
-// Get the elements using document.querySelector
-// var shopFilterIcon = document.querySelector('.shop-filter-active, .filter-close');
-// var productFilterWrapper = document.querySelector('.product-filter-wrapper');
-
-// // Add click event listeners to the elements
-// document.body.addEventListener('click', function(e) {
-//     if (!productFilterWrapper.contains(e.target) && !shopFilterIcon.contains(e.target)) {
-//         productFilterWrapper.classList.remove('active');
-//         productFilterWrapper.style.display = 'none';
-//     } else {
-//         e.preventDefault();
-//         productFilterWrapper.classList.toggle('active');
-//         productFilterWrapper.style.display = (productFilterWrapper.style.display === 'block' || productFilterWrapper.style.display === '') ? 'none' : 'block';
-//     }
-// });
-
-
 // price range slider
 const rangeInput = document.querySelectorAll(".range-input input"),
     priceInput = document.querySelectorAll(".price-input input"),
