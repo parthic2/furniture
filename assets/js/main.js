@@ -5,7 +5,7 @@ window.addEventListener("load", function () {
 
     // Hide the preloader after a delay
     setTimeout(() => {
-        loader.style.display = "none";
+        // loader.style.display = "none";
         headerSticky.style.display = "block";
 
         // Add scroll event listener only after preloader is hidden
@@ -15,7 +15,7 @@ window.addEventListener("load", function () {
                 headerSticky.classList.toggle("header-sticky", scroll >= 100);
             }
         });
-    }, 60);
+    }, 100);
 });
 
 // slider slider
