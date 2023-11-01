@@ -19,3 +19,54 @@
         transform: translateX(0);
     }
 }
+
+// loading animation
+@keyframes back {
+    0% {
+        transform: rotateZ(0deg);
+
+    }
+
+    20% {
+        transform: rotateZ(90deg);
+
+    }
+
+    50% {
+        transform: rotateZ(90deg);
+
+    }
+
+    70% {
+        transform: rotateZ(0deg);
+
+    }
+}
+
+@keyframes left {
+    15% {
+        transform: rotate(90deg);
+    }
+
+    40% {
+        transform: rotate(90deg);
+    }
+
+    70% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes right {
+    15% {
+        transform: rotate(-90deg);
+    }
+
+    40% {
+        transform: rotate(-90deg);
+    }
+
+    70% {
+        transform: rotate(0deg);
+    }
+}

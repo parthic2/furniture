@@ -15,7 +15,7 @@ window.addEventListener("load", function () {
                 headerSticky.classList.toggle("header-sticky", scroll >= 100);
             }
         });
-    }, 50);
+    }, 100);
 });
 
 // slider slider

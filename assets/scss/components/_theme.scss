@@ -150,7 +150,7 @@ input[type="email"] {
 
 // preloader css
 #preloader {
-    background: #ffffff no-repeat center center;
+    background: #f9f6f1 no-repeat center center;
     background-size: 10%;
     height: 100vh;
     width: 100%;
@@ -160,13 +160,49 @@ input[type="email"] {
     justify-content: center;
     align-items: center;
     opacity: 1;
-    /* Initially set the opacity to 0 */
     transition: opacity 0.5s ease-in-out;
-    /* Add a smooth transition for opacity */
 }
 
-#preloader img {
-    width: 15%;
-    transition: width 0.5s ease-in-out;
-    /* Add a smooth transition for image width */
+.chairPiece {
+    position: absolute;
+    border-radius: 10px;
+    top: 48vh;
+    left: 48vw;
+    background-color: #866340;
+}
+
+#backContainer {
+    position: absolute;
+    left: 0vw;
+    top: 0vh;
+    transform: translate(-15px);
+    overflow: visible;
+    height: 50px;
+    width: 50px;
+}
+
+#back {
+    animation: back 3s ease-in infinite;
+    transform-origin: right;
+    width: 55px;
+    height: 5px;
+}
+
+#seat {
+    width: 40px;
+    height: 5px;
+}
+
+#left {
+    animation: left 3s ease-in infinite .4s;
+    transform-origin: left;
+    width: 40px;
+    height: 5px;
+}
+
+#right {
+    animation: right 3s ease-in infinite .3s;
+    transform-origin: right;
+    width: 40px;
+    height: 5px;
 }
