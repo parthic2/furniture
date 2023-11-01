@@ -1,20 +1,21 @@
-// Get a reference to the window object
-var windowOn = window;
-
-// Add a scroll event listener to the window
-windowOn.addEventListener('scroll', function () {
-    var scroll = windowOn.scrollY; // Get the vertical scroll position
+// sticky header and preloader
+window.addEventListener("load", function () {
+    var loader = document.getElementById("preloader");
     var headerSticky = document.getElementById("header-sticky");
 
-    if (scroll < 100) {
-        // Remove the "header-sticky" class
-        headerSticky.classList.remove("header-sticky");
-        document.getElementById("header-sticky").style.display = "block";
-    } else {
-        // Add the "header-sticky" class
-        headerSticky.classList.add("header-sticky");
-        document.getElementById("header-sticky").style.display = "block";
-    }
+    // Hide the preloader after a delay
+    setTimeout(() => {
+        loader.style.display = "none";
+        headerSticky.style.display = "block";
+
+        // Add scroll event listener only after preloader is hidden
+        window.addEventListener('scroll', function () {
+            if (loader.style.display === "none") {
+                var scroll = window.scrollY;
+                headerSticky.classList.toggle("header-sticky", scroll >= 100);
+            }
+        });
+    }, 50);
 });
 
 // slider slider

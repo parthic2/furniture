@@ -21,7 +21,7 @@ a {
     color: inherit;
 }
 
-a:hover{
+a:hover {
     color: inherit;
 }
 
@@ -38,7 +38,7 @@ ul {
     background: rgba(0, 0, 0, 0) url("/assets/img/bg/product.jpg") no-repeat scroll center center/cover;
 }
 
-.about-banner-area{
+.about-banner-area {
     background: rgba(0, 0, 0, 0) url("/assets/img/bg/about.jpg") no-repeat scroll center center/cover;
 }
 
@@ -110,7 +110,9 @@ ul {
     content: "";
 }
 
-input[type="text"], input[type="password"],input[type="email"] {
+input[type="text"],
+input[type="password"],
+input[type="email"] {
     background: #f6f6f6 none repeat scroll 0 0;
     border: medium none;
     box-shadow: none;
@@ -122,4 +124,49 @@ input[type="text"], input[type="password"],input[type="email"] {
     width: 100%;
     outline: none;
     font-size: 13px;
+}
+
+// customize scroll bar
+
+// scroll bar
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #72747c;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #866340;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #a28466;
+}
+
+// preloader css
+#preloader {
+    background: #ffffff no-repeat center center;
+    background-size: 10%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    /* Initially set the opacity to 0 */
+    transition: opacity 0.5s ease-in-out;
+    /* Add a smooth transition for opacity */
+}
+
+#preloader img {
+    width: 15%;
+    transition: width 0.5s ease-in-out;
+    /* Add a smooth transition for image width */
 }
