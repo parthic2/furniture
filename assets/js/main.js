@@ -18,7 +18,7 @@
 //     }, 100);
 // });
 
-window.addEventListener("load", function () {
+window.addEventListener("DOMContentLoaded", function () {
     const preloader = document.getElementById("preloader");
     const tableIcon = document.getElementById("table");
     const chairIcon = document.getElementById("chair");
