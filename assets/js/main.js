@@ -20,7 +20,7 @@ window.addEventListener("DOMContentLoaded", function () {
         isAnimationRunning = false; // Stop the animation
         clearInterval(switchInterval); // Clear the interval
         headerSticky.style.display = "block"; // Show the header
-    }, 3000);
+    }, 5000);
 
     // Add scroll event listener
     window.addEventListener('scroll', function () {
