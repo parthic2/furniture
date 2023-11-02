@@ -1,5 +1,5 @@
 // sticky header and preloader
-window.addEventListener("load", function () {
+window.addEventListener("DOMContentLoaded", function () {
     var headerSticky = document.getElementById("header-sticky");
     const preloader = document.getElementById("preloader");
     const tableIcon = document.getElementById("table");
@@ -12,13 +12,13 @@ window.addEventListener("load", function () {
             tableIcon.classList.toggle("hidden");
             chairIcon.classList.toggle("hidden");
         }
-    }, 600); // Toggle animations every 3 seconds
+    }, 1000); // Toggle animations every 3 seconds
 
     // Hide preloader, stop animation, and show header after 3 seconds
     setTimeout(() => {
-        preloader.style.display = "none";
-        isAnimationRunning = false; // Stop the animation
-        clearInterval(switchInterval); // Clear the interval
+        // preloader.style.display = "none";
+        // isAnimationRunning = false; // Stop the animation
+        // clearInterval(switchInterval); // Clear the interval
         headerSticky.style.display = "block"; // Show the header
     }, 3000);
 
