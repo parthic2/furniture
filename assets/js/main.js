@@ -1,7 +1,7 @@
 // sticky header and preloader
-window.addEventListener("DOMContentLoaded", function () {
-    var loader = document.getElementById("preloader");
+window.addEventListener("load", function () {
     var headerSticky = document.getElementById("header-sticky");
+    const preloader = document.getElementById("preloader");
     const tableIcon = document.getElementById("table");
     const chairIcon = document.getElementById("chair");
     let isAnimationRunning = true;
@@ -12,23 +12,23 @@ window.addEventListener("DOMContentLoaded", function () {
             tableIcon.classList.toggle("hidden");
             chairIcon.classList.toggle("hidden");
         }
-    }, 400); // Toggle animations every 3 seconds
+    }, 600); // Toggle animations every 3 seconds
 
-    // Hide the preloader after a delay
+    // Hide preloader, stop animation, and show header after 3 seconds
     setTimeout(() => {
-        loader.style.display = "none";
-        headerSticky.style.display = "block";
-
-        // Add scroll event listener only after preloader is hidden
-        window.addEventListener('scroll', function () {
-            if (loader.style.display === "none") {
-                var scroll = window.scrollY;
-                headerSticky.classList.toggle("header-sticky", scroll >= 100);
-                isAnimationRunning = false; // Stop the animation
-                clearInterval(switchInterval); // Clear the interval
-            }
-        });
+        preloader.style.display = "none";
+        isAnimationRunning = false; // Stop the animation
+        clearInterval(switchInterval); // Clear the interval
+        headerSticky.style.display = "block"; // Show the header
     }, 3000);
+
+    // Add scroll event listener
+    window.addEventListener('scroll', function () {
+        if (preloader.style.display === "none") {
+            var scroll = window.scrollY;
+            headerSticky.classList.toggle("header-sticky", scroll >= 100);
+        }
+    });
 });
 
 // slider slider
