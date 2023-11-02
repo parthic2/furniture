@@ -1,25 +1,7 @@
 // sticky header and preloader
-// window.addEventListener("load", function () {
-//     var loader = document.getElementById("preloader");
-//     var headerSticky = document.getElementById("header-sticky");
-
-//     // Hide the preloader after a delay
-//     setTimeout(() => {
-//         // loader.style.display = "none";
-//         headerSticky.style.display = "block";
-
-//         // Add scroll event listener only after preloader is hidden
-//         window.addEventListener('scroll', function () {
-//             if (loader.style.display === "none") {
-//                 var scroll = window.scrollY;
-//                 headerSticky.classList.toggle("header-sticky", scroll >= 100);
-//             }
-//         });
-//     }, 100);
-// });
-
 window.addEventListener("DOMContentLoaded", function () {
-    const preloader = document.getElementById("preloader");
+    var loader = document.getElementById("preloader");
+    var headerSticky = document.getElementById("header-sticky");
     const tableIcon = document.getElementById("table");
     const chairIcon = document.getElementById("chair");
     let isAnimationRunning = true;
@@ -32,11 +14,20 @@ window.addEventListener("DOMContentLoaded", function () {
         }
     }, 600); // Toggle animations every 3 seconds
 
-    // Hide preloader and stop animation after 3 seconds
+    // Hide the preloader after a delay
     setTimeout(() => {
-        preloader.style.display = "none";
-        isAnimationRunning = false; // Stop the animation
-        clearInterval(switchInterval); // Clear the interval
+        loader.style.display = "none";
+        headerSticky.style.display = "block";
+
+        // Add scroll event listener only after preloader is hidden
+        window.addEventListener('scroll', function () {
+            if (loader.style.display === "none") {
+                var scroll = window.scrollY;
+                headerSticky.classList.toggle("header-sticky", scroll >= 100);
+                isAnimationRunning = false; // Stop the animation
+                clearInterval(switchInterval); // Clear the interval
+            }
+        });
     }, 3000);
 });
 
