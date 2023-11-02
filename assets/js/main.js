@@ -16,9 +16,9 @@ window.addEventListener("DOMContentLoaded", function () {
 
     // Hide preloader, stop animation, and show header after 3 seconds
     setTimeout(() => {
-        // preloader.style.display = "none";
-        // isAnimationRunning = false; // Stop the animation
-        // clearInterval(switchInterval); // Clear the interval
+        preloader.style.display = "none";
+        isAnimationRunning = false; // Stop the animation
+        clearInterval(switchInterval); // Clear the interval
         headerSticky.style.display = "block"; // Show the header
     }, 3000);
 
