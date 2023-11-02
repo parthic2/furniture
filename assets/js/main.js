@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", function () {
             tableIcon.classList.toggle("hidden");
             chairIcon.classList.toggle("hidden");
         }
-    }, 600); // Toggle animations every 3 seconds
+    }, 400); // Toggle animations every 3 seconds
 
     // Hide the preloader after a delay
     setTimeout(() => {
