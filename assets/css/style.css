@@ -48,6 +48,11 @@ img {
     /* Add a smooth transition for opacity */
 }
 
+#table,
+#chair {
+    width: 10%;
+}
+
 .hidden {
     display: none;
 }
@@ -71,7 +76,7 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: fadeInOut 3s infinite;
+    animation: fadeInOut 1s infinite;
 }
 
 /* .chairPiece {

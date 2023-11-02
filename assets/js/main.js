@@ -18,33 +18,28 @@
 //     }, 100);
 // });
 
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
     const preloader = document.getElementById("preloader");
-    const headerSticky = document.getElementById("header-sticky");
     const tableIcon = document.getElementById("table");
     const chairIcon = document.getElementById("chair");
+    let isAnimationRunning = true;
 
-    // Hide preloader and show header
-    preloader.style.display = "none";
-    headerSticky.style.display = "block";
-
-    // Toggle between table and chair icons
-    setInterval(() => {
-        if (tableIcon.classList.contains("hidden")) {
-            tableIcon.classList.remove("hidden");
-            chairIcon.classList.add("hidden");
-        } else {
-            tableIcon.classList.add("hidden");
-            chairIcon.classList.remove("hidden");
+    // Start table/chair switch every 3 seconds
+    const switchInterval = setInterval(() => {
+        if (isAnimationRunning) {
+            tableIcon.classList.toggle("hidden");
+            chairIcon.classList.toggle("hidden");
         }
+    }, 1000); // Toggle animations every 3 seconds
 
-        window.addEventListener('scroll', function() {
-            if (preloader.style.display === "none") {
-                headerSticky.classList.toggle("header-sticky", window.scrollY >= 100);
-            }
-        });
-    }, 10000); // Switch icons every 3 seconds (3000 milliseconds)
+    // Hide preloader and stop animation after 3 seconds
+    setTimeout(() => {
+        preloader.style.display = "none";
+        isAnimationRunning = false; // Stop the animation
+        clearInterval(switchInterval); // Clear the interval
+    }, 3000);
 });
+
 
 
 
