@@ -40,9 +40,6 @@ window.addEventListener("DOMContentLoaded", function () {
     }, 3000);
 });
 
-
-
-
 // slider slider
 const serviceSwiper = new Swiper('.tp-slider__active', {
     direction: 'horizontal',

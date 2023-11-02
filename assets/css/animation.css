@@ -21,53 +21,17 @@
 }
 
 /* loading animation */
-@keyframes back {
+@keyframes fadeInOut {
   0% {
-    transform: rotateZ(0deg);
-
-  }
-
-  20% {
-    transform: rotateZ(90deg);
-
+    opacity: 0;
   }
 
   50% {
-    transform: rotateZ(90deg);
-
+    opacity: 1;
   }
 
-  70% {
-    transform: rotateZ(0deg);
-
-  }
-}
-
-@keyframes left {
-  15% {
-    transform: rotate(90deg);
-  }
-
-  40% {
-    transform: rotate(90deg);
-  }
-
-  70% {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes right {
-  15% {
-    transform: rotate(-90deg);
-  }
-
-  40% {
-    transform: rotate(-90deg);
-  }
-
-  70% {
-    transform: rotate(0deg);
+  100% {
+    opacity: 0;
   }
 }
 

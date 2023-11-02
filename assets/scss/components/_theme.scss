@@ -163,46 +163,75 @@ input[type="email"] {
     transition: opacity 0.5s ease-in-out;
 }
 
-.chairPiece {
+#table,
+#chair {
+    width: 5%;
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+
+    #table,
+    #chair {
+        width: 5%;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    #table,
+    #chair {
+        width: 5%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    #table,
+    #chair {
+        width: 5%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    #table,
+    #chair {
+        width: 8%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    #table,
+    #chair {
+        width: 15%;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    #table,
+    #chair {
+        width: 10%;
+    }
+}
+
+@media only screen and (min-width: 440px) and (max-width: 575px) {
+
+    #table,
+    #chair {
+        width: 10%;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.icon {
     position: absolute;
-    border-radius: 10px;
-    top: 47vh;
-    left: 47vw;
-    background-color: #866340;
-}
-
-#backContainer {
-    position: absolute;
-    left: 0vw;
-    top: 0vh;
-    transform: translate(-15px);
-    overflow: visible;
-    height: 50px;
-    width: 50px;
-}
-
-#back {
-    animation: back 3s ease-in infinite;
-    transform-origin: right;
-    width: 55px;
-    height: 5px;
-}
-
-#seat {
-    width: 40px;
-    height: 5px;
-}
-
-#left {
-    animation: left 3s ease-in infinite .4s;
-    transform-origin: left;
-    width: 40px;
-    height: 5px;
-}
-
-#right {
-    animation: right 3s ease-in infinite .3s;
-    transform-origin: right;
-    width: 40px;
-    height: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeInOut 1s infinite;
 }
