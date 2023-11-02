@@ -30,7 +30,7 @@ window.addEventListener("load", function () {
             tableIcon.classList.toggle("hidden");
             chairIcon.classList.toggle("hidden");
         }
-    }, 1000); // Toggle animations every 3 seconds
+    }, 600); // Toggle animations every 3 seconds
 
     // Hide preloader and stop animation after 3 seconds
     setTimeout(() => {
