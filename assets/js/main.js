@@ -31,7 +31,7 @@ window.addEventListener("load", function () {
     });
 });
 
-// slider slider
+// service slider
 const serviceSwiper = new Swiper('.tp-slider__active', {
     direction: 'horizontal',
     slidesPerView: 1,
@@ -56,11 +56,7 @@ const featureSwiper = new Swiper('.tp-feature__active', {
     autoplay: {
         delay: 2000, // Adjust the delay (in milliseconds) as needed
         disableOnInteraction: false, // Prevent auto-play from stopping on user interaction
-    },
-    // navigation: {
-    //     prevEl: '.slider-prev',
-    //     nextEl: '.slider-next',
-    // }
+    }
 });
 
 const feature2Swiper = new Swiper('.tp-feature-2__active', {
@@ -71,15 +67,11 @@ const feature2Swiper = new Swiper('.tp-feature-2__active', {
     autoplay: {
         delay: 2000, // Adjust the delay (in milliseconds) as needed
         disableOnInteraction: false, // Prevent auto-play from stopping on user interaction
-    },
-    // navigation: {
-    //     prevEl: '.slider-prev-2',
-    //     nextEl: '.slider-next-2',
-    // }
+    }
 });
 
-// testimoinal slider
-const testiSwiper = new Swiper('.tp-testi__active', {
+// testimonial slider
+const testSwiper = new Swiper('.tp-testi__active', {
     direction: 'horizontal',
     slidesPerView: 1,
     spaceBetween: 0,
@@ -110,7 +102,6 @@ document.querySelector('.body-overlay').addEventListener('click', function () {
     document.querySelector('.tpoffcanvas').classList.remove('opened');
     document.querySelector('.body-overlay').classList.remove('apply');
 });
-
 
 // for mobile menu to display menu item
 if (document.querySelectorAll('.tp-main-menu-content').length && document.querySelectorAll('.tp-main-menu-mobile').length) {
@@ -145,10 +136,6 @@ if (document.querySelectorAll('.tp-main-menu-content').length && document.queryS
 }
 
 // add product plus minus js
-// const cartPlusMinus = document.querySelectorAll(".cart-plus-minus");
-// cartPlusMinus.innerHTML = '<div class="dec qtybutton">-</div>';
-// cartPlusMinus.innerHTML += '<div class="inc qtybutton">+</div>';
-
 document.querySelectorAll(".qtybutton").forEach(function (element) {
     element.addEventListener("click", function () {
         const parent = this.parentElement;
