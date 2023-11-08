@@ -705,7 +705,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 .homemenu-thumb .homemenu-btn:hover .tp-menu-btn {
     color: #ffffff;
-    background-color: #866340;
+    background-color: #a28466;
 }
 
 .homemenu-title a {
@@ -718,7 +718,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .homemenu-title a:hover {
-    color: #866340;
+    color: #a28466;
 }
 
 .tp-menu-bar {
