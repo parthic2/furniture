@@ -185,30 +185,6 @@ if (categoryMenuContent && mobileMenu) {
             nav.style.display = (nav.style.display === "block") ? "none" : "block";
         }
     });
-
-    document.querySelectorAll(".tp-category-mobile-menu .has-dropdown > a").forEach(function (arrowLink) {
-        const arrowBtn = document.createElement("button");
-        arrowBtn.classList.add("dropdown-toggle-btn");
-        arrowBtn.innerHTML = "<i class='fa-regular fa-angle-right'></i>";
-        arrowLink.appendChild(arrowBtn);
-
-        arrowBtn.addEventListener("click", function (e) {
-            e.preventDefault();
-            const parentListItem = arrowLink.parentElement;
-            const grandparentListItem = parentListItem.parentElement;
-            parentListItem.classList.toggle("expanded");
-            parentListItem.classList.toggle("dropdown-opened");
-            Array.from(grandparentListItem.children).forEach(sibling => {
-                if (sibling !== parentListItem) {
-                    sibling.classList.remove("dropdown-opened");
-                }
-            });
-            const submenu = grandparentListItem.querySelector(".tp-submenu");
-            if (submenu) {
-                submenu.style.display = (submenu.style.display === "block") ? "none" : "block";
-            }
-        });
-    });
 }
 
 // price range slider
