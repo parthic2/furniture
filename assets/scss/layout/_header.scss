@@ -22,7 +22,7 @@
 	&__area {
 		box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 	}
-	
+
 	&__logo img {
 		max-width: 100%;
 		width: 110px;
@@ -503,7 +503,7 @@
 					transform: rotate(90deg);
 				}
 
-				&:not(:last-child) > a {
+				&:not(:last-child)>a {
 					border-bottom: 1px solid rgba(127, 131, 135, 0.3);
 				}
 
@@ -573,6 +573,7 @@
 		visibility: visible;
 		opacity: 1;
 		display: none;
+		padding-top: 10px;
 
 		li {
 			float: none;

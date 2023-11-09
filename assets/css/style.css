@@ -872,6 +872,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
     visibility: visible;
     opacity: 1;
     display: none;
+    padding-top: 10px;
 }
 
 .tpoffcanvas ul li .mega-menu li,
