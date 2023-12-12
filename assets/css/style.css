@@ -1288,12 +1288,12 @@ only screen and (min-width: 768px) and (max-width: 991px),
     }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+/* @media only screen and (min-width: 1200px) and (max-width: 1399px) {
     .fa-slider__arrow-box {
         left: 41.8%;
         top: 78%;
     }
-}
+} */
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .fa-slider__arrow-box {
@@ -1355,7 +1355,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
     .fa-slider__arrow-box-prev {
-        right: 58.1%;
+        /* right: 58.1%; */
         top: 85.4%;
     }
 }
