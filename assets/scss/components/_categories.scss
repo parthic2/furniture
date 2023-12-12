@@ -1,3 +1,9 @@
+/** ---------
+ Categories page css
+ ------- **/
+
+@use "../utils/variables";
+
 .tp-product-5 {
     &__content {
         a {
@@ -19,20 +25,21 @@
     }
 
     &__title {
-        color: black;
+        color: var(--fa-common-black);
         font-size: 171px;
         font-weight: 500;
         text-transform: capitalize;
         margin-bottom: 0;
         transition: 0.3s;
+        margin-top: 15px;
 
         &:hover {
-            color: #866340;
+            color: var(--fa-common-brown);
         }
     }
 
     &__thumb {
-        margin: 20px auto;
+        // margin: 20px auto;
         font-size: 20px;
         color: #999;
         width: 140px;
@@ -41,7 +48,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #f9f6f1;
+        background: var(--fa-bg-light);
         box-shadow: #00000029 0px 0px 5px 1px;
 
         img {
@@ -50,6 +57,12 @@
     }
 
     &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+
         @media only screen and (max-width: 575px) {
             display: flex;
             justify-content: center;

@@ -1,3 +1,9 @@
+/** ---------
+ Product section css
+ ------- **/
+
+@use "../utils/variables";
+
 .tp-product-4 {
     &__thumb img {
         width: 100%;
@@ -54,7 +60,7 @@
     }
 
     &__title {
-        color: black;
+        color: var(--fa-common-black);
         font-size: 18px;
         font-weight: 500;
         text-transform: uppercase;
@@ -78,7 +84,7 @@
     }
 
     &__sub-title {
-        color: black;
+        color: var(--fa-common-black);
         font-size: 15px;
         font-weight: 500;
         text-transform: capitalize;
@@ -111,8 +117,8 @@
         font-weight: 500;
         font-size: 15px;
         text-transform: capitalize;
-        color: white;
-        background: #866340;
+        color: var(--fa-common-white);
+        background: var(--fa-common-brown);
         transition: 0.3s;
         text-decoration: none;
         border: none;
@@ -123,8 +129,8 @@
         }
 
         &:hover {
-            color: black;
-            background-color: white;
+            color: var(--fa-common-black);
+            background-color: var(--fa-common-white)
         }
     }
 
@@ -136,8 +142,8 @@
         font-weight: 500;
         font-size: 15px;
         text-transform: capitalize;
-        color: black;
-        background: white;
+        color: var(--fa-common-black);
+        background: var(--fa-common-white);
         transition: 0.3s;
         text-decoration: none;
         border: none;
@@ -148,8 +154,8 @@
         }
 
         &:hover {
-            color: white;
-            background-color: #866340;
+            color: var(--fa-common-white);
+            background-color: var(--fa-common-brown);
         }
     }
 }

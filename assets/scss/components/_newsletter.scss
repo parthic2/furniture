@@ -1,5 +1,13 @@
+/** ---------
+ Newsletter section css
+ ------- **/
+
+@use "../utils/variables";
+
 .news {
     &-bg img {
+        width: 100%;
+
         @media only screen and (min-width: 1200px) and (max-width: 1399px) {
             width: 100%;
             height: 100%;
@@ -32,8 +40,8 @@
     }
 
     &__section {
-        background-color: #866340;
-        color: white;
+        background-color: var(--fa-common-brown);
+        color: var(--fa-common-white);
         padding: 25px 40px;
 
         input {
@@ -48,7 +56,7 @@
         .sub-btn {
             font-size: 13px;
             border: none;
-            background: #ffffff;
+            background: var(--fa-common-white);
             color: #201f20;
             margin-top: 35px;
             padding: 10px 30px;

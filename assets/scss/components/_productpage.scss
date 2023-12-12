@@ -1,5 +1,11 @@
+/** ---------
+ Product page css
+ ------- **/
+
+@use "../utils/variables";
+
 .widget {
-    background: #fff none repeat scroll 0 0;
+    background: var(--fa-common-white) none repeat scroll 0 0;
     width: 100%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 8px;
@@ -8,14 +14,14 @@
         position: relative;
 
         input {
-            background: #fff none repeat scroll 0 0;
+            background: var(--fa-common-white) none repeat scroll 0 0;
             height: 50px;
             margin-bottom: 0;
             padding: 0 65px 0 20px;
         }
 
         button {
-            color: #999;
+            color: var(--fa-textBox-color);
             font-size: 18px;
             line-height: 50px;
             position: absolute;
@@ -27,8 +33,8 @@
     }
 
     &-title h4 {
-        border-bottom: 2px solid #f6f6f6;
-        color: #c8a165;
+        border-bottom: 2px solid var(--fa-text-background);
+        color: var(--fa-common-brown-2);
         font-size: 16px;
         font-weight: 700;
         height: 50px;
@@ -48,6 +54,7 @@
 
     &-banner .widget-info {
         padding: 15px;
+        text-align: center;
     }
 }
 
@@ -57,7 +64,7 @@
 
         li {
             span {
-                color: #666;
+                color: var(--fa-grey-light-2);
                 display: block;
                 font-size: 14px;
                 line-height: 30px;
@@ -66,12 +73,12 @@
                 transition: all .3s ease 0s;
 
                 &:hover {
-                    color: #c8a165;
+                    color: var(--fa-common-brown-2);
                 }
             }
 
             .collapsable span {
-                color: #c8a165;
+                color: var(--fa-common-brown-2);
             }
         }
     }
@@ -86,7 +93,7 @@
 
             &.active {
                 a {
-                    color: #c8a165;
+                    color: var(--fa-common-brown-2);
                 }
 
                 span.color {
@@ -95,7 +102,7 @@
                 }
 
                 span.count {
-                    color: #c8a165;
+                    color: var(--fa-common-brown-2);
                 }
             }
 
@@ -105,7 +112,7 @@
             }
 
             a {
-                color: #666;
+                color: var(--fa-grey-light-2);
                 float: left;
                 font-size: 14px;
                 line-height: 28px;
@@ -113,7 +120,7 @@
                 text-decoration: none;
 
                 &:hover {
-                    color: #c8a165;
+                    color: var(--fa-common-brown-2);
                 }
             }
         }
@@ -159,7 +166,7 @@ span.color {
 
 .product {
     &-option {
-        background: #fff none repeat scroll 0 0;
+        background: var(--fa-common-white) none repeat scroll 0 0;
         height: 50px;
         line-height: 50px;
         padding: 0 30px;
@@ -168,7 +175,7 @@ span.color {
 
     &-style-2 {
         .single-product {
-            background: #fff none repeat scroll 0 0;
+            background: var(--fa-common-white) none repeat scroll 0 0;
             margin-bottom: 30px;
             padding: 15px 15px 25px;
 
@@ -182,11 +189,11 @@ span.color {
             top: 15px;
 
             &.new-label {
-                background: #c8a165 none repeat scroll 0 0;
+                background: var(--fa-common-brown-2) none repeat scroll 0 0;
             }
 
             &.sale-label {
-                background: #c87065 none repeat scroll 0 0;
+                background: var(--fa-dark-brown) none repeat scroll 0 0;
             }
         }
 
@@ -217,15 +224,21 @@ span.color {
         a {
             font-size: 15px;
             position: relative;
-            background: #c0a273;
+            background: var(--fa-common-white);
             padding: 10px;
-            color: white;
+            color: var(--fa-common-black);
             margin-left: 2%;
             text-decoration: none;
             width: 40px;
             height: 40px;
             text-align: center;
             border-radius: 100%;
+            box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+
+            &:hover{
+                background: var(--fa-common-brown-2);
+                color: var(--fa-common-white);
+            }
         }
     }
 }
@@ -238,19 +251,19 @@ span.color {
 
     li {
         a {
-            color: #999;
+            color: var(--fa-textBox-color);
             display: block;
             font-size: 20px;
 
             &.active {
-                color: #c8a165;
+                color: var(--fa-common-brown-2);
             }
         }
     }
 }
 
 .pagination {
-    background: #fff none repeat scroll 0 0;
+    background: var(--fa-common-white) none repeat scroll 0 0;
     display: block;
     height: 50px;
     margin: 0;
@@ -266,22 +279,22 @@ span.color {
             padding: 10px 0;
 
             &:hover a {
-                color: #c8a165;
+                color: var(--fa-common-brown-2);
             }
 
             a {
-                color: #666;
+                color: var(--fa-grey-light-2);
                 display: block;
                 line-height: 30px;
                 padding: 0 6px;
                 text-decoration: none;
 
                 &.active {
-                    color: #c8a165;
+                    color: var(--fa-common-brown-2);
                 }
 
                 i {
-                    color: #666;
+                    color: var(--fa-grey-light-2);
                 }
 
                 i {
@@ -296,7 +309,7 @@ span.color {
 
 .shop-list {
     .single-product {
-        background: #fff none repeat scroll 0 0;
+        background: var(--fa-common-white) none repeat scroll 0 0;
         margin-bottom: 30px;
         padding: 15px;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -335,7 +348,7 @@ span.color {
         font-weight: 400;
         margin-bottom: 20px;
         font-size: 13px;
-        color: #666;
+        color: var(--fa-grey-light-2);
 
         @media (min-width: 768px) and (max-width: 991px) {
             margin-bottom: 25px;
@@ -385,7 +398,7 @@ span.color {
 
 .pro {
     &-rating a {
-        color: #c87065;
+        color: var(--fa-dark-brown);
         font-size: 15px;
         line-height: 28px;
         text-decoration: none;
@@ -393,11 +406,11 @@ span.color {
 
     span {
         font-size: 14px;
-        color: #666;
+        color: var(--fa-grey-light-2);
     }
 
     &-price {
-        color: #c87065;
+        color: var(--fa-dark-brown);
         font-size: 15px;
         font-weight: 700;
         line-height: 28px;
@@ -415,7 +428,7 @@ span.color {
         font-weight: 500;
 
         &:hover {
-            color: #c8a165;
+            color: var(--fa-common-brown-2);
         }
     }
 }
@@ -427,13 +440,14 @@ span.color {
 }
 
 .cart-plus-minus {
-    background: #c0a273 none repeat scroll 0 0;
+    background: var(--fa-common-white) none repeat scroll 0 0;
     float: left;
     height: 40px;
     line-height: 40px;
     overflow: hidden;
     text-align: center;
     width: 25%;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
 
 .qtybutton {
@@ -442,7 +456,7 @@ span.color {
     font-size: 20px;
     position: relative;
     width: 33.3333%;
-    color: white;
+    color: var(--fa-common-black);
 }
 
 .dec.qtybutton::before {
@@ -455,7 +469,7 @@ span.color {
 
 .dec.qtybutton::before,
 .inc.qtybutton::before {
-    background: white;
+    background: var(--fa-common-black);
     content: "";
     height: 14px;
     position: absolute;
@@ -465,14 +479,14 @@ span.color {
 }
 
 input.cart-plus-minus-box {
-    background: #c0a273 none repeat scroll 0 0;
+    background: var(--fa-common-white) none repeat scroll 0 0;
     float: left;
     font-size: 13px;
     margin: 0;
     padding: 0;
     text-align: center;
     width: 33.33%;
-    color: white;
+    color: var(--fa-common-black);
 }
 
 // .product-info {
@@ -488,9 +502,9 @@ input.cart-plus-minus-box {
     position: absolute;
     top: 20px;
     z-index: 2;
-    background: #c8a165 none repeat scroll 0 0;
+    background: var(--fa-common-brown-2) none repeat scroll 0 0;
     border-radius: 5px;
-    color: #fff;
+    color: var(--fa-common-white);
     height: 25px;
     line-height: 25px;
     padding: 0 10px;
@@ -504,7 +518,7 @@ input.cart-plus-minus-box {
 }
 
 .showing {
-    color: #666;
+    color: var(--fa-grey-light-2);
     font-size: 14px;
 }
 
@@ -548,7 +562,7 @@ input.cart-plus-minus-box {
         }
 
         .fr__product__inner h4 a {
-            color: #c8a165;
+            color: var(--fa-common-brown-2);
         }
     }
 }
@@ -626,12 +640,12 @@ input.cart-plus-minus-box {
                 text-align: center;
                 transition: all 0.4s ease 0s;
                 width: 50px;
-                color: #c8a165;
+                color: var(--fa-common-brown-2);
                 font-size: 18px;
 
                 &:hover {
-                    background: #c8a165;
-                    color: white;
+                    background: var(--fa-common-brown-2);
+                    color: var(--fa-common-white);
                 }
             }
         }
@@ -661,8 +675,8 @@ input.cart-plus-minus-box {
     margin-left: 12px;
     border-radius: 5px;
     text-align: center;
-    border: 1px solid #c8a165;
-    color: #c8a165;
+    border: 1px solid var(--fa-common-brown-2);
+    color: var(--fa-common-brown-2);
 }
 
 .slider {
@@ -678,7 +692,7 @@ input.cart-plus-minus-box {
         right: 25%;
         position: absolute;
         border-radius: 5px;
-        background: #c8a165;
+        background: var(--fa-common-brown-2);
     }
 }
 
@@ -700,7 +714,7 @@ input[type="range"]::-webkit-slider-thumb {
     height: 17px;
     width: 17px;
     border-radius: 50%;
-    background: #c8a165;
+    background: var(--fa-common-brown-2);
     pointer-events: auto;
     -webkit-appearance: none;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
@@ -711,7 +725,7 @@ input[type="range"]::-moz-range-thumb {
     width: 17px;
     border: none;
     border-radius: 50%;
-    background: #c8a165;
+    background: var(--fa-common-brown-2);
     pointer-events: auto;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
 }

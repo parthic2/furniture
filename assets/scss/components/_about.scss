@@ -1,3 +1,9 @@
+/** ---------
+ Main about us page css
+ ------- **/
+
+@use "../utils/variables";
+
 .section-box {
     padding-top: 150px;
     padding-bottom: 120px;
@@ -90,7 +96,7 @@
                     display: block;
                     font-size: 18px;
                     font-weight: 500;
-                    color: #333;
+                    color: var(--fa-grey-dark);
                     padding-bottom: 4px;
                 }
             }
@@ -111,7 +117,7 @@
 .special-heading {
     font-size: 38px;
     font-weight: 500;
-    color: #333;
+    color: var(--fa-grey-dark);
     text-align: center;
     position: relative;
     padding-bottom: 16px;
@@ -160,6 +166,12 @@
             }
         }
     }
+}
+
+.socials ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .our-team-page {
@@ -214,7 +226,7 @@
             & .job {
                 font-size: 15px;
                 font-weight: 400;
-                color: #666;
+                color: var(--fa-grey-light-2);
                 display: block;
             }
 
@@ -223,199 +235,16 @@
                 margin-bottom: -10px;
 
                 a {
-                    color: #999;
+                    color: var(--fa-textBox-color);
                     font-size: 18px;
                     padding: 0 8px;
                     text-decoration: none;
 
                     &:hover {
-                        color: #333;
+                        color: var(--fa-grey-dark);
                     }
                 }
             }
         }
-    }
-}
-
-// testimonials css
-// .testimonials-hp-1.testimonials-about-us {
-//     background: #f7f7f7;
-// }
-
-// .testimonials-hp-1.testimonials-about-us .testimonials-content {
-//     background: 0 0;
-// }
-
-// .testimonials-hp-1 .testimonials-content {
-//     margin: 0 65px;
-//     background: #f7f7f7;
-// }
-
-// @media screen and (max-width: 1750px) and (min-width: 1200px) {
-//     .testimonials-hp-1 .item .testimonials-detail {
-//         padding: 150px 80px 40px;
-//     }
-// }
-
-// .testimonials-hp-1 .item .testimonials-detail {
-//     padding: 149px 65px 135px 85px;
-//     text-align: center;
-// }
-
-// .testimonials-hp-1 .item .testimonials-detail svg {
-//     font-size: 90px;
-//     fill: #666;
-// }
-
-// .testimonials-hp-1 .item .testimonials-detail p {
-//     margin-top: 7px;
-//     color: #212529;
-//     font-size: 15px;
-// }
-
-// .testimonials-hp-1 .item .testimonials-detail h5 {
-//     font-size: 20px;
-//     padding: 38px 0 4px;
-// }
-
-// .testimonials-hp-1 .item .left-block.left-block-2 .images {
-//     padding-right: 0;
-//     margin-right: -63px;
-// }
-
-// .testimonials-hp-1 .item .left-block .images {
-//     padding-right: 0;
-//     margin-right: -10px;
-// }
-
-
-// index2.html main page about css
-.overflow-visible {
-    overflow: visible !important;
-}
-
-.cover-background {
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    overflow: hidden;
-    position: relative;
-    background-position: center center !important;
-}
-
-.margin-20px-bottom {
-    margin-bottom: 20px;
-}
-
-.w-70 {
-    width: 70%;
-}
-
-.margin-4-rem-bottom {
-    margin-bottom: 4rem;
-}
-
-.w-55 {
-    width: 55%;
-}
-
-.right-25px {
-    right: 25px;
-}
-
-.bottom-minus-50px {
-    bottom: -50px;
-}
-
-.position-absolute {
-    position: absolute !important;
-}
-
-@media (max-width: 767px) {
-    .sm-no-margin-bottom {
-        margin-bottom: 0 !important;
-    }
-
-    .sm-margin-10-rem-bottom {
-        margin-bottom: 10rem;
-    }
-}
-
-@media (max-width: 991px) {
-    .md-margin-8-rem-bottom {
-        margin-bottom: 8rem;
-    }
-
-    .md-right-15px {
-        right: 15px;
-    }
-
-    .md-bottom-minus-30px {
-        bottom: -30px;
-    }
-}
-
-.about {
-    &__title {
-        margin-bottom: 30px;
-        font-size: 14px;
-        line-height: 20px;
-        font-weight: 500;
-
-        .border {
-            height: 1px;
-            width: 40px;
-            margin-right: 20px;
-            opacity: .7;
-            background-color: #bf8c4c;
-        }
-    }
-
-    &__text {
-        color: #bf8c4c;
-    }
-
-    &__heading {
-        font-weight: 700;
-        width: 85%;
-        margin-bottom: 35px;
-        font-size: 38.9px;
-        line-height: 45px;
-        color: #232323;
-
-        @media (max-width:767px) {
-            margin-bottom: 25px;
-            font-size: 31.35px;
-        }
-    }
-
-    &_desc {
-        color: #828282;
-        font-size: 15px;
-        width: 80%;
-        line-height: 30px;
-    }
-}
-
-
-@media (max-width:1199px) {
-    .lg-w-100 {
-        width: 100% !important
-    }
-}
-
-.btn-fancy {
-    margin-top: 20px;
-    font-size: 12px;
-    letter-spacing: 1px;
-    padding: 12px 28px;
-    background-color: #232323;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 500;
-
-    &:focus,
-    &:hover {
-        background: 0 0;
-        color: #232323;
     }
 }

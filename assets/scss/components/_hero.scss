@@ -1,3 +1,9 @@
+/** ---------
+ Hero section css
+ ------- **/
+
+@use "../utils/variables";
+
 .fa-service__wrapper {
     padding-right: 0;
 
@@ -14,7 +20,7 @@
         top: 80%;
         transform: translateY(-50%);
         z-index: 10;
-        background-color: white;
+        background-color: var(--fa-common-white);
 
         @media only screen and (min-width: 1400px) and (max-width: 1599px) {
             left: 42%;
@@ -64,7 +70,7 @@
             top: 87.2%;
             transform: translateY(-50%);
             z-index: 10;
-            background-color: white;
+            background-color: var(--fa-common-white);
 
             @media only screen and (min-width: 1400px) and (max-width: 1599px) {
                 right: 58%;
@@ -120,7 +126,7 @@
         font-weight: 500;
         font-size: 20px;
         line-height: 27px;
-        color: #4b4b49;
+        color: var(--fa-grey);
         position: relative;
         display: inline-block;
         margin-bottom: 23px;
@@ -135,7 +141,7 @@
         line-height: 1.1;
         font-size: 70px;
         text-transform: capitalize;
-        color: #866340;
+        color: var(--fa-common-brown);
 
         @media only screen and (min-width: 1400px) and (max-width: 1599px) {
             font-size: 65px;
@@ -182,7 +188,7 @@
         font-size: 16px;
         line-height: 32px;
         margin-bottom: 40px;
-        color: #4b4b49;
+        color: var(--fa-grey);
 
         @media only screen and (min-width: 768px) and (max-width: 991px) {
             br {
@@ -237,7 +243,7 @@
 }
 
 .tp-btn-brown {
-    border: 1px solid #866340;
+    border: 1px solid var(--fa-common-brown);
     padding: 0 32px;
     border-radius: 0;
     font-size: 15px;
@@ -248,8 +254,8 @@
     text-transform: uppercase;
 
     &:hover {
-        border: 1px solid #866340;
-        background: #866340;
-        color: #fff;
+        border: 1px solid var(--fa-common-brown);
+        background: var(--fa-common-brown);
+        color: var(--fa-common-white);
     }
 }

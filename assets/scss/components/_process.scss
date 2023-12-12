@@ -1,3 +1,9 @@
+/** ---------
+ Process section css
+ ------- **/
+
+@use "../utils/variables";
+
 .title {
     font-size: 20px;
     font-weight: 700;
@@ -6,7 +12,7 @@
 
 .subtitle {
     font-size: 15px;
-    color: #5b646b;
+    color: var(--fa-grey-light);
 }
 
 .process-section img {

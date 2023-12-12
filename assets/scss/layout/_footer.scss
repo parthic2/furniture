@@ -1,5 +1,11 @@
+/** ---------
+ Footer css
+ ------- **/
+
+@use "../utils/variables";
+
 .inner-footer {
-    background: #f9f6f1;
+    background: var(--fa-bg-light);
 }
 
 @media (max-width:991px) {
@@ -10,9 +16,9 @@
 
 .footer-one {
     #tiva-copyright {
-        background: #866340;
+        background: var(--fa-common-brown);
         font-size: 11px;
-        color: #f9f6f1;
+        color: var(--fa-bg-light);
     }
 
     .inner-footer {
@@ -25,7 +31,7 @@
         }
 
         .block-content {
-            color: #5b646b;
+            color: var(--fa-grey-light);
             font-weight: 400;
             font-size: 13px;
             line-height: 25px;
@@ -65,12 +71,12 @@
             }
 
             ul li a {
-                color: #5b646b;
+                color: var(--fa-grey-light);
                 text-decoration: none;
 
                 &:hover {
                     font-weight: 600;
-                    color: #866340;
+                    color: var(--fa-common-brown);
                 }
             }
         }
@@ -85,18 +91,18 @@
         height: 40px;
         border-radius: 50%;
         transition: all 0.35s ease-in-out;
-        background-color: #866340;
+        background-color: var(--fa-common-brown);
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 15px;
 
         &:hover {
-            background-color: #a28466;
+            background-color: var(--fa-light-brown);
         }
 
         a {
-            color: white !important;
+            color: var(--fa-common-white) !important;
         }
     }
 }
@@ -106,10 +112,10 @@
 
     .input-group .input-group-btn .btn-secondary {
         padding: 8px 20px;
-        color: #fff;
-        border: #866340;
-        background: #866340;
-        border-radius: 0 23px 23px 0 !important;
+        color: var(--fa-common-white);
+        border: var(--fa-common-brown);
+        background: var(--fa-common-brown);
+        border-radius: 0 !important;
         height: 40px;
         font-weight: 500;
         font-size: 11px;
@@ -118,7 +124,7 @@
 
 .title {
     &-content span {
-        color: #222;
+        color: var(--fa-dark);
         font-weight: 600;
     }
 
@@ -127,8 +133,13 @@
         margin-bottom: 16px;
         text-align: left;
         text-transform: uppercase;
-        color: #222;
+        color: var(--fa-dark);
         font-size: 14px;
         line-height: 1.5;
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
     }
 }

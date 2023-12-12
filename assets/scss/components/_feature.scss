@@ -1,13 +1,20 @@
+/** ---------
+ Features page css
+ ------- **/
+
+@use "../utils/variables";
+
 .fa-title {
     font-size: 30px;
     text-transform: capitalize;
     padding-bottom: 20px;
-    color: #866340;
+    color: var(--fa-common-brown);
+    font-weight: bold;
 }
 
 .fa-sub-title {
     font-size: 15px;
-    color: #5b646b;
+    color: var(--fa-grey-light);
     line-height: 25px;
     padding-bottom: 15px;
 
@@ -70,14 +77,14 @@
     font-weight: 500;
     font-size: 15px;
     text-transform: capitalize;
-    color: white;
-    background: #866340;
+    color: var(--fa-common-white);
+    background: var(--fa-common-brown);
     transition: 0.3s;
     text-decoration: none;
     border: none;
 
     &:hover {
-        color: white;
+        color: var(--fa-common-white);
         background-color: rgb(158, 117, 76);
     }
 
@@ -93,7 +100,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--fa-common-white);
     width: 45%;
     align-self: center;
     left: 14px;

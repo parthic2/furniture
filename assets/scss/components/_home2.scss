@@ -1,5 +1,16 @@
+/** ---------
+ Home2 all css page css
+ ------- **/
+
+@use "../utils/variables";
+
 .bg-light-brown {
     background-color: #f9f3eb;
+}
+
+.home2-logo img{
+    width: 50px;
+    height: 50px;
 }
 
 .heading {
@@ -16,13 +27,12 @@
     font-size: 15px;
     padding: 20px 0 20px 0;
     line-height: 25px;
-    color: #a3a3a3;
+    color: var(--fa-grey-2);
 }
 
 .btn-header {
-    background: #c2a773;
+    background: var(--fa-light-brown-2);
     text-transform: uppercase;
-    border-radius: 10px;
     font-weight: 700;
     text-decoration: none;
     padding: 17px 45px;
@@ -43,17 +53,18 @@
     text-transform: capitalize;
     font-size: 30px;
     margin-bottom: 12px;
+    font-weight: bold;
 }
 
 .product__desc {
     font-size: 15px;
-    color: #a3a3a3;
+    color: var(--fa-grey-2);
 }
 
 .line {
     height: 1px;
     width: 61px;
-    background-color: #a3a3a3;
+    background-color: var(--fa-grey-2);
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
@@ -61,7 +72,7 @@
 
 .new-product-item {
     transition: all 300ms ease-in-out;
-    background-color: white;
+    background-color: var(--fa-common-white);
     text-align: start;
 
     &:hover {
@@ -78,7 +89,7 @@
     }
 
     .badge {
-        background: #c2a773;
+        background: var(--fa-light-brown-2);
         position: absolute;
         padding: 8px;
         width: 65px;
@@ -93,10 +104,10 @@
 .info {
     padding: 32px;
     text-align: start;
-    background-color: white;
+    background-color: var(--fa-common-white);
 
     &:hover .name {
-        color: #c2a773;
+        color: var(--fa-light-brown-2);
     }
 
     .name {
@@ -110,12 +121,12 @@
         .new {
             margin-left: 10px;
             font-weight: 600;
-            color: #c2a773;
+            color: var(--fa-light-brown-2);
         }
 
         .old {
             position: relative;
-            color: #a3a3a3;
+            color: var(--fa-grey-2);
 
             &::after {
                 content: "";
@@ -124,7 +135,7 @@
                 bottom: 0;
                 height: 2px;
                 width: 100%;
-                background-color: #a3a3a3;
+                background-color: var(--fa-grey-2);
                 top: 50%;
                 transform: translateY(-50%);
             }
@@ -133,11 +144,11 @@
 
     .ratings p {
         margin-left: 3px;
-        color: #a3a3a3;
+        color: var(--fa-grey-2);
     }
 
     .ratings i {
-        color: #c2a773;
+        color: var(--fa-light-brown-2);
     }
 }
 
@@ -176,17 +187,18 @@
         width: 130px;
         opacity: 0.85;
         transition: all 300ms ease-in-out;
-        background-color: white;
+        background-color: var(--fa-common-white);
         padding: 10px;
     }
 }
 
 // 4th part css
 .featured-deals-item {
+    border-radius: 10px;
     overflow: hidden;
     transition: all 300ms ease-in-out;
     box-shadow: 0px 4px 19px -8px rgba(0, 0, 0, 0.5);
-    background-color: white;
+    background-color: var(--fa-common-white);
 
     .image {
         padding: 10px;
@@ -204,13 +216,13 @@
 
 // 5th part css
 .bg-brown {
-    background-color: #c2a773;
+    background-color: var(--fa-light-brown-2);
 }
 
 .catalog {
     &-right {
-        color: white;
-        padding: 10px;
+        color: var(--fa-common-white);
+        padding: 30px;
 
         .section-title {
             margin-bottom: 32px;
@@ -231,6 +243,11 @@
 // footer css
 .block {
     &-menu {
+        img {
+            width: 50px;
+            height: 50px;
+        }
+
         @media (max-width:991px) {
             padding-top: 20px;
         }
@@ -255,10 +272,10 @@
 
                 a {
                     text-decoration: none;
-                    color: black;
+                    color: var(--fa-common-black);
 
                     &:hover {
-                        color: #c2a773;
+                        color: var(--fa-light-brown-2);
                     }
                 }
             }
@@ -281,7 +298,7 @@
 
             .btn-submit {
                 margin-left: 10px;
-                background: #000;
+                background: var(--fa-common-black);
                 padding: 14px;
                 height: 47px;
                 cursor: pointer;
@@ -293,7 +310,7 @@
                 i {
                     text-align: center;
                     font-size: 20px;
-                    color: white;
+                    color: var(--fa-common-white);
                 }
             }
         }

@@ -1,1599 +1,1781 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A Furniture website">
-    <title>Furniture</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="A Furniture website">
+		<title>Furniture</title>
 
-    <!-- css link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    >
+		<!-- css link -->
+		<link rel="stylesheet" href="assets/css/all.min.css">
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/swiper-bundle.css">
+		<link rel="stylesheet" href="assets/css/spacing.css">
+		<link rel="stylesheet" href="assets/css/animation.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+	</head>
+	<body>
+		<!-- Preloader start -->
+		<div id="preloader">
+			<img
+				id="table"
+				class="icon"
+				src="assets/img/categories/table.svg"
+				alt="table svg"
+			>
+			<img
+				id="chair"
+				class="icon hidden"
+				src="assets/img/categories/chair.svg"
+				alt="chair svg"
+			>
+		</div>
+		<!-- Preloader end -->
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
-    <link rel="stylesheet" href="assets/css/spacing.css">
-    <link rel="stylesheet" href="assets/css/animation.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body>
-    <!-- Preloader start -->
-    <div id="preloader">
-      <img id="table" class="icon" src="assets/img/categories/table.svg" alt="table svg">
-      <img id="chair" class="icon hidden" src="assets/img/categories/chair.svg" alt="chair svg">
-    </div>
-    <!-- Preloader end -->
+		<!-- tp-offcanvas-area-start (for sidebar) -->
+		<div class="tpoffcanvas-area">
+			<div class="tpoffcanvas">
+				<div class="tpoffcanvas__close-btn">
+					<button class="close-btn" aria-label="close">
+						<i class="fa-solid fa-xmark fa-sm"></i>
+					</button>
+				</div>
+				<div class="tpoffcanvas__logo">
+					<a href="index.html" class="home2-logo">
+						<img src="assets/img/banner/logo.png" alt="">
+					</a>
+				</div>
+				<div class="tp-main-menu-mobile d-xl-none"></div>
+			</div>
+		</div>
+		<div class="body-overlay"></div>
+		<!-- tp-offcanvas-area-end -->
 
-    <!-- tp-offcanvas-area-start (for sidebar) -->
-    <div class="tpoffcanvas-area">
-      <div class="tpoffcanvas">
-        <div class="tpoffcanvas__close-btn">
-          <button class="close-btn" aria-label="close">
-            <i class="fa-solid fa-xmark fa-sm"></i>
-          </button>
-        </div>
-        <div class="tpoffcanvas__logo">
-          <a href="index.html">
-            <!-- <img src="" alt="logo"> -->
-            Furniture
-          </a>
-        </div>
-        <div class="tp-main-menu-mobile d-xl-none"></div>
-      </div>
-    </div>
-    <div class="body-overlay"></div>
-    <!-- tp-offcanvas-area-end -->
+		<!-- header start -->
+		<header id="tp-header-height">
+			<div id="header-sticky" class="tp-header__area">
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col-xl-4 col-lg-5 col-md-6 col-sm-6 col-6">
+							<div class="tp-header__left-box d-flex align-items-center">
+								<div class="tp-header__logo">
+									<a href="index.html" aria-label="Furniture">
+										<img src="assets/img/banner/logo.png" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-8 col-lg-7 d-none d-xl-block text-end" style="padding-right: 0 !important;">
+							<div class="tp-header__main-menu">
+								<nav class="tp-main-menu-content">
+									<ul>
+										<li class="has-dropdown">
+											<a href="index.html">home</a>
+											<div class="tp-submenu submenu has-homemenu">
+												<div
+													class="row gx-6 row-cols-1 row-cols-md-2 row-cols-xl-2 row-cols-xxl-2"
+												>
+													<div class="col homemenu">
+														<div class="homemenu-thumb mb-15">
+															<a href="index.html">
+																<img
+																	src="assets/img/banner/hero-banner-1.png"
+																	alt="home banner"
+																	class="img-fluid"
+																	width="250"
+																	height="279"
+																>
+															</a>
+															<div class="homemenu-btn">
+																<a class="tp-menu-btn" href="index.html"
+																	>View Demo</a
+																>
+															</div>
+														</div>
+														<div class="homemenu-content text-center">
+															<h4 class="homemenu-title">
+																<a href="index.html">Home 01</a>
+															</h4>
+														</div>
+													</div>
+													<div class="col homemenu">
+														<div class="homemenu-thumb mb-15">
+															<a href="index2.html">
+																<img
+																	src="assets/img/banner/hero-banner-2.jpg"
+																	alt="home banner"
+																	class="img-fluid"
+																	width="250"
+																	height="279"
+																>
+															</a>
+															<div class="homemenu-btn">
+																<a class="tp-menu-btn" href="index2.html"
+																	>View Demo</a
+																>
+															</div>
+														</div>
+														<div class="homemenu-content text-center">
+															<h4 class="homemenu-title">
+																<a href="index2.html">Home 02</a>
+															</h4>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="product.html">Products</a>
+										</li>
+										<li>
+											<a href="about.html">about</a>
+										</li>
+										<li>
+											<a href="contact.html">contact us</a>
+										</li>
+										<li class="cart">
+											<a href="product.html" aria-label="cart">
+												<i class="fa-solid fa-cart-shopping fa-sm"></i>
+											</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-7 col-md-6 col-sm-6 col-6 d-xl-none">
+							<div
+								class="tp-header__right-box d-flex align-items-center justify-content-end"
+							>
+								<div class="tp-header-2__bar d-xl-none">
+									<button class="tp-menu-bar" aria-label="menu">
+										<i class="fa-solid fa-bars"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header end -->
 
-    <!-- header start -->
-    <header id="tp-header-height">
-      <div id="header-sticky" class="tp-header__area">
-        <div class="container-fluid">
-          <div class="row align-items-center">
-            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-6 col-6">
-              <div class="tp-header__left-box d-flex align-items-center">
-                <div class="tp-header__logo">
-                  <a href="index.html" aria-label="Furniture">
-                    <!-- <img src="assets/img/logo/logo.png" alt="" /> -->
-                    Furniture
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-8 col-lg-7 d-none d-xl-block text-end">
-              <div class="tp-header__main-menu">
-                <nav class="tp-main-menu-content">
-                  <ul>
-                    <li class="has-dropdown">
-                      <a href="index.html">home</a>
-                      <div class="tp-submenu submenu has-homemenu">
-                        <div
-                          class="row gx-6 row-cols-1 row-cols-md-2 row-cols-xl-2 row-cols-xxl-2"
-                        >
-                          <div class="col homemenu">
-                            <div class="homemenu-thumb mb-15">
-                              <a href="index.html">
-                                <img
-                                  src="assets/img/banner/hero-banner-1.png"
-                                  alt="home banner"
-                                  class="img-fluid"
-                                  width="250"
-                                  height="279"
-                                >
-                              </a>
-                              <div class="homemenu-btn">
-                                <a class="tp-menu-btn" href="index.html">View Demo</a>
-                              </div>
-                            </div>
-                            <div class="homemenu-content text-center">
-                              <h4 class="homemenu-title">
-                                <a href="index.html">Home 01</a>
-                              </h4>
-                            </div>
-                          </div>
-                          <div class="col homemenu">
-                            <div class="homemenu-thumb mb-15">
-                              <a href="index2.html">
-                                <img
-                                  src="assets/img/banner/hero-banner-2.jpg"
-                                  alt="home banner"
-                                  class="img-fluid"
-                                  width="250"
-                                  height="279"
-                                >
-                              </a>
-                              <div class="homemenu-btn">
-                                <a class="tp-menu-btn" href="index2.html">View Demo</a>
-                              </div>
-                            </div>
-                            <div class="homemenu-content text-center">
-                              <h4 class="homemenu-title">
-                                <a href="index2.html">Home 02</a>
-                              </h4>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <a href="product.html">Products</a>
-                    </li>
-                    <li>
-                      <a href="about.html">about</a>
-                    </li>
-                    <li>
-                      <a href="contact.html">contact us</a>
-                    </li>
-                    <li class="search">
-                      <i class="fa-solid fa-magnifying-glass fa-sm"></i>
-                    </li>
-                    <li class="cart">
-                      <a href="product.html" aria-label="cart">
-                        <i class="fa-solid fa-cart-shopping fa-sm"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-7 col-md-6 col-sm-6 col-6 d-xl-none">
-              <div
-                class="tp-header__right-box d-flex align-items-center justify-content-end"
-              >
-                <div class="tp-header-2__bar d-xl-none">
-                  <button class="tp-menu-bar" aria-label="menu">
-                    <i class="fa-solid fa-bars"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- header end -->
+		<main class="body-bg">
+			<!-- banner start -->
+			<section class="heading-banner-area overlay-bg">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="heading-banner">
+								<div class="heading-banner-title">
+									<h2>Products</h2>
+								</div>
+								<div class="breadcumbs">
+									<nav aria-label="breadcrumb">
+										<ol class="breadcrumb">
+											<li class="breadcrumb-item">
+												<a href="index.html">Home</a>
+											</li>
+											<li class="breadcrumb-item active" aria-current="page">
+												Products
+											</li>
+										</ol>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- banner end -->
 
-    <main class="body-bg">
-      <!-- banner start -->
-      <div class="heading-banner-area overlay-bg">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="heading-banner">
-                <div class="heading-banner-title">
-                  <h2>Products</h2>
-                </div>
-                <div class="breadcumbs pb-15">
-                  <ul>
-                    <li><a href="#">Home</a></li>
-                    <li>Products</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- banner end -->
+			<!-- PRODUCT-AREA START -->
+			<section class="product-area pt-80 pb-80 product-style-2">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 order-1 order-lg-1">
+							<!-- Widget-Search start -->
+							<aside class="widget widget-search mb-30">
+								<form action="#">
+									<input type="text" placeholder="Search here...">
+									<button type="submit" aria-label="submit">
+										<i class="fa-solid fa-magnifying-glass fa-sm"></i>
+									</button>
+								</form>
+							</aside>
+							<!-- Widget-search end -->
+							<!-- Widget-Categories start -->
+							<aside class="widget widget-color mb-30">
+								<div class="widget-title">
+									<h4>Categories</h4>
+								</div>
+								<div
+									id="cat-treeview"
+									class="widget-info product-cat boxscrol2"
+								>
+									<ul class="treeview">
+										<li><span>Small furniture</span></li>
+										<li><span>nightstands</span></li>
+										<li><span>dressers</span></li>
+										<li><span>Bookcase</span></li>
+										<li><span>tables</span></li>
+										<li><span>sofas</span></li>
+										<li><span>chairs</span></li>
+									</ul>
+								</div>
+							</aside>
+							<!-- Widget-categories end -->
+							<!-- Shop-Filter start -->
+							<aside class="widget shop-filter mb-30">
+								<div class="widget-title">
+									<h4>Price</h4>
+								</div>
+								<div class="widget-info">
+									<div class="price_filter">
+										<div class="price-input">
+											<div class="field">
+												<span>Min</span>
+												<input type="number" class="input-min" value="2500">
+											</div>
+											<!-- <div class="separator">-</div> -->
+											<div class="field ml-10">
+												<span>Max</span>
+												<input type="number" class="input-max" value="7500">
+											</div>
+										</div>
+										<div class="slider">
+											<div class="progress"></div>
+										</div>
+										<div class="range-input">
+											<input
+												type="range"
+												class="range-min"
+												min="0"
+												max="10000"
+												value="2500"
+												step="100"
+											>
+											<input
+												type="range"
+												class="range-max"
+												min="0"
+												max="10000"
+												value="7500"
+												step="100"
+											>
+										</div>
+									</div>
+								</div>
+							</aside>
+							<!-- Shop-Filter end -->
+							<!-- Widget-Color start -->
+							<aside class="widget widget-color mb-30">
+								<div class="widget-title">
+									<h4>Color</h4>
+								</div>
+								<div class="widget-info color-filter clearfix">
+									<ul>
+										<li>
+											<a href="#"
+												><span class="color color-1"></span>LightSalmon<span
+													class="count"
+													>12</span
+												></a
+											>
+										</li>
+										<li>
+											<a href="#"
+												><span class="color color-2"></span>Dark Salmon<span
+													class="count"
+													>20</span
+												></a
+											>
+										</li>
+										<li>
+											<a href="#"
+												><span class="color color-3"></span>Tomato<span
+													class="count"
+													>59</span
+												></a
+											>
+										</li>
+										<li>
+											<a class="active" href="#"
+												><span class="color color-4"></span>Deep Sky Blue<span
+													class="count"
+													>45</span
+												></a
+											>
+										</li>
+										<li>
+											<a href="#"
+												><span class="color color-5"></span>Electric Purple<span
+													class="count"
+													>78</span
+												></a
+											>
+										</li>
+										<li>
+											<a href="#"
+												><span class="color color-6"></span>Atlantis<span
+													class="count"
+													>10</span
+												></a
+											>
+										</li>
+										<li>
+											<a href="#"
+												><span class="color color-7"></span>Deep Lilac<span
+													class="count"
+													>15</span
+												></a
+											>
+										</li>
+									</ul>
+								</div>
+							</aside>
+							<!-- Widget-Color end -->
+							<!-- Widget-banner start -->
+							<aside class="widget widget-banner hidden-sm">
+								<div class="widget-info widget-banner-img">
+									<a href="#">
+										<img
+											src="assets/img/banner/5.jpg"
+											alt="Banner"
+											class="img-fluid"
+											width="231"
+											height="282"
+									></a>
+								</div>
+							</aside>
+							<!-- Widget-banner end -->
+						</div>
 
-      <!-- PRODUCT-AREA START -->
-      <div class="product-area pt-80 pb-80 product-style-2">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 order-1 order-lg-1">
-              <!-- Widget-Search start -->
-              <aside class="widget widget-search mb-30">
-                <form action="#">
-                  <input type="text" placeholder="Search here...">
-                  <button type="submit" aria-label="submit">
-                    <i class="fa-solid fa-magnifying-glass fa-sm"></i>
-                  </button>
-                </form>
-              </aside>
-              <!-- Widget-search end -->
-              <!-- Widget-Categories start -->
-              <aside class="widget widget-color mb-30">
-                <div class="widget-title">
-                  <h4>Categories</h4>
-                </div>
-                <div
-                  id="cat-treeview"
-                  class="widget-info product-cat boxscrol2"
-                >
-                  <ul class="treeview">
-                    <li><span>Small furniture</span></li>
-                    <li><span>nightstands</span></li>
-                    <li><span>dressers</span></li>
-                    <li><span>Bookcase</span></li>
-                    <li><span>tables</span></li>
-                    <li><span>sofas</span></li>
-                    <li><span>chairs</span></li>
-                  </ul>
-                </div>
-              </aside>
-              <!-- Widget-categories end -->
-              <!-- Shop-Filter start -->
-              <aside class="widget shop-filter mb-30">
-                <div class="widget-title">
-                  <h4>Price</h4>
-                </div>
-                <div class="widget-info">
-                  <div class="price_filter">
-                    <div class="price-input">
-                      <div class="field">
-                        <span>Min</span>
-                        <input type="number" class="input-min" value="2500">
-                      </div>
-                      <!-- <div class="separator">-</div> -->
-                      <div class="field ml-10">
-                        <span>Max</span>
-                        <input type="number" class="input-max" value="7500">
-                      </div>
-                    </div>
-                    <div class="slider">
-                      <div class="progress"></div>
-                    </div>
-                    <div class="range-input">
-                      <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                      <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
-                    </div>
-                  </div>
-                </div>
-              </aside>
-              <!-- Shop-Filter end -->
-              <!-- Widget-Color start -->
-              <aside class="widget widget-color mb-30">
-                <div class="widget-title">
-                  <h4>Color</h4>
-                </div>
-                <div class="widget-info color-filter clearfix">
-                  <ul>
-                    <li>
-                      <a href="#"
-                        ><span class="color color-1"></span>LightSalmon<span
-                          class="count"
-                          >12</span
-                        ></a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><span class="color color-2"></span>Dark Salmon<span
-                          class="count"
-                          >20</span
-                        ></a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><span class="color color-3"></span>Tomato<span
-                          class="count"
-                          >59</span
-                        ></a
-                      >
-                    </li>
-                    <li>
-                      <a class="active" href="#"
-                        ><span class="color color-4"></span>Deep Sky Blue<span
-                          class="count"
-                          >45</span
-                        ></a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><span class="color color-5"></span>Electric Purple<span
-                          class="count"
-                          >78</span
-                        ></a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><span class="color color-6"></span>Atlantis<span
-                          class="count"
-                          >10</span
-                        ></a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><span class="color color-7"></span>Deep Lilac<span
-                          class="count"
-                          >15</span
-                        ></a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </aside>
-              <!-- Widget-Color end -->
-              <!-- Widget-banner start -->
-              <aside class="widget widget-banner hidden-sm">
-                <div class="widget-info widget-banner-img">
-                  <a href="#">
-                    <img
-                      src="assets/img/banner/5.jpg"
-                      alt="Banner"
-                      class="img-fluid"
-                      width="231"
-                      height="282"
-                  ></a>
-                </div>
-              </aside>
-              <!-- Widget-banner end -->
-            </div>
+						<div class="col-lg-9 order-2 order-lg-1 tab-space">
+							<!-- Shop-Content End -->
+							<div class="shop-content mt-tab-30 mb-30 mb-lg-0">
+								<div class="product-option mb-30 clearfix">
+									<ul class="nav d-block shop-tab" role="tablist">
+										<li>
+											<a
+												class="active"
+												href="#grid-view"
+												data-bs-toggle="tab"
+												role="tab"
+												aria-selected="true"
+											>
+												<i class="fa-solid fa-grip fa-sm"></i>
+											</a>
+										</li>
+										<li>
+											<a
+												href="#list-view"
+												data-bs-toggle="tab"
+												role="tab"
+												aria-selected="false"
+											>
+												<i class="fa-solid fa-list fa-sm"></i>
+											</a>
+										</li>
+									</ul>
+									<div class="showing text-end d-none d-md-block">
+										<p class="mb-0">Showing 01-09 of 17 Results</p>
+									</div>
+								</div>
+								<!-- Tab panes -->
+								<div class="tab-content">
+									<div class="tab-pane active" id="grid-view">
+										<div class="row">
+											<!-- Single-product start -->
+											<div class="col-lg-4 col-md-6 mb-20">
+												<div class="category">
+													<div class="ht__cat__thumb">
+														<a href="#">
+															<img
+																src="assets/img/product/product-1-1.jpg"
+																alt="Product"
+																class="img-fluid"
+															>
+														</a>
+													</div>
+													<div class="fr__hover__info">
+														<ul class="product__action">
+															<li>
+																<a href="#"
+																	><i class="fa-regular fa-heart fa-sm"></i
+																></a>
+															</li>
+															<li>
+																<a href="#"
+																	><i class="fa-solid fa-cart-plus fa-sm"></i
+																></a>
+															</li>
+															<li>
+																<a href="#"
+																	><i
+																		class="fa-solid fa-arrows-rotate fa-sm"
+																	></i
+																></a>
+															</li>
+														</ul>
+													</div>
+													<div class="fr__product__inner">
+														<div class="fix text-center">
+															<span class="pro-rating">
+																<a href="#" aria-label="star">
+																	<i class="fa-solid fa-star fa-sm"></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i class="fa-solid fa-star fa-sm"></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i class="fa-solid fa-star fa-sm"></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i
+																		class="fa-regular fa-star-half-stroke fa-sm"
+																	></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i
+																		class="fa-regular fa-star-half-stroke fa-sm"
+																	></i>
+																</a>
+															</span>
+														</div>
+														<h4><a href="#">Classic Yellow Chair</a></h4>
+														<ul class="fr__pro__prize">
+															<li class="old__prize"><del>$30.30</del></li>
+															<li>$25.90</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<!-- Single-product end -->
+											<!-- Single-product start -->
+											<div class="col-lg-4 col-md-6 mb-20">
+												<div class="category">
+													<div class="ht__cat__thumb">
+														<a href="#">
+															<img
+																src="assets/img/product/product-1-2.jpg"
+																alt="Product"
+																class="img-fluid"
+															>
+														</a>
+													</div>
+													<div class="fr__hover__info">
+														<ul class="product__action">
+															<li>
+																<a href="#"
+																	><i class="fa-regular fa-heart fa-sm"></i
+																></a>
+															</li>
+															<li>
+																<a href="#"
+																	><i class="fa-solid fa-cart-plus fa-sm"></i
+																></a>
+															</li>
+															<li>
+																<a href="#"
+																	><i
+																		class="fa-solid fa-arrows-rotate fa-sm"
+																	></i
+																></a>
+															</li>
+														</ul>
+													</div>
+													<div class="fr__product__inner">
+														<div class="fix text-center">
+															<span class="pro-rating">
+																<a href="#" aria-label="star">
+																	<i class="fa-solid fa-star fa-sm"></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i class="fa-solid fa-star fa-sm"></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i class="fa-solid fa-star fa-sm"></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i
+																		class="fa-regular fa-star-half-stroke fa-sm"
+																	></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i
+																		class="fa-regular fa-star-half-stroke fa-sm"
+																	></i>
+																</a>
+															</span>
+														</div>
+														<h4><a href="#">table & chair combo</a></h4>
+														<ul class="fr__pro__prize">
+															<li class="old__prize"><del>$90.30</del></li>
+															<li>$80.90</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<!-- Single-product end -->
+											<!-- Single-product start -->
+											<div class="col-lg-4 col-md-6 mb-20">
+												<div class="category">
+													<div class="ht__cat__thumb">
+														<a href="#">
+															<img
+																src="assets/img/product/product-1-3.jpg"
+																alt="Product"
+																class="img-fluid"
+															>
+														</a>
+													</div>
+													<div class="fr__hover__info">
+														<ul class="product__action">
+															<li>
+																<a href="#"
+																	><i class="fa-regular fa-heart fa-sm"></i
+																></a>
+															</li>
+															<li>
+																<a href="#"
+																	><i class="fa-solid fa-cart-plus fa-sm"></i
+																></a>
+															</li>
+															<li>
+																<a href="#"
+																	><i
+																		class="fa-solid fa-arrows-rotate fa-sm"
+																	></i
+																></a>
+															</li>
+														</ul>
+													</div>
+													<div class="fr__product__inner">
+														<div class="fix text-center">
+															<span class="pro-rating">
+																<a href="#" aria-label="star">
+																	<i class="fa-solid fa-star fa-sm"></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i class="fa-solid fa-star fa-sm"></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i class="fa-solid fa-star fa-sm"></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i
+																		class="fa-regular fa-star-half-stroke fa-sm"
+																	></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i
+																		class="fa-regular fa-star-half-stroke fa-sm"
+																	></i>
+																</a>
+															</span>
+														</div>
+														<h4><a href="#">Trendy White sofa</a></h4>
+														<ul class="fr__pro__prize">
+															<li class="old__prize"><del>$700.00</del></li>
+															<li>$650.00</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<!-- Single-product end -->
+											<!-- Single-product start -->
+											<div class="col-lg-4 col-md-6 mb-20">
+												<div class="category">
+													<div class="ht__cat__thumb">
+														<a href="#">
+															<img
+																src="assets/img/product/product-1-4.jpg"
+																alt="Product"
+																class="img-fluid"
+															>
+														</a>
+													</div>
+													<div class="fr__hover__info">
+														<ul class="product__action">
+															<li>
+																<a href="#"
+																	><i class="fa-regular fa-heart fa-sm"></i
+																></a>
+															</li>
+															<li>
+																<a href="#"
+																	><i class="fa-solid fa-cart-plus fa-sm"></i
+																></a>
+															</li>
+															<li>
+																<a href="#"
+																	><i
+																		class="fa-solid fa-arrows-rotate fa-sm"
+																	></i
+																></a>
+															</li>
+														</ul>
+													</div>
+													<div class="fr__product__inner">
+														<div class="fix text-center">
+															<span class="pro-rating">
+																<a href="#" aria-label="star">
+																	<i class="fa-solid fa-star fa-sm"></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i class="fa-solid fa-star fa-sm"></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i class="fa-solid fa-star fa-sm"></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i
+																		class="fa-regular fa-star-half-stroke fa-sm"
+																	></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i
+																		class="fa-regular fa-star-half-stroke fa-sm"
+																	></i>
+																</a>
+															</span>
+														</div>
+														<h4><a href="#">Modern Bookcase</a></h4>
+														<ul class="fr__pro__prize">
+															<li class="old__prize"><del>$55.20</del></li>
+															<li>$51.00</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<!-- Single-product end -->
+											<!-- Single-product start -->
+											<div class="col-lg-4 col-md-6 mb-20">
+												<div class="category">
+													<div class="ht__cat__thumb">
+														<a href="#">
+															<img
+																src="assets/img/product/product-1-5.jpg"
+																alt="Product"
+																class="img-fluid"
+															>
+														</a>
+													</div>
+													<div class="fr__hover__info">
+														<ul class="product__action">
+															<li>
+																<a href="#"
+																	><i class="fa-regular fa-heart fa-sm"></i
+																></a>
+															</li>
+															<li>
+																<a href="#"
+																	><i class="fa-solid fa-cart-plus fa-sm"></i
+																></a>
+															</li>
+															<li>
+																<a href="#"
+																	><i
+																		class="fa-solid fa-arrows-rotate fa-sm"
+																	></i
+																></a>
+															</li>
+														</ul>
+													</div>
+													<div class="fr__product__inner">
+														<div class="fix text-center">
+															<span class="pro-rating">
+																<a href="#" aria-label="star">
+																	<i class="fa-solid fa-star fa-sm"></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i class="fa-solid fa-star fa-sm"></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i class="fa-solid fa-star fa-sm"></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i
+																		class="fa-regular fa-star-half-stroke fa-sm"
+																	></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i
+																		class="fa-regular fa-star-half-stroke fa-sm"
+																	></i>
+																</a>
+															</span>
+														</div>
+														<h4><a href="#">Night Lamps table</a></h4>
+														<ul class="fr__pro__prize">
+															<li class="old__prize"><del>$30.00</del></li>
+															<li>$25.00</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<!-- Single-product end -->
+											<!-- Single-product start -->
+											<div class="col-lg-4 col-md-6 mb-20">
+												<div class="category">
+													<div class="ht__cat__thumb">
+														<a href="#">
+															<img
+																src="assets/img/product/product-1-6.jpg"
+																alt="Product"
+																class="img-fluid"
+															>
+														</a>
+													</div>
+													<div class="fr__hover__info">
+														<ul class="product__action">
+															<li>
+																<a href="#"
+																	><i class="fa-regular fa-heart fa-sm"></i
+																></a>
+															</li>
+															<li>
+																<a href="#"
+																	><i class="fa-solid fa-cart-plus fa-sm"></i
+																></a>
+															</li>
+															<li>
+																<a href="#"
+																	><i
+																		class="fa-solid fa-arrows-rotate fa-sm"
+																	></i
+																></a>
+															</li>
+														</ul>
+													</div>
+													<div class="fr__product__inner">
+														<div class="fix text-center">
+															<span class="pro-rating">
+																<a href="#" aria-label="star">
+																	<i class="fa-solid fa-star fa-sm"></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i class="fa-solid fa-star fa-sm"></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i class="fa-solid fa-star fa-sm"></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i
+																		class="fa-regular fa-star-half-stroke fa-sm"
+																	></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i
+																		class="fa-regular fa-star-half-stroke fa-sm"
+																	></i>
+																</a>
+															</span>
+														</div>
+														<h4><a href="#">dining table</a></h4>
+														<ul class="fr__pro__prize">
+															<li class="old__prize"><del>$3000.00</del></li>
+															<li>$2500.00</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<!-- Single-product end -->
+											<!-- Single-product start -->
+											<div class="col-lg-4 col-md-6 mb-20">
+												<div class="category">
+													<div class="ht__cat__thumb">
+														<a href="#">
+															<img
+																src="assets/img/product/product-1-7.jpg"
+																alt="Product"
+																class="img-fluid"
+															>
+														</a>
+													</div>
+													<div class="fr__hover__info">
+														<ul class="product__action">
+															<li>
+																<a href="#"
+																	><i class="fa-regular fa-heart fa-sm"></i
+																></a>
+															</li>
+															<li>
+																<a href="#"
+																	><i class="fa-solid fa-cart-plus fa-sm"></i
+																></a>
+															</li>
+															<li>
+																<a href="#"
+																	><i
+																		class="fa-solid fa-arrows-rotate fa-sm"
+																	></i
+																></a>
+															</li>
+														</ul>
+													</div>
+													<div class="fr__product__inner">
+														<div class="fix text-center">
+															<span class="pro-rating">
+																<a href="#" aria-label="star">
+																	<i class="fa-solid fa-star fa-sm"></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i class="fa-solid fa-star fa-sm"></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i class="fa-solid fa-star fa-sm"></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i
+																		class="fa-regular fa-star-half-stroke fa-sm"
+																	></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i
+																		class="fa-regular fa-star-half-stroke fa-sm"
+																	></i>
+																</a>
+															</span>
+														</div>
+														<h4><a href="#">Living room sofa set</a></h4>
+														<ul class="fr__pro__prize">
+															<li class="old__prize"><del>$5000.00</del></li>
+															<li>$4000.00</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<!-- Single-product end -->
+											<!-- Single-product start -->
+											<div class="col-lg-4 col-md-6 mb-20">
+												<div class="category">
+													<div class="ht__cat__thumb">
+														<a href="#">
+															<img
+																src="assets/img/product/product-1-8.jpg"
+																alt="Product"
+																class="img-fluid"
+															>
+														</a>
+													</div>
+													<div class="fr__hover__info">
+														<ul class="product__action">
+															<li>
+																<a href="#"
+																	><i class="fa-regular fa-heart fa-sm"></i
+																></a>
+															</li>
+															<li>
+																<a href="#"
+																	><i class="fa-solid fa-cart-plus fa-sm"></i
+																></a>
+															</li>
+															<li>
+																<a href="#"
+																	><i
+																		class="fa-solid fa-arrows-rotate fa-sm"
+																	></i
+																></a>
+															</li>
+														</ul>
+													</div>
+													<div class="fr__product__inner">
+														<div class="fix text-center">
+															<span class="pro-rating">
+																<a href="#" aria-label="star">
+																	<i class="fa-solid fa-star fa-sm"></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i class="fa-solid fa-star fa-sm"></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i class="fa-solid fa-star fa-sm"></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i
+																		class="fa-regular fa-star-half-stroke fa-sm"
+																	></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i
+																		class="fa-regular fa-star-half-stroke fa-sm"
+																	></i>
+																</a>
+															</span>
+														</div>
+														<h4><a href="#">Classic chair</a></h4>
+														<ul class="fr__pro__prize">
+															<li class="old__prize"><del>$50.30</del></li>
+															<li>$25.90</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<!-- Single-product end -->
+											<!-- Single-product start -->
+											<div class="col-lg-4 col-md-6 mb-20">
+												<div class="category">
+													<div class="ht__cat__thumb">
+														<a href="#">
+															<img
+																src="assets/img/product/product-1-9.jpg"
+																alt="Product"
+																class="img-fluid"
+															>
+														</a>
+													</div>
+													<div class="fr__hover__info">
+														<ul class="product__action">
+															<li>
+																<a href="#"
+																	><i class="fa-regular fa-heart fa-sm"></i
+																></a>
+															</li>
+															<li>
+																<a href="#"
+																	><i class="fa-solid fa-cart-plus fa-sm"></i
+																></a>
+															</li>
+															<li>
+																<a href="#"
+																	><i
+																		class="fa-solid fa-arrows-rotate fa-sm"
+																	></i
+																></a>
+															</li>
+														</ul>
+													</div>
+													<div class="fr__product__inner">
+														<div class="fix text-center">
+															<span class="pro-rating">
+																<a href="#" aria-label="star">
+																	<i class="fa-solid fa-star fa-sm"></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i class="fa-solid fa-star fa-sm"></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i class="fa-solid fa-star fa-sm"></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i
+																		class="fa-regular fa-star-half-stroke fa-sm"
+																	></i>
+																</a>
+																<a href="#" aria-label="star">
+																	<i
+																		class="fa-regular fa-star-half-stroke fa-sm"
+																	></i>
+																</a>
+															</span>
+														</div>
+														<h4><a href="#">wall furniture</a></h4>
+														<ul class="fr__pro__prize">
+															<li class="old__prize"><del>$40.00</del></li>
+															<li>$30.00</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<!-- Single-product end -->
+										</div>
+									</div>
 
-            <div class="col-lg-9 order-2 order-lg-1 tab-space">
-              <!-- Shop-Content End -->
-              <div class="shop-content mt-tab-30 mb-30 mb-lg-0">
-                <div class="product-option mb-30 clearfix">
-                  <ul class="nav d-block shop-tab" role="tablist">
-                    <li>
-                      <a class="active" href="#grid-view" data-bs-toggle="tab" role="tab" aria-selected="true">
-                        <i class="fa-solid fa-grip fa-sm"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#list-view" data-bs-toggle="tab" role="tab" aria-selected="false">
-                        <i class="fa-solid fa-list fa-sm"></i>
-                      </a>
-                    </li>
-                  </ul>
-                  <div class="showing text-end d-none d-md-block">
-                    <p class="mb-0">Showing 01-09 of 17 Results</p>
-                  </div>
-                </div>
-                <!-- Tab panes -->
-                <div class="tab-content">
-                  <div class="tab-pane active" id="grid-view">
-                    <div class="row">
-                      <!-- Single-product start -->
-                      <div class="col-lg-4 col-md-6 mb-20">
-                        <div class="category">
-                          <div class="ht__cat__thumb">
-                              <a href="#">
-                                <img 
-                                  src="assets/img/product/product-1-1.jpg"
-                                  alt="Product"
-                                  class="img-fluid"
-                                >
-                              </a>
-                          </div>
-                          <div class="fr__hover__info">
-                              <ul class="product__action">
-                                <li><a href="#"><i class="fa-regular fa-heart fa-sm"></i></a></li>
-                                <li><a href="#"><i class="fa-solid fa-cart-plus fa-sm"></i></a></li>
-                                <li><a href="#"><i class="fa-solid fa-arrows-rotate fa-sm"></i></a></li>
-                              </ul>
-                          </div>
-                          <div class="fr__product__inner">
-                            <div class="fix text-center">
-                              <span class="pro-rating">
-                                <a href="#" aria-label="star">
-                                  <i class="fa-solid fa-star fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-solid fa-star fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-solid fa-star fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i
-                                    class="fa-regular fa-star-half-stroke fa-sm"
-                                  ></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i
-                                    class="fa-regular fa-star-half-stroke fa-sm"
-                                  ></i>
-                                </a>
-                              </span>
-                            </div>
-                            <h4><a href="#">Classic Yellow Chair</a></h4>
-                            <ul class="fr__pro__prize">
-                              <li class="old__prize"><del>$30.30</del></li>
-                              <li>$25.90</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Single-product end -->
-                      <!-- Single-product start -->
-                      <div class="col-lg-4 col-md-6 mb-20">
-                        <div class="category">
-                          <div class="ht__cat__thumb">
-                            <a href="#">
-                              <img
-                                src="assets/img/product/product-1-2.jpg"
-                                alt="Product"
-                                class="img-fluid"
-                              >
-                            </a>
-                          </div>
-                          <div class="fr__hover__info">
-                            <ul class="product__action">
-                              <li>
-                                <a href="#"><i class="fa-regular fa-heart fa-sm"></i></a>
-                              </li>
-                              <li>
-                                <a href="#"><i class="fa-solid fa-cart-plus fa-sm"></i></a>
-                              </li>
-                              <li>
-                                <a href="#"><i class="fa-solid fa-arrows-rotate fa-sm"></i></a>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="fr__product__inner">
-                            <div class="fix text-center">
-                              <span class="pro-rating">
-                                <a href="#" aria-label="star">
-                                  <i class="fa-solid fa-star fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-solid fa-star fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-solid fa-star fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-regular fa-star-half-stroke fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-regular fa-star-half-stroke fa-sm"></i>
-                                </a>
-                              </span>
-                            </div>
-                            <h4><a href="#">table & chair combo</a></h4>
-                            <ul class="fr__pro__prize">
-                              <li class="old__prize"><del>$90.30</del></li>
-                              <li>$80.90</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Single-product end -->
-                      <!-- Single-product start -->
-                      <div class="col-lg-4 col-md-6 mb-20">
-                        <div class="category">
-                          <div class="ht__cat__thumb">
-                            <a href="#">
-                              <img 
-                                src="assets/img/product/product-1-3.jpg"
-                                alt="Product"
-                                class="img-fluid"
-                              >
-                            </a>
-                          </div>
-                          <div class="fr__hover__info">
-                            <ul class="product__action">
-                              <li>
-                                <a href="#"><i class="fa-regular fa-heart fa-sm"></i></a>
-                              </li>
-                              <li>
-                                <a href="#"><i class="fa-solid fa-cart-plus fa-sm"></i></a>
-                              </li>
-                              <li>
-                                <a href="#"><i class="fa-solid fa-arrows-rotate fa-sm"></i></a>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="fr__product__inner">
-                            <div class="fix text-center">
-                              <span class="pro-rating">
-                                <a href="#" aria-label="star">
-                                  <i class="fa-solid fa-star fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-solid fa-star fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-solid fa-star fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-regular fa-star-half-stroke fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-regular fa-star-half-stroke fa-sm"></i>
-                                </a>
-                              </span>
-                            </div>
-                            <h4><a href="#">Trendy White sofa</a></h4>
-                            <ul class="fr__pro__prize">
-                              <li class="old__prize"><del>$700.00</del></li>
-                              <li>$650.00</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Single-product end -->
-                      <!-- Single-product start -->
-                      <div class="col-lg-4 col-md-6 mb-20">
-                        <div class="category">
-                          <div class="ht__cat__thumb">
-                            <a href="#">
-                              <img 
-                                src="assets/img/product/product-1-4.jpg"
-                                alt="Product"
-                                class="img-fluid"
-                              >
-                            </a>
-                          </div>
-                          <div class="fr__hover__info">
-                            <ul class="product__action">
-                              <li>
-                                <a href="#"><i class="fa-regular fa-heart fa-sm"></i></a>
-                              </li>
-                              <li>
-                                <a href="#"><i class="fa-solid fa-cart-plus fa-sm"></i></a>
-                              </li>
-                              <li>
-                                <a href="#"><i class="fa-solid fa-arrows-rotate fa-sm"></i></a>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="fr__product__inner">
-                            <div class="fix text-center">
-                              <span class="pro-rating">
-                                <a href="#" aria-label="star">
-                                  <i class="fa-solid fa-star fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-solid fa-star fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-solid fa-star fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-regular fa-star-half-stroke fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-regular fa-star-half-stroke fa-sm"></i>
-                                </a>
-                              </span>
-                            </div>
-                            <h4><a href="#">Modern Bookcase</a></h4>
-                            <ul class="fr__pro__prize">
-                              <li class="old__prize"><del>$55.20</del></li>
-                              <li>$51.00</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Single-product end -->
-                      <!-- Single-product start -->
-                      <div class="col-lg-4 col-md-6 mb-20">
-                        <div class="category">
-                          <div class="ht__cat__thumb">
-                            <a href="#">
-                              <img 
-                                src="assets/img/product/product-1-5.jpg"
-                                alt="Product"
-                                class="img-fluid"
-                              >
-                            </a>
-                          </div>
-                          <div class="fr__hover__info">
-                            <ul class="product__action">
-                              <li>
-                                <a href="#"><i class="fa-regular fa-heart fa-sm"></i></a>
-                              </li>
-                              <li>
-                                <a href="#"><i class="fa-solid fa-cart-plus fa-sm"></i></a>
-                              </li>
-                              <li>
-                                <a href="#"><i class="fa-solid fa-arrows-rotate fa-sm"></i></a>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="fr__product__inner">
-                            <div class="fix text-center">
-                              <span class="pro-rating">
-                                <a href="#" aria-label="star">
-                                  <i class="fa-solid fa-star fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-solid fa-star fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-solid fa-star fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-regular fa-star-half-stroke fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-regular fa-star-half-stroke fa-sm"></i>
-                                </a>
-                              </span>
-                            </div>
-                            <h4><a href="#">Night Lamps table</a></h4>
-                            <ul class="fr__pro__prize">
-                              <li class="old__prize"><del>$30.00</del></li>
-                              <li>$25.00</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Single-product end -->
-                      <!-- Single-product start -->
-                      <div class="col-lg-4 col-md-6 mb-20">
-                        <div class="category">
-                          <div class="ht__cat__thumb">
-                            <a href="#">
-                              <img 
-                                src="assets/img/product/product-1-6.jpg"
-                                alt="Product"
-                                class="img-fluid"
-                              >
-                            </a>
-                          </div>
-                          <div class="fr__hover__info">
-                            <ul class="product__action">
-                              <li>
-                                <a href="#"><i class="fa-regular fa-heart fa-sm"></i></a>
-                              </li>
-                              <li>
-                                <a href="#"><i class="fa-solid fa-cart-plus fa-sm"></i></a>
-                              </li>
-                              <li>
-                                <a href="#"><i class="fa-solid fa-arrows-rotate fa-sm"></i></a>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="fr__product__inner">
-                            <div class="fix text-center">
-                              <span class="pro-rating">
-                                <a href="#" aria-label="star">
-                                  <i class="fa-solid fa-star fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-solid fa-star fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-solid fa-star fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-regular fa-star-half-stroke fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-regular fa-star-half-stroke fa-sm"></i>
-                                </a>
-                              </span>
-                            </div>
-                            <h4><a href="#">dining table</a></h4>
-                            <ul class="fr__pro__prize">
-                              <li class="old__prize"><del>$3000.00</del></li>
-                              <li>$2500.00</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Single-product end -->
-                      <!-- Single-product start -->
-                      <div class="col-lg-4 col-md-6 mb-20">
-                        <div class="category">
-                          <div class="ht__cat__thumb">
-                            <a href="#">
-                              <img 
-                                src="assets/img/product/product-1-7.jpg"
-                                alt="Product"
-                                class="img-fluid"
-                              >
-                            </a>
-                          </div>
-                          <div class="fr__hover__info">
-                            <ul class="product__action">
-                              <li>
-                                <a href="#"><i class="fa-regular fa-heart fa-sm"></i></a>
-                              </li>
-                              <li>
-                                <a href="#"><i class="fa-solid fa-cart-plus fa-sm"></i></a>
-                              </li>
-                              <li>
-                                <a href="#"><i class="fa-solid fa-arrows-rotate fa-sm"></i></a>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="fr__product__inner">
-                            <div class="fix text-center">
-                              <span class="pro-rating">
-                                <a href="#" aria-label="star">
-                                  <i class="fa-solid fa-star fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-solid fa-star fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-solid fa-star fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-regular fa-star-half-stroke fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-regular fa-star-half-stroke fa-sm"></i>
-                                </a>
-                              </span>
-                            </div>
-                            <h4><a href="#">Living room sofa set</a></h4>
-                            <ul class="fr__pro__prize">
-                              <li class="old__prize"><del>$5000.00</del></li>
-                              <li>$4000.00</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Single-product end -->
-                      <!-- Single-product start -->
-                      <div class="col-lg-4 col-md-6 mb-20">
-                        <div class="category">
-                          <div class="ht__cat__thumb">
-                            <a href="#">
-                              <img 
-                                src="assets/img/product/product-1-8.jpg"
-                                alt="Product"
-                                class="img-fluid"
-                              >
-                            </a>
-                          </div>
-                          <div class="fr__hover__info">
-                            <ul class="product__action">
-                              <li>
-                                <a href="#"><i class="fa-regular fa-heart fa-sm"></i></a>
-                              </li>
-                              <li>
-                                <a href="#"><i class="fa-solid fa-cart-plus fa-sm"></i></a>
-                              </li>
-                              <li>
-                                <a href="#"><i class="fa-solid fa-arrows-rotate fa-sm"></i></a>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="fr__product__inner">
-                            <div class="fix text-center">
-                              <span class="pro-rating">
-                                <a href="#" aria-label="star">
-                                  <i class="fa-solid fa-star fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-solid fa-star fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-solid fa-star fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-regular fa-star-half-stroke fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-regular fa-star-half-stroke fa-sm"></i>
-                                </a>
-                              </span>
-                            </div>
-                            <h4><a href="#">Classic chair</a></h4>
-                            <ul class="fr__pro__prize">
-                              <li class="old__prize"><del>$50.30</del></li>
-                              <li>$25.90</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Single-product end -->
-                      <!-- Single-product start -->
-                      <div class="col-lg-4 col-md-6 mb-20">
-                        <div class="category">
-                          <div class="ht__cat__thumb">
-                            <a href="#">
-                              <img 
-                                src="assets/img/product/product-1-9.jpg"
-                                alt="Product"
-                                class="img-fluid"
-                              >
-                            </a>
-                          </div>
-                          <div class="fr__hover__info">
-                            <ul class="product__action">
-                              <li>
-                                <a href="#"><i class="fa-regular fa-heart fa-sm"></i></a>
-                              </li>
-                              <li>
-                                <a href="#"><i class="fa-solid fa-cart-plus fa-sm"></i></a>
-                              </li>
-                              <li>
-                                <a href="#"><i class="fa-solid fa-arrows-rotate fa-sm"></i></a>
-                              </li>
-                            </ul>
-                          </div>
-                          <div class="fr__product__inner">
-                            <div class="fix text-center">
-                              <span class="pro-rating">
-                                <a href="#" aria-label="star">
-                                  <i class="fa-solid fa-star fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-solid fa-star fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-solid fa-star fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-regular fa-star-half-stroke fa-sm"></i>
-                                </a>
-                                <a href="#" aria-label="star">
-                                  <i class="fa-regular fa-star-half-stroke fa-sm"></i>
-                                </a>
-                              </span>
-                            </div>
-                            <h4><a href="#">wall furniture</a></h4>
-                            <ul class="fr__pro__prize">
-                              <li class="old__prize"><del>$40.00</del></li>
-                              <li>$30.00</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Single-product end -->
-                    </div>
-                  </div>
+									<div class="tab-pane" id="list-view">
+										<div class="row shop-list">
+											<!-- Single-product start -->
+											<div class="col-lg-12">
+												<div class="single-product clearfix">
+													<div class="row">
+														<div class="col-xl-4 col-lg-4 col-md-4">
+															<div class="product-img">
+																<span class="pro-label new-label">new</span>
+																<a href="#"
+																	><img
+																		src="assets/img/product/product-1-1.jpg"
+																		alt="Product"
+																		class="img-fluid"
+																		width="230"
+																		height="153"
+																></a>
+															</div>
+														</div>
+														<div class="col-xl-8 col-lg-8 col-md-8">
+															<div class="product-info">
+																<div class="fix">
+																	<h4 class="post-title floatleft">
+																		<a href="#">Classic Yellow Chair</a>
+																	</h4>
+																	<span class="pro-rating floatright">
+																		<a href="#" aria-label="star">
+																			<i class="fa-solid fa-star fa-sm"></i>
+																		</a>
+																		<a href="#" aria-label="star">
+																			<i class="fa-solid fa-star fa-sm"></i>
+																		</a>
+																		<a href="#" aria-label="star">
+																			<i class="fa-solid fa-star fa-sm"></i>
+																		</a>
+																		<a href="#" aria-label="star">
+																			<i
+																				class="fa-regular fa-star-half-stroke fa-sm"
+																			></i>
+																		</a>
+																		<a href="#" aria-label="star">
+																			<i
+																				class="fa-regular fa-star-half-stroke fa-sm"
+																			></i>
+																		</a>
+																		<span>( 27 Rating )</span>
+																	</span>
+																</div>
+																<div class="fix mb-20">
+																	<span class="pro-price">$ 25.90</span>
+																</div>
+																<div class="product-description">
+																	<p>
+																		There are many variations of passages of
+																		Lorem Ipsum available, but the majority have
+																		be suffered alteration in some form, by
+																		injected humour.
+																	</p>
+																</div>
+																<div class="clearfix">
+																	<div class="cart-plus-minus">
+																		<div class="dec qtybutton">-</div>
+																		<input
+																			type="text"
+																			value="02"
+																			name="qtybutton"
+																			class="cart-plus-minus-box"
+																		>
+																		<div class="inc qtybutton">+</div>
+																	</div>
+																	<div class="product-action clearfix">
+																		<a
+																			href="#"
+																			data-bs-toggle="tooltip"
+																			data-placement="top"
+																			title="Wishlist"
+																		>
+																			<i class="fa-regular fa-heart fa-sm"></i>
+																		</a>
+																		<a
+																			href="#"
+																			data-bs-toggle="modal"
+																			data-bs-target="#productModal"
+																			title="Quick View"
+																		>
+																			<i
+																				class="fa-brands fa-searchengin fa-sm"
+																			></i>
+																		</a>
+																		<a
+																			href="#"
+																			data-bs-toggle="tooltip"
+																			data-placement="top"
+																			title="Compare"
+																		>
+																			<i
+																				class="fa-solid fa-arrows-rotate fa-sm"
+																			></i>
+																		</a>
+																		<a
+																			href="#"
+																			data-bs-toggle="tooltip"
+																			data-placement="top"
+																			title="Add To Cart"
+																		>
+																			<i
+																				class="fa-solid fa-cart-plus fa-sm"
+																			></i>
+																		</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Single-product end -->
+											<!-- Single-product start -->
+											<div class="col-lg-12">
+												<div class="single-product clearfix">
+													<div class="row">
+														<div class="col-xl-4 col-lg-4 col-md-4">
+															<div class="product-img">
+																<span class="pro-label new-label">new</span>
+																<a href="#"
+																	><img
+																		src="assets/img/product/product-1-2.jpg"
+																		alt="Product"
+																		class="img-fluid"
+																		width="230"
+																		height="153"
+																></a>
+															</div>
+														</div>
+														<div class="col-xl-8 col-lg-8 col-md-8">
+															<div class="product-info">
+																<div class="fix">
+																	<h4 class="post-title floatleft">
+																		<a href="#">table & chair combo</a>
+																	</h4>
+																	<span class="pro-rating floatright">
+																		<a href="#" aria-label="star">
+																			<i class="fa-solid fa-star fa-sm"></i>
+																		</a>
+																		<a href="#" aria-label="star">
+																			<i class="fa-solid fa-star fa-sm"></i>
+																		</a>
+																		<a href="#" aria-label="star">
+																			<i class="fa-solid fa-star fa-sm"></i>
+																		</a>
+																		<a href="#" aria-label="star">
+																			<i
+																				class="fa-regular fa-star-half-stroke fa-sm"
+																			></i>
+																		</a>
+																		<a href="#" aria-label="star">
+																			<i
+																				class="fa-regular fa-star-half-stroke fa-sm"
+																			></i>
+																		</a>
+																		<span>( 27 Rating )</span>
+																	</span>
+																</div>
+																<div class="fix mb-20">
+																	<span class="pro-price">$ 80.90</span>
+																</div>
+																<div class="product-description">
+																	<p>
+																		There are many variations of passages of
+																		Lorem Ipsum available, but the majority have
+																		be suffered alteration in some form, by
+																		injected humour.
+																	</p>
+																</div>
+																<div class="clearfix">
+																	<div class="cart-plus-minus">
+																		<div class="dec qtybutton">-</div>
+																		<input
+																			type="text"
+																			value="02"
+																			name="qtybutton"
+																			class="cart-plus-minus-box"
+																		>
+																		<div class="inc qtybutton">+</div>
+																	</div>
+																	<div class="product-action clearfix">
+																		<a
+																			href="#"
+																			data-bs-toggle="tooltip"
+																			data-placement="top"
+																			title="Wishlist"
+																		>
+																			<i class="fa-regular fa-heart fa-sm"></i>
+																		</a>
+																		<a
+																			href="#"
+																			data-bs-toggle="modal"
+																			data-bs-target="#productModal"
+																			title="Quick View"
+																		>
+																			<i
+																				class="fa-brands fa-searchengin fa-sm"
+																			></i>
+																		</a>
+																		<a
+																			href="#"
+																			data-bs-toggle="tooltip"
+																			data-placement="top"
+																			title="Compare"
+																		>
+																			<i
+																				class="fa-solid fa-arrows-rotate fa-sm"
+																			></i>
+																		</a>
+																		<a
+																			href="#"
+																			data-bs-toggle="tooltip"
+																			data-placement="top"
+																			title="Add To Cart"
+																		>
+																			<i
+																				class="fa-solid fa-cart-plus fa-sm"
+																			></i>
+																		</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Single-product end -->
+											<!-- Single-product start -->
+											<div class="col-lg-12">
+												<div class="single-product clearfix">
+													<div class="row">
+														<div class="col-xl-4 col-lg-4 col-md-4">
+															<div class="product-img">
+																<span class="pro-label new-label">new</span>
+																<a href="#"
+																	><img
+																		src="assets/img/product/product-1-3.jpg"
+																		alt="Product"
+																		class="img-fluid"
+																		width="230"
+																		height="153"
+																></a>
+															</div>
+														</div>
+														<div class="col-xl-8 col-lg-8 col-md-8">
+															<div class="product-info">
+																<div class="fix">
+																	<h4 class="post-title floatleft">
+																		<a href="#">Trendy White sofa</a>
+																	</h4>
+																	<span class="pro-rating floatright">
+																		<a href="#" aria-label="star">
+																			<i class="fa-solid fa-star fa-sm"></i>
+																		</a>
+																		<a href="#" aria-label="star">
+																			<i class="fa-solid fa-star fa-sm"></i>
+																		</a>
+																		<a href="#" aria-label="star">
+																			<i class="fa-solid fa-star fa-sm"></i>
+																		</a>
+																		<a href="#" aria-label="star">
+																			<i
+																				class="fa-regular fa-star-half-stroke fa-sm"
+																			></i>
+																		</a>
+																		<a href="#" aria-label="star">
+																			<i
+																				class="fa-regular fa-star-half-stroke fa-sm"
+																			></i>
+																		</a>
+																		<span>( 27 Rating )</span>
+																	</span>
+																</div>
+																<div class="fix mb-20">
+																	<span class="pro-price">$ 650.00</span>
+																</div>
+																<div class="product-description">
+																	<p>
+																		There are many variations of passages of
+																		Lorem Ipsum available, but the majority have
+																		be suffered alteration in some form, by
+																		injected humour.
+																	</p>
+																</div>
+																<div class="clearfix">
+																	<div class="cart-plus-minus">
+																		<div class="dec qtybutton">-</div>
+																		<input
+																			type="text"
+																			value="02"
+																			name="qtybutton"
+																			class="cart-plus-minus-box"
+																		>
+																		<div class="inc qtybutton">+</div>
+																	</div>
+																	<div class="product-action clearfix">
+																		<a
+																			href="#"
+																			data-bs-toggle="tooltip"
+																			data-placement="top"
+																			title="Wishlist"
+																		>
+																			<i class="fa-regular fa-heart fa-sm"></i>
+																		</a>
+																		<a
+																			href="#"
+																			data-bs-toggle="modal"
+																			data-bs-target="#productModal"
+																			title="Quick View"
+																		>
+																			<i
+																				class="fa-brands fa-searchengin fa-sm"
+																			></i>
+																		</a>
+																		<a
+																			href="#"
+																			data-bs-toggle="tooltip"
+																			data-placement="top"
+																			title="Compare"
+																		>
+																			<i
+																				class="fa-solid fa-arrows-rotate fa-sm"
+																			></i>
+																		</a>
+																		<a
+																			href="#"
+																			data-bs-toggle="tooltip"
+																			data-placement="top"
+																			title="Add To Cart"
+																		>
+																			<i
+																				class="fa-solid fa-cart-plus fa-sm"
+																			></i>
+																		</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Single-product end -->
+											<!-- Single-product start -->
+											<div class="col-lg-12">
+												<div class="single-product clearfix">
+													<div class="row">
+														<div class="col-xl-4 col-lg-4 col-md-4">
+															<div class="product-img">
+																<span class="pro-label sale-label">sale</span>
+																<a href="#"
+																	><img
+																		src="assets/img/product/product-1-4.jpg"
+																		alt="Product"
+																		class="img-fluid"
+																		width="230"
+																		height="153"
+																></a>
+															</div>
+														</div>
+														<div class="col-xl-8 col-lg-8 col-md-8">
+															<div class="product-info">
+																<div class="fix">
+																	<h4 class="post-title floatleft">
+																		<a href="#">Modern Bookcase</a>
+																	</h4>
+																	<span class="pro-rating floatright">
+																		<a href="#" aria-label="star">
+																			<i class="fa-solid fa-star fa-sm"></i>
+																		</a>
+																		<a href="#" aria-label="star">
+																			<i class="fa-solid fa-star fa-sm"></i>
+																		</a>
+																		<a href="#" aria-label="star">
+																			<i class="fa-solid fa-star fa-sm"></i>
+																		</a>
+																		<a href="#" aria-label="star">
+																			<i
+																				class="fa-regular fa-star-half-stroke fa-sm"
+																			></i>
+																		</a>
+																		<a href="#" aria-label="star">
+																			<i
+																				class="fa-regular fa-star-half-stroke fa-sm"
+																			></i>
+																		</a>
+																		<span>( 27 Rating )</span>
+																	</span>
+																</div>
+																<div class="fix mb-20">
+																	<span class="pro-price">$ 51.00</span>
+																</div>
+																<div class="product-description">
+																	<p>
+																		There are many variations of passages of
+																		Lorem Ipsum available, but the majority have
+																		be suffered alteration in some form, by
+																		injected humour.
+																	</p>
+																</div>
+																<div class="clearfix">
+																	<div class="cart-plus-minus">
+																		<div class="dec qtybutton">-</div>
+																		<input
+																			type="text"
+																			value="02"
+																			name="qtybutton"
+																			class="cart-plus-minus-box"
+																		>
+																		<div class="inc qtybutton">+</div>
+																	</div>
+																	<div class="product-action clearfix">
+																		<a
+																			href="#"
+																			data-bs-toggle="tooltip"
+																			data-placement="top"
+																			title="Wishlist"
+																		>
+																			<i class="fa-regular fa-heart fa-sm"></i>
+																		</a>
+																		<a
+																			href="#"
+																			data-bs-toggle="modal"
+																			data-bs-target="#productModal"
+																			title="Quick View"
+																		>
+																			<i
+																				class="fa-brands fa-searchengin fa-sm"
+																			></i>
+																		</a>
+																		<a
+																			href="#"
+																			data-bs-toggle="tooltip"
+																			data-placement="top"
+																			title="Compare"
+																		>
+																			<i
+																				class="fa-solid fa-arrows-rotate fa-sm"
+																			></i>
+																		</a>
+																		<a
+																			href="#"
+																			data-bs-toggle="tooltip"
+																			data-placement="top"
+																			title="Add To Cart"
+																		>
+																			<i
+																				class="fa-solid fa-cart-plus fa-sm"
+																			></i>
+																		</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Single-product end -->
+											<!-- Single-product start -->
+											<div class="col-lg-12">
+												<div class="single-product clearfix">
+													<div class="row">
+														<div class="col-xl-4 col-lg-4 col-md-4">
+															<div class="product-img">
+																<span class="pro-label sale-label">sale</span>
+																<a href="#"
+																	><img
+																		src="assets/img/product/product-1-5.jpg"
+																		alt="Product"
+																		class="img-fluid"
+																		width="230"
+																		height="153"
+																></a>
+															</div>
+														</div>
+														<div class="col-xl-8 col-lg-8 col-md-8">
+															<div class="product-info">
+																<div class="fix">
+																	<h4 class="post-title floatleft">
+																		<a href="#">Night Lamps table</a>
+																	</h4>
+																	<span class="pro-rating floatright">
+																		<a href="#" aria-label="star">
+																			<i class="fa-solid fa-star fa-sm"></i>
+																		</a>
+																		<a href="#" aria-label="star">
+																			<i class="fa-solid fa-star fa-sm"></i>
+																		</a>
+																		<a href="#" aria-label="star">
+																			<i class="fa-solid fa-star fa-sm"></i>
+																		</a>
+																		<a href="#" aria-label="star">
+																			<i
+																				class="fa-regular fa-star-half-stroke fa-sm"
+																			></i>
+																		</a>
+																		<a href="#" aria-label="star">
+																			<i
+																				class="fa-regular fa-star-half-stroke fa-sm"
+																			></i>
+																		</a>
+																		<span>( 27 Rating )</span>
+																	</span>
+																</div>
+																<div class="fix mb-20">
+																	<span class="pro-price">$ 25.00</span>
+																</div>
+																<div class="product-description">
+																	<p>
+																		There are many variations of passages of
+																		Lorem Ipsum available, but the majority have
+																		be suffered alteration in some form, by
+																		injected humour.
+																	</p>
+																</div>
+																<div class="clearfix">
+																	<div class="cart-plus-minus">
+																		<div class="dec qtybutton">-</div>
+																		<input
+																			type="text"
+																			value="02"
+																			name="qtybutton"
+																			class="cart-plus-minus-box"
+																		>
+																		<div class="inc qtybutton">+</div>
+																	</div>
+																	<div class="product-action clearfix">
+																		<a
+																			href="#"
+																			data-bs-toggle="tooltip"
+																			data-placement="top"
+																			title="Wishlist"
+																		>
+																			<i class="fa-regular fa-heart fa-sm"></i>
+																		</a>
+																		<a
+																			href="#"
+																			data-bs-toggle="modal"
+																			data-bs-target="#productModal"
+																			title="Quick View"
+																		>
+																			<i
+																				class="fa-brands fa-searchengin fa-sm"
+																			></i>
+																		</a>
+																		<a
+																			href="#"
+																			data-bs-toggle="tooltip"
+																			data-placement="top"
+																			title="Compare"
+																		>
+																			<i
+																				class="fa-solid fa-arrows-rotate fa-sm"
+																			></i>
+																		</a>
+																		<a
+																			href="#"
+																			data-bs-toggle="tooltip"
+																			data-placement="top"
+																			title="Add To Cart"
+																		>
+																			<i
+																				class="fa-solid fa-cart-plus fa-sm"
+																			></i>
+																		</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Single-product end -->
+										</div>
+									</div>
+								</div>
 
-                  <div class="tab-pane" id="list-view">
-                    <div class="row shop-list">
-                      <!-- Single-product start -->
-                      <div class="col-lg-12">
-                        <div class="single-product clearfix">
-                          <div class="row">
-                            <div class="col-xl-4 col-lg-4 col-md-4">
-                              <div class="product-img">
-                                <span class="pro-label new-label">new</span>
-                                <a href="#"
-                                  ><img
-                                    src="assets/img/product/product-1-1.jpg"
-                                    alt="Product"
-                                    class="img-fluid"
-                                    width="230"
-                                    height="153"
-                                ></a>
-                              </div>
-                            </div>
-                            <div class="col-xl-8 col-lg-8 col-md-8">
-                              <div class="product-info">
-                                <div class="fix">
-                                  <h4 class="post-title floatleft">
-                                    <a href="#">Classic Yellow Chair</a>
-                                  </h4>
-                                  <span class="pro-rating floatright">
-                                    <a href="#" aria-label="star">
-                                      <i class="fa-solid fa-star fa-sm"></i>
-                                    </a>
-                                    <a href="#" aria-label="star">
-                                      <i class="fa-solid fa-star fa-sm"></i>
-                                    </a>
-                                    <a href="#" aria-label="star">
-                                      <i class="fa-solid fa-star fa-sm"></i>
-                                    </a>
-                                    <a href="#" aria-label="star">
-                                      <i
-                                        class="fa-regular fa-star-half-stroke fa-sm"
-                                      ></i>
-                                    </a>
-                                    <a href="#" aria-label="star">
-                                      <i
-                                        class="fa-regular fa-star-half-stroke fa-sm"
-                                      ></i>
-                                    </a>
-                                    <span>( 27 Rating )</span>
-                                  </span>
-                                </div>
-                                <div class="fix mb-20">
-                                  <span class="pro-price">$ 25.90</span>
-                                </div>
-                                <div class="product-description">
-                                  <p>
-                                    There are many variations of passages of Lorem
-                                    Ipsum available, but the majority have be
-                                    suffered alteration in some form, by injected
-                                    humour.
-                                  </p>
-                                </div>
-                                <div class="clearfix">
-                                  <div class="cart-plus-minus">
-                                    <div class="dec qtybutton">-</div>
-                                    <input
-                                      type="text"
-                                      value="02"
-                                      name="qtybutton"
-                                      class="cart-plus-minus-box"
-                                    >
-                                    <div class="inc qtybutton">+</div>
-                                  </div>
-                                  <div class="product-action clearfix">
-                                    <a
-                                      href="#"
-                                      data-bs-toggle="tooltip"
-                                      data-placement="top"
-                                      title="Wishlist"
-                                    >
-                                      <i class="fa-regular fa-heart fa-sm"></i>
-                                    </a>
-                                    <a
-                                      href="#"
-                                      data-bs-toggle="modal"
-                                      data-bs-target="#productModal"
-                                      title="Quick View"
-                                    >
-                                      <i class="fa-brands fa-searchengin fa-sm"></i>
-                                    </a>
-                                    <a
-                                      href="#"
-                                      data-bs-toggle="tooltip"
-                                      data-placement="top"
-                                      title="Compare"
-                                    >
-                                      <i
-                                        class="fa-solid fa-arrows-rotate fa-sm"
-                                      ></i>
-                                    </a>
-                                    <a
-                                      href="#"
-                                      data-bs-toggle="tooltip"
-                                      data-placement="top"
-                                      title="Add To Cart"
-                                    >
-                                      <i class="fa-solid fa-cart-plus fa-sm"></i>
-                                    </a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Single-product end -->
-                      <!-- Single-product start -->
-                      <div class="col-lg-12">
-                        <div class="single-product clearfix">
-                          <div class="row">
-                            <div class="col-xl-4 col-lg-4 col-md-4">
-                              <div class="product-img">
-                                <span class="pro-label new-label">new</span>
-                                <a href="#"
-                                  ><img
-                                    src="assets/img/product/product-1-2.jpg"
-                                    alt="Product"
-                                    class="img-fluid"
-                                    width="230"
-                                    height="153"
-                                ></a>
-                              </div>
-                            </div>
-                            <div class="col-xl-8 col-lg-8 col-md-8">
-                              <div class="product-info">
-                                <div class="fix">
-                                  <h4 class="post-title floatleft">
-                                    <a href="#">table & chair combo</a>
-                                  </h4>
-                                  <span class="pro-rating floatright">
-                                    <a href="#" aria-label="star">
-                                      <i class="fa-solid fa-star fa-sm"></i>
-                                    </a>
-                                    <a href="#" aria-label="star">
-                                      <i class="fa-solid fa-star fa-sm"></i>
-                                    </a>
-                                    <a href="#" aria-label="star">
-                                      <i class="fa-solid fa-star fa-sm"></i>
-                                    </a>
-                                    <a href="#" aria-label="star">
-                                      <i
-                                        class="fa-regular fa-star-half-stroke fa-sm"
-                                      ></i>
-                                    </a>
-                                    <a href="#" aria-label="star">
-                                      <i
-                                        class="fa-regular fa-star-half-stroke fa-sm"
-                                      ></i>
-                                    </a>
-                                    <span>( 27 Rating )</span>
-                                  </span>
-                                </div>
-                                <div class="fix mb-20">
-                                  <span class="pro-price">$ 80.90</span>
-                                </div>
-                                <div class="product-description">
-                                  <p>
-                                    There are many variations of passages of Lorem
-                                    Ipsum available, but the majority have be
-                                    suffered alteration in some form, by injected
-                                    humour.
-                                  </p>
-                                </div>
-                                <div class="clearfix">
-                                  <div class="cart-plus-minus">
-                                    <div class="dec qtybutton">-</div>
-                                    <input
-                                      type="text"
-                                      value="02"
-                                      name="qtybutton"
-                                      class="cart-plus-minus-box"
-                                    >
-                                    <div class="inc qtybutton">+</div>
-                                  </div>
-                                  <div class="product-action clearfix">
-                                    <a
-                                      href="#"
-                                      data-bs-toggle="tooltip"
-                                      data-placement="top"
-                                      title="Wishlist"
-                                    >
-                                      <i class="fa-regular fa-heart fa-sm"></i>
-                                    </a>
-                                    <a
-                                      href="#"
-                                      data-bs-toggle="modal"
-                                      data-bs-target="#productModal"
-                                      title="Quick View"
-                                    >
-                                      <i class="fa-brands fa-searchengin fa-sm"></i>
-                                    </a>
-                                    <a
-                                      href="#"
-                                      data-bs-toggle="tooltip"
-                                      data-placement="top"
-                                      title="Compare"
-                                    >
-                                      <i
-                                        class="fa-solid fa-arrows-rotate fa-sm"
-                                      ></i>
-                                    </a>
-                                    <a
-                                      href="#"
-                                      data-bs-toggle="tooltip"
-                                      data-placement="top"
-                                      title="Add To Cart"
-                                    >
-                                      <i class="fa-solid fa-cart-plus fa-sm"></i>
-                                    </a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Single-product end -->
-                      <!-- Single-product start -->
-                      <div class="col-lg-12">
-                        <div class="single-product clearfix">
-                          <div class="row">
-                            <div class="col-xl-4 col-lg-4 col-md-4">
-                              <div class="product-img">
-                                <span class="pro-label new-label">new</span>
-                                <a href="#"
-                                  ><img
-                                    src="assets/img/product/product-1-3.jpg"
-                                    alt="Product"
-                                    class="img-fluid"
-                                    width="230"
-                                    height="153"
-                                ></a>
-                              </div>
-                            </div>
-                            <div class="col-xl-8 col-lg-8 col-md-8">
-                              <div class="product-info">
-                                <div class="fix">
-                                  <h4 class="post-title floatleft">
-                                    <a href="#">Trendy White sofa</a>
-                                  </h4>
-                                  <span class="pro-rating floatright">
-                                    <a href="#" aria-label="star">
-                                      <i class="fa-solid fa-star fa-sm"></i>
-                                    </a>
-                                    <a href="#" aria-label="star">
-                                      <i class="fa-solid fa-star fa-sm"></i>
-                                    </a>
-                                    <a href="#" aria-label="star">
-                                      <i class="fa-solid fa-star fa-sm"></i>
-                                    </a>
-                                    <a href="#" aria-label="star">
-                                      <i
-                                        class="fa-regular fa-star-half-stroke fa-sm"
-                                      ></i>
-                                    </a>
-                                    <a href="#" aria-label="star">
-                                      <i
-                                        class="fa-regular fa-star-half-stroke fa-sm"
-                                      ></i>
-                                    </a>
-                                    <span>( 27 Rating )</span>
-                                  </span>
-                                </div>
-                                <div class="fix mb-20">
-                                  <span class="pro-price">$ 650.00</span>
-                                </div>
-                                <div class="product-description">
-                                  <p>
-                                    There are many variations of passages of Lorem
-                                    Ipsum available, but the majority have be
-                                    suffered alteration in some form, by injected
-                                    humour.
-                                  </p>
-                                </div>
-                                <div class="clearfix">
-                                  <div class="cart-plus-minus">
-                                    <div class="dec qtybutton">-</div>
-                                    <input
-                                      type="text"
-                                      value="02"
-                                      name="qtybutton"
-                                      class="cart-plus-minus-box"
-                                    >
-                                    <div class="inc qtybutton">+</div>
-                                  </div>
-                                  <div class="product-action clearfix">
-                                    <a
-                                      href="#"
-                                      data-bs-toggle="tooltip"
-                                      data-placement="top"
-                                      title="Wishlist"
-                                    >
-                                      <i class="fa-regular fa-heart fa-sm"></i>
-                                    </a>
-                                    <a
-                                      href="#"
-                                      data-bs-toggle="modal"
-                                      data-bs-target="#productModal"
-                                      title="Quick View"
-                                    >
-                                      <i class="fa-brands fa-searchengin fa-sm"></i>
-                                    </a>
-                                    <a
-                                      href="#"
-                                      data-bs-toggle="tooltip"
-                                      data-placement="top"
-                                      title="Compare"
-                                    >
-                                      <i
-                                        class="fa-solid fa-arrows-rotate fa-sm"
-                                      ></i>
-                                    </a>
-                                    <a
-                                      href="#"
-                                      data-bs-toggle="tooltip"
-                                      data-placement="top"
-                                      title="Add To Cart"
-                                    >
-                                      <i class="fa-solid fa-cart-plus fa-sm"></i>
-                                    </a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Single-product end -->
-                      <!-- Single-product start -->
-                      <div class="col-lg-12">
-                        <div class="single-product clearfix">
-                          <div class="row">
-                            <div class="col-xl-4 col-lg-4 col-md-4">
-                              <div class="product-img">
-                                <span class="pro-label sale-label">sale</span>
-                                <a href="#"
-                                  ><img
-                                    src="assets/img/product/product-1-4.jpg"
-                                    alt="Product"
-                                    class="img-fluid"
-                                    width="230"
-                                    height="153"
-                                ></a>
-                              </div>
-                            </div>
-                            <div class="col-xl-8 col-lg-8 col-md-8">
-                              <div class="product-info">
-                                <div class="fix">
-                                  <h4 class="post-title floatleft">
-                                    <a href="#">Modern Bookcase</a>
-                                  </h4>
-                                  <span class="pro-rating floatright">
-                                    <a href="#" aria-label="star">
-                                      <i class="fa-solid fa-star fa-sm"></i>
-                                    </a>
-                                    <a href="#" aria-label="star">
-                                      <i class="fa-solid fa-star fa-sm"></i>
-                                    </a>
-                                    <a href="#" aria-label="star">
-                                      <i class="fa-solid fa-star fa-sm"></i>
-                                    </a>
-                                    <a href="#" aria-label="star">
-                                      <i
-                                        class="fa-regular fa-star-half-stroke fa-sm"
-                                      ></i>
-                                    </a>
-                                    <a href="#" aria-label="star">
-                                      <i
-                                        class="fa-regular fa-star-half-stroke fa-sm"
-                                      ></i>
-                                    </a>
-                                    <span>( 27 Rating )</span>
-                                  </span>
-                                </div>
-                                <div class="fix mb-20">
-                                  <span class="pro-price">$ 51.00</span>
-                                </div>
-                                <div class="product-description">
-                                  <p>
-                                    There are many variations of passages of Lorem
-                                    Ipsum available, but the majority have be
-                                    suffered alteration in some form, by injected
-                                    humour.
-                                  </p>
-                                </div>
-                                <div class="clearfix">
-                                  <div class="cart-plus-minus">
-                                    <div class="dec qtybutton">-</div>
-                                    <input
-                                      type="text"
-                                      value="02"
-                                      name="qtybutton"
-                                      class="cart-plus-minus-box"
-                                    >
-                                    <div class="inc qtybutton">+</div>
-                                  </div>
-                                  <div class="product-action clearfix">
-                                    <a
-                                      href="#"
-                                      data-bs-toggle="tooltip"
-                                      data-placement="top"
-                                      title="Wishlist"
-                                    >
-                                      <i class="fa-regular fa-heart fa-sm"></i>
-                                    </a>
-                                    <a
-                                      href="#"
-                                      data-bs-toggle="modal"
-                                      data-bs-target="#productModal"
-                                      title="Quick View"
-                                    >
-                                      <i class="fa-brands fa-searchengin fa-sm"></i>
-                                    </a>
-                                    <a
-                                      href="#"
-                                      data-bs-toggle="tooltip"
-                                      data-placement="top"
-                                      title="Compare"
-                                    >
-                                      <i
-                                        class="fa-solid fa-arrows-rotate fa-sm"
-                                      ></i>
-                                    </a>
-                                    <a
-                                      href="#"
-                                      data-bs-toggle="tooltip"
-                                      data-placement="top"
-                                      title="Add To Cart"
-                                    >
-                                      <i class="fa-solid fa-cart-plus fa-sm"></i>
-                                    </a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Single-product end -->
-                      <!-- Single-product start -->
-                      <div class="col-lg-12">
-                        <div class="single-product clearfix">
-                          <div class="row">
-                            <div class="col-xl-4 col-lg-4 col-md-4">
-                              <div class="product-img">
-                                <span class="pro-label sale-label">sale</span>
-                                <a href="#"
-                                  ><img
-                                    src="assets/img/product/product-1-5.jpg"
-                                    alt="Product"
-                                    class="img-fluid"
-                                    width="230"
-                                    height="153"
-                                ></a>
-                              </div>
-                            </div>
-                            <div class="col-xl-8 col-lg-8 col-md-8">
-                              <div class="product-info">
-                                <div class="fix">
-                                  <h4 class="post-title floatleft">
-                                    <a href="#">Night Lamps table</a>
-                                  </h4>
-                                  <span class="pro-rating floatright">
-                                    <a href="#" aria-label="star">
-                                      <i class="fa-solid fa-star fa-sm"></i>
-                                    </a>
-                                    <a href="#" aria-label="star">
-                                      <i class="fa-solid fa-star fa-sm"></i>
-                                    </a>
-                                    <a href="#" aria-label="star">
-                                      <i class="fa-solid fa-star fa-sm"></i>
-                                    </a>
-                                    <a href="#" aria-label="star">
-                                      <i
-                                        class="fa-regular fa-star-half-stroke fa-sm"
-                                      ></i>
-                                    </a>
-                                    <a href="#" aria-label="star">
-                                      <i
-                                        class="fa-regular fa-star-half-stroke fa-sm"
-                                      ></i>
-                                    </a>
-                                    <span>( 27 Rating )</span>
-                                  </span>
-                                </div>
-                                <div class="fix mb-20">
-                                  <span class="pro-price">$ 25.00</span>
-                                </div>
-                                <div class="product-description">
-                                  <p>
-                                    There are many variations of passages of Lorem
-                                    Ipsum available, but the majority have be
-                                    suffered alteration in some form, by injected
-                                    humour.
-                                  </p>
-                                </div>
-                                <div class="clearfix">
-                                  <div class="cart-plus-minus">
-                                    <div class="dec qtybutton">-</div>
-                                    <input
-                                      type="text"
-                                      value="02"
-                                      name="qtybutton"
-                                      class="cart-plus-minus-box"
-                                    >
-                                    <div class="inc qtybutton">+</div>
-                                  </div>
-                                  <div class="product-action clearfix">
-                                    <a
-                                      href="#"
-                                      data-bs-toggle="tooltip"
-                                      data-placement="top"
-                                      title="Wishlist"
-                                    >
-                                      <i class="fa-regular fa-heart fa-sm"></i>
-                                    </a>
-                                    <a
-                                      href="#"
-                                      data-bs-toggle="modal"
-                                      data-bs-target="#productModal"
-                                      title="Quick View"
-                                    >
-                                      <i class="fa-brands fa-searchengin fa-sm"></i>
-                                    </a>
-                                    <a
-                                      href="#"
-                                      data-bs-toggle="tooltip"
-                                      data-placement="top"
-                                      title="Compare"
-                                    >
-                                      <i
-                                        class="fa-solid fa-arrows-rotate fa-sm"
-                                      ></i>
-                                    </a>
-                                    <a
-                                      href="#"
-                                      data-bs-toggle="tooltip"
-                                      data-placement="top"
-                                      title="Add To Cart"
-                                    >
-                                      <i class="fa-solid fa-cart-plus fa-sm"></i>
-                                    </a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Single-product end -->
-                    </div>
-                  </div>
-                </div>
+								<!-- Pagination start -->
+								<div class="shop-pagination text-center">
+									<div class="pagination">
+										<ul>
+											<li>
+												<a href="#" aria-label="arrow left">
+													<i class="fa-solid fa-arrow-left-long fa-sm"></i>
+												</a>
+											</li>
+											<li><a href="#">01</a></li>
+											<li><a class="active" href="#">02</a></li>
+											<li><a href="#">03</a></li>
+											<li><a href="#">04</a></li>
+											<li><a href="#">05</a></li>
+											<li>
+												<a href="#" aria-label="arrow right">
+													<i class="fa-solid fa-arrow-right-long fa-sm"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- Pagination end -->
+							</div>
+							<!-- Shop-Content End -->
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- PRODUCT-AREA END -->
+		</main>
 
-                <!-- Pagination start -->
-                <div class="shop-pagination text-center">
-                  <div class="pagination">
-                    <ul>
-                      <li>
-                        <a href="#" aria-label="arrow left">
-                          <i class="fa-solid fa-arrow-left-long fa-sm"></i>
-                        </a>
-                      </li>
-                      <li><a href="#">01</a></li>
-                      <li><a class="active" href="#">02</a></li>
-                      <li><a href="#">03</a></li>
-                      <li><a href="#">04</a></li>
-                      <li><a href="#">05</a></li>
-                      <li>
-                        <a href="#" aria-label="arrow right">
-                          <i class="fa-solid fa-arrow-right-long fa-sm"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- Pagination end -->
-              </div>
-              <!-- Shop-Content End -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- PRODUCT-AREA END -->
-    </main>
-
-    <footer class="footer-one">
-      <div class="inner-footer">
-        <div class="container">
-          <div class="col-lg-12 col-xs-12 pt-90 pb-90">
-            <div class="row">
-              <div class="col-lg-4 col-sm-12 col-xs-12">
-                <div class="block">
-                  <div class="block-content">
-                    <p class="title-block">
-                      <!-- <img src="img/home/logo.png" alt="img"> -->
-                      Furniture
-                    </p>
-                    <p class="content-logo">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                    </p>
-                  </div>
-                </div>
-                <div class="block">
-                  <div class="block-content">
-                    <ul>
-                      <li>
-                        <a href="#">About Us</a>
-                      </li>
-                      <li>
-                        <a href="#">Reasons to shop</a>
-                      </li>
-                      <li>
-                        <a href="#">What our customers say</a>
-                      </li>
-                      <li>
-                        <a href="#">Meet the team</a>
-                      </li>
-                      <li>
-                        <a href="#">Contact our buyers</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-sm-6 footer-top-pb">
-                <div class="block m-top">
-                  <div class="title-block">
-                    Contact Us
-                  </div>
-                  <div class="block-content">
-                    <div class="contact-us">
-                      <div class="title-content">
-                        <i class="fa fa-home" aria-hidden="true"></i>
-                        <span>Address :</span>
-                      </div>
-                      <div class="content-contact address-contact">
-                        <p>123 Suspendis matti, Visaosang Building VST District NY Accums, North American
-                        </p>
-                      </div>
-                    </div>
-                    <div class="contact-us">
-                      <div class="title-content">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <span>Email :</span>
-                      </div>
-                      <div class="content-contact mail-contact">
-                        <p>support@domain.com</p>
-                      </div>
-                    </div>
-                    <div class="contact-us">
-                      <div class="title-content">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        <span>Hotline :</span>
-                      </div>
-                      <div class="content-contact phone-contact">
-                        <p>+0012-345-67890</p>
-                      </div>
-                    </div>
-                    <div class="contact-us">
-                      <div class="title-content">
-                        <i class="fa-solid fa-clock fa-sm" aria-hidden="true"></i>
-                        <span>Opening Hours :</span>
-                      </div>
-                      <div class="content-contact hours-contact">
-                        <p>Monday - Sunday / 08.00AM- 10.00PM</p>
-                        <span>(Except Holidays)</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="tiva-modules col-lg-4 col-md-6 footer-top-pb">
-                <div class="block m-top">
-                  <div class="block-content">
-                    <div class="title-block">Newsletter</div>
-                    <div class="sub-title">Sign up to our newsletter to get the latest articles, lookbooks voucher codes direct to your inbox
-                    </div>
-                    <div class="block-newsletter">
-                      <form action="index.html" method="post">
-                        <div class="input-group">
-                          <input type="text" class="form-control bg-white" name="email" value="" placeholder="Enter Your Email">
-                          <span class="input-group-btn">
-                            <button class="effect-btn btn btn-secondary " name="submitNewsletter" type="submit">
-                              <span>subscribe</span>
-                            </button>
-                          </span>
-                        </div>
-                        <input type="hidden" name="action" value="0">
-                      </form>
-                    </div>
-                  </div>
-                </div>
-                <div class="block m-top1">
-                  <div class="block-content">
-                    <div class="social-content">
-                      <div class="title-block">
-                        Follow us on
-                      </div>
-                      <div id="social-block">
-                        <div class="social">
-                          <ul class="list-inline d-flex">
-                            <li class="list-inline-item mb-0">
-                              <a href="#" target="_blank" aria-label="social">
+		<footer class="footer-one">
+			<div class="inner-footer">
+				<div class="container">
+					<div class="col-lg-12 col-xs-12 pt-90 pb-90">
+						<div class="row">
+							<div class="col-lg-4 col-sm-12 col-xs-12">
+								<div class="block">
+									<div class="block-content">
+										<p class="title-block">
+											<img src="assets/img/banner/logo.png" alt="">
+										</p>
+										<p class="content-logo">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit
+											sed do eiusmod tempor incididunt ut labore et dolore magna
+											aliqua. Ut enim ad minim
+										</p>
+									</div>
+								</div>
+								<div class="block">
+									<div class="block-content">
+										<ul>
+											<li>
+												<a href="#">About Us</a>
+											</li>
+											<li>
+												<a href="#">Reasons to shop</a>
+											</li>
+											<li>
+												<a href="#">What our customers say</a>
+											</li>
+											<li>
+												<a href="#">Meet the team</a>
+											</li>
+											<li>
+												<a href="#">Contact our buyers</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-sm-6 footer-top-pb">
+								<div class="block m-top">
+									<div class="title-block">
+										Contact Us
+									</div>
+									<div class="block-content">
+										<div class="contact-us">
+											<div class="title-content">
+												<i class="fa fa-home" aria-hidden="true"></i>
+												<span>Address :</span>
+											</div>
+											<div class="content-contact address-contact">
+												<p>
+													123 Suspendis matti, Visaosang Building VST District
+													NY Accums, North American
+												</p>
+											</div>
+										</div>
+										<div class="contact-us">
+											<div class="title-content">
+												<i class="fa fa-envelope" aria-hidden="true"></i>
+												<span>Email :</span>
+											</div>
+											<div class="content-contact mail-contact">
+												<p>support@domain.com</p>
+											</div>
+										</div>
+										<div class="contact-us">
+											<div class="title-content">
+												<i class="fa fa-phone" aria-hidden="true"></i>
+												<span>Hotline :</span>
+											</div>
+											<div class="content-contact phone-contact">
+												<p>+0012-345-67890</p>
+											</div>
+										</div>
+										<div class="contact-us">
+											<div class="title-content">
+												<i
+													class="fa-solid fa-clock fa-sm"
+													aria-hidden="true"
+												></i>
+												<span>Opening Hours :</span>
+											</div>
+											<div class="content-contact hours-contact">
+												<p>Monday - Sunday / 08.00AM- 10.00PM</p>
+												<span>(Except Holidays)</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tiva-modules col-lg-4 col-md-6 footer-top-pb">
+								<div class="block m-top">
+									<div class="block-content">
+										<div class="title-block">Newsletter</div>
+										<div class="sub-title">
+											Sign up to our newsletter to get the latest articles,
+											lookbooks voucher codes direct to your inbox
+										</div>
+										<div class="block-newsletter">
+											<form action="index.html" method="post">
+												<div class="input-group">
+													<input
+														type="text"
+														class="form-control bg-white"
+														name="email"
+														value=""
+														placeholder="Enter Your Email"
+													>
+													<span class="input-group-btn">
+														<button
+															class="effect-btn btn btn-secondary"
+															name="submitNewsletter"
+															type="submit"
+														>
+															<span>subscribe</span>
+														</button>
+													</span>
+												</div>
+												<input type="hidden" name="action" value="0">
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="block m-top1">
+									<div class="block-content">
+										<div class="social-content">
+											<div class="title-block">
+												Follow us on
+											</div>
+											<div id="social-block">
+												<div class="social">
+													<ul class="list-inline d-flex">
+														<li class="list-inline-item mb-0">
+                              <a href="https://www.facebook.com/" target="_blank" aria-label="social">
                                 <i class="fa-brands fa-facebook-f fa-sm"></i>
                               </a>
                             </li>
                             <li class="list-inline-item mb-0">
-                              <a href="#" target="_blank" aria-label="social">
+                              <a href="https://www.twitter.com/" target="_blank" aria-label="social">
                                 <i class="fa-brands fa-twitter fa-sm"></i>
                               </a>
                             </li>
                             <li class="list-inline-item mb-0">
-                              <a href="#" target="_blank" aria-label="social">
+                              <a href="https://www.google.com/" target="_blank" aria-label="social">
                                 <i class="fa-brands fa-google fa-sm"></i>
                               </a>
                             </li>
                             <li class="list-inline-item mb-0">
-                              <a href="#" target="_blank" aria-label="social">
+                              <a href="https://www.instagram.com/" target="_blank" aria-label="social">
                                 <i class="fa-brands fa-instagram fa-sm"></i>
                               </a>
                             </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="tiva-copyright" class="pt-10 pb-10">
-        <div class="container">
-          <div class="row">
-            <div class="text-center col-lg-12 ">
-              <span>
-                Copyright © 2023. All Rights Reserved.
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="tiva-copyright" class="pt-10 pb-10">
+				<div class="container">
+					<div class="row">
+						<div class="text-center col-lg-12">
+							<span>
+								Copyright © 2023. All Rights Reserved.
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 
-    <!-- js link -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/swiper-bundle.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+		<!-- js link -->
+		<script src="assets/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/swiper-bundle.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
 </html>
