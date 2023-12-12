@@ -353,7 +353,6 @@ input[type="email"] {
     list-style-type: none;
     display: inline-block;
     position: relative;
-    border-right: 1px solid var(--fa-common-white);
     padding: 0 28px;
 }
 
@@ -602,10 +601,6 @@ only screen and (min-width: 768px) and (max-width: 991px),
     width: 110px;
     height: auto;
 }
-
-/* .tp-header-5-space {
-    padding-top: 13px;
-} */
 
 @media screen and (max-width: 1199px) {
     .tp-header-5-space {
