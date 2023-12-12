@@ -39,7 +39,6 @@
     }
 
     &__thumb {
-        // margin: 20px auto;
         font-size: 20px;
         color: #999;
         width: 140px;
@@ -49,7 +48,7 @@
         justify-content: center;
         align-items: center;
         background: var(--fa-bg-light);
-        box-shadow: #00000029 0px 0px 5px 1px;
+        box-shadow: 0 0 5px 1px #00000029;
 
         img {
             width: 50%;

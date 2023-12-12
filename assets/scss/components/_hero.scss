@@ -118,18 +118,14 @@
 }
 
 .tp-hero {
-    &__section-box {
-        padding-bottom: 30px;
-    }
-
     &-subtitle {
         font-weight: 500;
-        font-size: 20px;
+        font-size: 15px;
         line-height: 27px;
         color: var(--fa-grey);
         position: relative;
         display: inline-block;
-        margin-bottom: 23px;
+        margin-bottom: 10px;
 
         @media only screen and (max-width: 1200px) and (max-width: 1399px) {
             font-size: 17px;
@@ -137,10 +133,12 @@
     }
 
     &-title {
-        font-weight: 500;
-        line-height: 1.1;
+        text-transform: uppercase;
+        color: #222;
+        letter-spacing: 1px;
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
         font-size: 70px;
-        text-transform: capitalize;
         color: var(--fa-common-brown);
 
         @media only screen and (min-width: 1400px) and (max-width: 1599px) {
